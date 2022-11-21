@@ -1,0 +1,5 @@
+1. Very Slightly or Not At All 
+2. A Little 
+3. Moderately 
+4. Quite a Bit 
+5. Extremely 

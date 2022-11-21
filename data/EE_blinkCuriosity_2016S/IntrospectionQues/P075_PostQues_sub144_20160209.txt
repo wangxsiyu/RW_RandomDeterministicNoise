@@ -1,0 +1,14 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it?How our decision making process is affected and what deviations cause us to change our minds.2. Your task was to maximize the number of points earned over the whole game. How easy was this for you?  It was fairly easy, I’m not horrible at taking the average of a set of numbers.3. (1) Did you have a strategy that you used when making your decision? I tried to keep the rough average of each machine and stuck with which ever had the highest average and if it would dip to low would to a chance at the other machine.   (2) Was your strategy different for longer games than shorter games?Not really 4. Did you have any trouble staying awake and alert the whole time?No I was alert and awake5. Were you distracted at all during the task?No though my fingers would get ahead of myself and hit the keys when I didn’t mean to.6. Have you had any caffeine recently? If so, what was it, and when?No.7. Do you play video games? If so, what type, and how often?Yes, on the weekends I may play 1st or 3rd person shooter games.******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

@@ -1,0 +1,36 @@
+model{
+	    for (h in 1:nHorizon) {
+		      NoiseDet_k_p[h] ~ dexp(0.01);
+		      NoiseDet_lambda_p[h] ~ dexp(10);
+		      NoiseDet[h] <- NoiseDet_k_p[h]/NoiseDet_lambda_p[h];
+					InfoBonus_mu_n[h] ~ dnorm(0,0.01);
+					InfoBonus_sigma_p[h] ~ dexp(0.01);
+					bias_mu_n[h] ~ dnorm(0,0.01);
+					bias_sigma_p[h] ~ dexp(0.01);
+					for (s in 1:nSubject) {
+		          NoiseDet_sub[h,s] ~ dgamma(NoiseDet_k_p[h], NoiseDet_lambda_p[h]);
+							Infobonus_sub[h,s] ~ dnorm(InfoBonus_mu_n[h], 1/InfoBonus_sigma_p[h]);
+							bias_sub[h,s] ~ dnorm(bias_mu_n[h], 1/bias_sigma_p[h]);
+		          NoiseDet_sub_tau[h,s] <- 1/NoiseDet_sub[h,s];
+					}
+
+			}
+			dNoiseDet = NoiseDet[2] - NoiseDet[1];
+			dInfoBonus = InfoBonus_mu_n[2] - InfoBonus_mu_n[1];
+			dbias = bias_mu_n[2] - bias_mu_n[1];
+	    for (h in 1:nHorizon) {
+            for (s in 1:nSubject){
+                for (i in 1:nrepeatID[s]){
+                    NoiseDet_pair[h, s, i] ~ dlogis(0, NoiseDet_sub_tau[h, s]);
+                }
+            }
+        }
+		for (s in 1:nSubject){
+        dNoiseDet_sub[s] = NoiseDet_sub[2, s] - NoiseDet_sub[1, s];
+        for (t in 1:nTrial[s]) {
+						dQ[s, t] <- dR[s,t] + Infobonus_sub[horizon[s,t],s] * dI[s, t] + bias_sub[horizon[s,t],s] + NoiseDet_pair[horizon[s,t],s,repeatID[s,t]];
+						P[s,t]  <- ifelse(dQ[s,t] >= 0, 0.999999999, 0.000000001);
+						choice[s,t] ~ dbern( P[s,t] );
+			}
+		}
+}

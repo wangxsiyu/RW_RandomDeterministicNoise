@@ -1,0 +1,4 @@
+1. Almost Never 
+2. Sometimes 
+3. Often 
+4. Almost Always

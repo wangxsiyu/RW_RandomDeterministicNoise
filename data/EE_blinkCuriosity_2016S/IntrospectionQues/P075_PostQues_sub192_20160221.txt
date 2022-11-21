@@ -1,0 +1,14 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it? -I think it was mainly about decision making. trying to figure out which one armed bandit had the most points. The game was a little boring and i didn’t quite understand it fully.2. Your task was to maximize the number of points earned over the whole game. How easy was this for you?  -It was not super easy because at first i messed up and thought i had to figure out which side had the “XX” and not click on any XX’s but then in round 2 i realized that was not the case there would be a number on either side i chose.3. (1) Did you have a strategy that you used when making your decision? -Really depended on how consistent the numbers stayed on the one side. If the numbers started decreasing i would switch to the other side.   (2) Was your strategy different for longer games than shorter games? -Yes with the longer games i could start to tell which side had the larger numbers. Sometimes in the shorter games it was more difficult to tell which had the highest number. 4. Did you have any trouble staying awake and alert the whole time? -Yes, i fell asleep on and off for a majority of the game haha.5. Were you distracted at all during the task? No6. Have you had any caffeine recently? If so, what was it, and when? No caffeine today.7. Do you play video games? If so, what type, and how often? -I really enjoy call of duty, fallout 4, and Destiny. I have not played them really at all during the school year.******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

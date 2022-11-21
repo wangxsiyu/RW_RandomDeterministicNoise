@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /Applications/EyeTribe
+./EyeTribe
+#/Applications/EyeTribe/EyeTribe --framerate=60

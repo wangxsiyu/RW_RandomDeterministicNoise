@@ -1,0 +1,14 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it?I thought it was about how your eyes react/ change when thinking and making decisions, and possibly noticing a pattern.2. Your task was to maximize the number of points earned over the whole game. How easy was this for you?  Fairly easy, if I did it correctly. My time was short so I assume I understood it. 3. (1) Did you have a strategy that you used when making your decision? Yes, I would choose the bandit that had the highest number on average.   (2) Was your strategy different for longer games than shorter games?On longer games I could test the other bandit before committing to one, but on short games I just had to guess based off of what the specified green blocks revealed.  4. Did you have any trouble staying awake and alert the whole time?Yes, during the initial eye measurement my first reaction was to want to close my eyes and rest them5. Were you distracted at all during the task?No6. Have you had any caffeine recently? If so, what was it, and when?No7. Do you play video games? If so, what type, and how often?Yes, RPGs on PC, around 3-4 times a week. ******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

@@ -1,0 +1,15 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it?A tad strange but over all was kinda nice to sit and play along2. Your task was to maximize the number of points earned over the whole game. How easy was this for you?  3. (1) Did you have a strategy that you used when making your decision? No, simple opportunity cost is all.   (2) Was your strategy different for longer games than shorter games?Study the trend and difference between the numbers and a supposed median. The larger the difference in numbers the greater the risk when choosing the column again because it may go up or down in number count. 
+ 4. Did you have any trouble staying awake and alert the whole time?5. Were you distracted at all during the task?6. Have you had any caffeine recently? If so, what was it, and when?7. Do you play video games? If so, what type, and how often?******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

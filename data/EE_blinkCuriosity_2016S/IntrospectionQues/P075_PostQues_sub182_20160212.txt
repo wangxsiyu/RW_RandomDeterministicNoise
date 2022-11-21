@@ -1,0 +1,14 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it?I got the impression that the experiment was about tradeoffs and risks. To be honest, I found it difficult to keep up with the numbers; let alone understand the full experiment. I thought it would be beneficial to add up the numbers, but found that continuing with a row of numbers that is already ahead was perhaps better. It took me quite some time, so my strategy was clearly flawed. 2. Your task was to maximize the number of points earned over the whole game. How easy was this for you?  It didn’t make sense to me. The numbers are random right? So wherever they go, it adds up to the same thing. I’m not sure how I could have maximized my points. 3. (1) Did you have a strategy that you used when making your decision? At first, I balanced out both the left and right bandits. Then I just favored the left bandit, then back to the right bandit.    (2) Was your strategy different for longer games than shorter games?My strategy was the same for both games. I thought they would both add up to similar results in the end.  4. Did you have any trouble staying awake and alert the whole time?I toned out several times, just pressing buttons. It’s hard to stay aware when you have no idea how to win. I remained conscious throughout the whole experiment.5. Were you distracted at all during the task?As I stated earlier, there were some times of toning out, but no distractions. I felt some desire to finish first, but realized that I wouldn’t early on. 6. Have you had any caffeine recently? If so, what was it, and when?I never drink caffeine products.7. Do you play video games? If so, what type, and how often?I play strategy games, not video games. I play strategy games on my phone throughout extra time during my day. ******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

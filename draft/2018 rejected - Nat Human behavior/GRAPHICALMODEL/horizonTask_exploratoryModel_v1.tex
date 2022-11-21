@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template graphical model %
+% Author: Tom Lodewyckx    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{pst-all}
+\usepackage{com.braju.graphicalmodels}
+%\usepackage[pass,paperwidth=8.5in,paperheight=11in]{geometry}
+\usepackage{ifpdf}
+\ifpdf
+  \pdfpaperheight=6in
+  \pdfpaperwidth=20.5in
+\else
+  \special{papersize=7.5in,5.75in}
+\fi
+\catcode`\@=11%
+\pagestyle{empty}
+%\setlength{\textheight}{9.3in}
+%\setlength{\textwidth}{7in}
+%\setlength{\footskip}{0.5in}
+%\setlength{\topmargin}{-0.5in}
+%\setlength{\headheight}{0.2in}
+%\setlength{\headsep}{0in}
+%\setlength{\parindent}{1pc}
+%\setlength{\oddsidemargin}{-0.25in}
+%\setlength{\evensidemargin}{-0.25in}
+\begin{document}
+\TeXtoEPS
+\psset{unit=14mm,arrowscale=1.5}
+\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+
+\begin{pspicture}(-0.7,1)(13,9.75)
+%\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+%\rput(1,1){\GM@node[NodeOptions]{name}}
+%                 \GM@label[LabelOptions]{name}{label}
+
+% dm and dI
+\rput(4,4){\GM@node[observed=true,observedColor=lightgray,nodeSize=12mm]{dm}}\GM@label[offset=-4mm]{dm}{${\bf r}_{shug}$}
+\rput(6,4){\GM@node[query=true,observed=true,observedColor=lightgray,nodeSize=12mm]{dI}}\GM@label[offset=-4mm]{dI}{${\bf a}_{shug}$}
+
+
+
+% choices
+\rput(5,6){\GM@node[observed=true,observedColor=lightgray,nodeSize=12mm]{c}}\GM@label[offset=-3mm]{c}{$c_{shug}$}
+
+% subject parameters
+\rput(3.5,8){\GM@node[nodeSize=12mm]{A}}\GM@label[offset=-3mm]{A}{$A_{shu}$}
+\rput(5,8){\GM@node[nodeSize=12mm]{b}}\GM@label[offset=-3mm]{b}{$B_{shu}$}
+\rput(6.5,8){\GM@node[nodeSize=12mm]{sigma}}\GM@label[offset=-3mm]{sigma}{$\sigma_{shu}$}
+\rput(8,8){\GM@node[nodeSize=12mm]{k0}}\GM@label[offset=-2mm]{k0}{$k_{sh}$}
+\rput(9.5,8){\GM@node[nodeSize=12mm]{lambda}}\GM@label[offset=-2mm]{lambda}{$\lambda_{sh}$}
+\rput(1.5,8){\GM@node[nodeSize=12mm]{alphainf}}\GM@label[offset=-2mm]{alphainf}{$\alpha^\infty_s$}
+\rput(0,8){\GM@node[nodeSize=12mm]{alpha0}}\GM@label[offset=-2mm]{alpha0}{$\alpha^0_s$}
+\rput(-1.5,8){\GM@node[nodeSize=12mm]{mu0}}\GM@label[offset=-2mm]{mu0}{$\mu^0_s$}
+
+
+% hyperparameters
+%\rput(2,10){\GM@node[nodeSize=12mm]{muA}}\GM@label[offset=-2mm]{muA}{$\mu^A_{n}$}
+\rput(3.5,10){\GM@node[nodeSize=12mm]{thetaA}}\GM@label[offset=-2mm]{thetaA}{$\theta^A_{hu}$}
+\rput(5,10){\GM@node[nodeSize=12mm]{thetab}}\GM@label[offset=-2mm]{thetab}{$\theta^B_{hu}$}
+\rput(6.5,10){\GM@node[nodeSize=12mm]{thetaSigma}}\GM@label[offset=-2mm]{thetaSigma}{$\theta^\sigma_{hu}$}
+
+\rput(8,10){\GM@node[nodeSize=12mm]{thetak0}}\GM@label[offset=-2mm]{thetak0}{$\theta^{k}_{h}$}
+\rput(9.5,10){\GM@node[nodeSize=12mm]{thetalambda}}\GM@label[offset=-2mm]{thetalambda}{$\theta^{\lambda}_{h}$}
+
+\rput(-1.5,10){\GM@node[nodeSize=12mm]{thetamu0}}\GM@label[offset=-2mm]{thetamu0}{$\theta^{\mu^0}$}
+\rput(0,10){\GM@node[nodeSize=12mm]{thetaalpha0}}\GM@label[offset=-2mm]{thetaalpha0}{$\theta^{\alpha^0}$}
+\rput(1.5,10){\GM@node[nodeSize=12mm]{thetaalphainf}}\GM@label[offset=-2mm]{thetaalphainf}{$\theta^{\alpha^\infty}$}
+
+% differences
+%\rput(3,13){\GM@node[nodeSize=12mm]{dmuAOUT}}
+%\rput(3,13){\GM@node[nodeSize=10mm]{dmuA}}\GM@label[offset=-3mm]{dmuA}{$\delta\mu^A_{u}$}
+%\rput(5,13){\GM@node[nodeSize=12mm]{dkSigmaOUT}}
+%\rput(5,13){\GM@node[nodeSize=10mm]{dkSigma}}\GM@label[offset=-3mm]{dkSigma}{$\delta k^\sigma_{u}$}
+%\rput(7,13){\GM@node[nodeSize=12mm]{dmubOUT}}
+%\rput(7,13){\GM@node[nodeSize=10mm]{dmub}}\GM@label[offset=-3mm]{dmub}{$\delta\mu^b_{u}$}
+
+
+% 3. Arrows
+%%%%%%%%%%%
+%
+\ncline[arrows=->]{dm}{c}
+\ncline[arrows=->]{dI}{c}
+\ncline[arrows=->]{dl}{c}
+
+\ncline[arrows=->]{A}{c}
+\ncline[arrows=->]{sigma}{c}
+\ncline[arrows=->]{b}{c}
+\ncline[arrows=->]{k0}{c}
+\ncline[arrows=->]{lambda}{c}
+\ncline[arrows=->]{alphainf}{c}
+\ncline[arrows=->]{alpha0}{c}
+\ncline[arrows=->]{mu0}{c}
+
+\ncline[arrows=->]{thetaA}{A}
+\ncline[arrows=->]{thetaSigma}{sigma}
+\ncline[arrows=->]{thetab}{b}
+
+\ncline[arrows=->]{thetamu0}{mu0}
+\ncline[arrows=->]{thetaalpha0}{alpha0}
+\ncline[arrows=->]{thetaalphainf}{alphainf}
+
+\ncline[arrows=->]{thetak0}{k0}
+\ncline[arrows=->]{thetalambda}{lambda}
+
+
+%\ncline[arrows=->]{muA}{dmuAOUT}
+%\ncline[arrows=->]{kSigma}{dkSigmaOUT}
+%\ncline[arrows=->]{mub}{dmubOUT}
+
+
+% 4. Plates
+%%%%%%%%%%%
+
+\rput(3.25,3){\GM@plate{3.5}{4}{game $g=1$:$G$   }}
+\rput(2.75,2.5){\GM@plate{4.5}{8.25}{uncertainty condition $u=1$:$U$   }}
+\rput(2.25,2){\GM@plate{8}{9.25}{horizon condition $h=1$:$H$   }}
+\rput(-2.25,1.5){\GM@plate{13}{7.5}{subject $s=1$:$S$   }}
+
+%\rput(1,1.5){\GM@plate{10}{10}{$u\in\left\{ [1\mbox{ }3], [2\mbox{ }2]\right\}$   }}
+
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% priors
+%\rput(-2.25,1){\pnode{priors}}\GM@label{priors}{{\bf Priors}}
+%
+%\rput(-2,0.5){\pnode{tm0}}\GM@label{tm0}{$\theta^{\mu^0} = (m^{\mu^0}, s^{\mu^0})$}
+%\rput(-1.75,0){\pnode{mm0}}\GM@label{mm0}{$m^{\mu^0} \sim \mbox{Gaussian}(0, 0.001)$}
+%\rput(-1.75,-0.5){\pnode{sm0}}\GM@label{sm0}{$s^{\mu^0} \sim \mbox{Exponential}(0.001)$}
+%
+%\rput(-2,-1){\pnode{ta0}}\GM@label{ta0}{$\theta^{\alpha^0} = (a^{\alpha^0}, b^{\alpha^0})$}
+%\rput(-1.75,-1.5){\pnode{ma0}}\GM@label{ma0}{$a^{\alpha^0} \sim \mbox{Exponential}(0.01)$}
+%\rput(-1.75,-2){\pnode{sa0}}\GM@label{sa0}{$b^{\alpha^0} \sim \mbox{Exponential}(0.001)$}
+%
+%\rput(-2,-2.5){\pnode{tai}}\GM@label{tai}{$\theta^{\alpha^\infty} = (a^{\alpha^\infty}, b^{\alpha^\infty})$}
+%\rput(-1.75,-3){\pnode{mai}}\GM@label{mai}{$a^{\alpha^\infty} \sim \mbox{Exponential}(0.01)$}
+%\rput(-1.75,-3.5){\pnode{sai}}\GM@label{sai}{$b^{\alpha^\infty} \sim \mbox{Exponential}(0.001)$}
+
+
+%    # inference does not vary by horizon or uncertainty condition
+%    a0 ~ dexp(0.01)
+%    b0 ~ dexp(0.001)
+%    a_inf ~ dexp(0.01)
+%    b_inf ~ dexp(0.001)
+%    mu0_mean ~ dnorm(50, 0.005)
+%    mu0_sigma ~ dgamma(1,0.001)
+%    mu0_tau <- 1/mu0_sigma
+%
+%    
+%    # choice kernel varies by horizon but not uncertainty condition
+%    for (i in 1:H) {
+%        k0_mean[i] ~ dnorm(0, 0.005)
+%        k0_sigma[i] ~ dgamma(1, 0.001)
+%        k0_tau[i] <- 1/k0_sigma[i]
+%        
+%        lambda_mean[i] ~ dnorm(0, 0.005)
+%        lambda_sigma[i] ~ dgamma(1, 0.001)
+%        lambda_tau[i] <- 1/lambda_sigma[i]
+%    }
+%
+%    # information bonus and decision noise vary by horizon and uncertainty
+%    for (i in 1:H){ # loop over horizon
+%        for (j in 1:U) { # loop over uncertainty conditions
+%            AA_mean[i,j] ~ dnorm(0, 0.0001)
+%            AA_sigma[i,j] ~ dgamma(1,0.001)
+%            AA_tau[i,j] <- 1 / AA_sigma[i,j]
+%        
+%            BB_k[i,j] ~ dexp(0.1)
+%            BB_lambda[i,j] ~ dexp(0.1)
+%            BB_mean[i,j] <- BB_k[i,j] / BB_lambda[i,j]
+%        }
+%    }
+
+
+%% priors
+%\rput(9,10.5){\pnode{priors}}\GM@label{priors}{Priors}
+%\rput(9,10){\pnode{muA}}\GM@label{muA}{$\mu^A_{n} \sim \mbox{Gaussian}(0, 1000)$}
+%\rput(9,9.5){\pnode{sigmaA}}\GM@label{sigmaA}{$\sigma^A_{n} \sim \mbox{Gamma}(0.001, 0.001)$}
+%
+%
+%\rput(9,9){\pnode{mub}}\GM@label{mub}{$\mu^B_{n} \sim \mbox{Gaussian}(0, 1000)$}
+%\rput(9,8.5){\pnode{sigmab}}\GM@label{sigmab}{$\sigma^B_{n} \sim \mbox{Gamma}(0.001, 0.001)$}
+%
+%\rput(9,8){\pnode{kSigma}}\GM@label{kSigma}{$k^\sigma_{n} \sim \mbox{Exponential}(0.001)$}
+%\rput(9,7.5){\pnode{lambdaSigma}}\GM@label{lambdaSigma}{$\lambda^\sigma_{n} \sim \mbox{Exponential}(0.001)$}
+%
+%
+%% subject level params
+%\rput(9,6.5){\pnode{subpars}}\GM@label{subpars}{Subject specific parameters}
+%\rput(9,6){\pnode{A}}\GM@label{A}{$A_{ns} \sim \mbox{Gaussian}(\mu^A_{n}, \sigma^A_{n})$}
+%\rput(9,5.5){\pnode{b}}\GM@label{b}{$B_{ns} \sim \mbox{Gaussian}(\mu^B_{n}, \sigma^B_{n})$}
+%\rput(9,5){\pnode{sigma}}\GM@label{sigma}{$\sigma_{ns} \sim \mbox{Gamma}(k^\sigma_{n}, \lambda^\sigma_{n})$}
+%
+%% choices!
+%%\rput(9,5.5){\pnode{c}}
+%%\GM@label{c}{$p \leftarrow }  $}
+%
+%\rput(9,4){\pnode{choices}}\GM@label{choices}{Observed choices}
+%\rput(9,3.5){\pnode{p}}
+%\GM@label{p}{$p_{nst} \leftarrow
+%\left[1+\exp\left( \frac{\Delta R_{nst}+A_{ns}\Delta I_{nst} + B_{ns}\Delta l_{nst}}{\sigma_{ns}} \right)\right]^{-1} $}
+%\rput(9,2.9){\pnode{c}}
+%\GM@label{c}{$c_{nst} \sim \mbox{Bernoulli}
+%\left( p_{nst} \right)$}
+%
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+
+
+
+\endTeXtoEPS
+\end{document}

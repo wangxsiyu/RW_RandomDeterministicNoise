@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Internal-External Noise.aux
+The style file: plainnat.bst
+Database file #1: Refs/refs.bib
+Warning--I didn't find a database entry for "psychtoolbox1"
+Warning--empty journal in hbm1
+Warning--empty journal in eeauer02
+Warning--empty journal in matjags
+You've used 39 entries,
+            2773 wiz_defined-function locations,
+            849 strings with 11622 characters,
+and the built_in function-call counts, 18268 in all, are:
+= -- 1621
+> -- 1110
+< -- 21
++ -- 375
+- -- 335
+* -- 1551
+:= -- 2864
+add.period$ -- 136
+call.type$ -- 39
+change.case$ -- 225
+chr.to.int$ -- 38
+cite$ -- 81
+duplicate$ -- 795
+empty$ -- 1449
+format.name$ -- 400
+if$ -- 3783
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 39
+newline$ -- 221
+num.names$ -- 158
+pop$ -- 412
+preamble$ -- 1
+purify$ -- 188
+quote$ -- 0
+skip$ -- 606
+stack$ -- 0
+substring$ -- 640
+swap$ -- 60
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 419
+warning$ -- 3
+while$ -- 158
+width$ -- 0
+write$ -- 536
+(There were 4 warnings)

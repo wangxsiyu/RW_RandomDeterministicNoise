@@ -1,0 +1,14 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it? I think it was about how my eyes change their direction when I do the experiment. and I’m kind of sure that the scores wasn’t based on the experiment and it was programming before. So it wasn’t matter if you did well or poorly, you will still finish on the same time.2. Your task was to maximize the number of points earned over the whole game. How easy was this for you? I used to find a pattern at first, but the pattern changed each time. So it was one of the things that was a little hard about the experiment, but overall I enjoyed to find a pattern for each set.3. (1) Did you have a strategy that you used when making your decision?  I tried to see which column as the lowest numbers,so it probably will have the highest number at the end    (2) Was your strategy different for longer games than shorter games? Yes 4. Did you have any trouble staying awake and alert the whole time? No5. Were you distracted at all during the task? No6. Have you had any caffeine recently? If so, what was it, and when? No7. Do you play video games? If so, what type, and how often? Not so much******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

@@ -1,0 +1,15 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it?I think it was about tracking eye movement and correlating it to decision making. I found myself analyzing my own decisions a lot more carefully because I wanted to know what the computer/researchers would think if they were watching my decisions.2. Your task was to maximize the number of points earned over the whole game. How easy was this for you?  This was relatively easy, I just stayed with the side that I thought showed more high numbers.3. (1) Did you have a strategy that you used when making your decision? 	I generally stuck to the side with the higher numbers, even if it shot out a low number or two halfway down.   (2) Was your strategy different for longer games than shorter games?	No, I used the same reasoning. 4. Did you have any trouble staying awake and alert the whole time?	No, I was fine. 
+5. Were you distracted at all during the task?	I was concentrated the whole time because I was trying to finish early (was really annoyed that I ended at ~98% one time and had to do a whole new set!) so I was focused.6. Have you had any caffeine recently? If so, what was it, and when?	No i don’t drink caffeine.7. Do you play video games? If so, what type, and how often?	I do, xbox, but really only like once or twice a month (way too busy!).******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

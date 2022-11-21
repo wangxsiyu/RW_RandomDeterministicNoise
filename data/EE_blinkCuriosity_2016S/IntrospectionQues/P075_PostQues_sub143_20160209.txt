@@ -1,0 +1,21 @@
+
+
+
+******************************************************************************************
+
+PLEASE answer the following questions as thoroughly and accurately as possible. If you have any questions, feel free to ask the experimenter.
+
+****************************************************************************************
+
+1. What did you think the experiment was about? Did you have any thoughts (general impressions) about the experiment while you were doing it?
+I thought the experiment was about how people make decisions. During the experiment I noticed some patterns in my own behavior once the gambling task started.2. Your task was to maximize the number of points earned over the whole game. How easy was this for you?  
+I did not think it was very difficult to maximize points during the game. 3. (1) Did you have a strategy that you used when making your decision? 
+Once I had a sense of the range on each column I was able to pick one and just go down the line.   (2) Was your strategy different for longer games than shorter games?For the shorter games I tended to pick the column I didn’t know the range of unless there was a particularly large gap between the numbers appearing in each column. 4. Did you have any trouble staying awake and alert the whole time?
+I started to zone out a bit later in the game during the parts where I had to pick what the computer said, but during the decision making I didn’t have any trouble staying alert.5. Were you distracted at all during the task?
+Not really.6. Have you had any caffeine recently? If so, what was it, and when?
+No.7. Do you play video games? If so, what type, and how often?
+I enjoy puzzle and strategy games, but have not played in a while.******************************************************************************************
+
+Thanks again for participating in this task! Please leave your seat quietly(Others might be still working on the bandit task) and find the experimenter for debriefing. 
+
+****************************************************************************************

@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ~/Dropbox/NeuRLLab_behavioral/EyeTribe-Toolbox-for-Matlab-master/python_source
+python EyeTribe_Matlab_server.py
+
+
