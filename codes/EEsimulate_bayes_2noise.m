@@ -38,7 +38,7 @@ function out = EEsimulate_bayes_2noise(data, As, bs, nrans, ndets)
                 choice(gi) = 0;
             end
         end
-        data.choice(si, :) = W.extend_nan(choice, size(data.choice, 2));
+        data.choice(si, :) = W.extend(choice, size(data.choice, 2));
     end
     out = data;
 end

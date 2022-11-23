@@ -42,20 +42,6 @@ vv2s = {'','_paironly'};
 for i = 1:1 % just the original
     %% parameter recovery
     vv = vvs{i}; vv2 = vv2s{i};
-    % load fitted params
-    paramsub = load(fullfile(outputdir, [HBItest 'HBI_DetRanNoise_' vv 'stat.mat'])).stats.mean;
-    % simulate behavior
-    data = load(fullfile(fullfile('../data',ver), ['bayes_2noise' vv2 '.mat'])).(['bayes_data' vv2]);
-    data.modelname = ['2noisemodel'];
-    for numi = 1:10
-        simugame = EEsimulate_bayes_2noise(data, paramsub.Infobonus_sub', ...
-            paramsub.bias_sub', paramsub.NoiseRan_sub', paramsub.NoiseDet_sub');
-        % fit
-        wj.setup_data_dir(simugame, outputdir);
-        wjinfo = EEbayes_analysis(simugame, nchains, mdpath);
-        wj.setup(wjinfo.modelfile, wjinfo.params, wjinfo.init0, ['DetRanNoise_' vv 'simu' num2str(numi)]);
-        wj.run;
-    end
     %% parameter recovery (with only random noise and only deterministic noise)
     % load fitted params
     paramsub = load(fullfile(outputdir, [HBItest 'HBI_DetRanNoise_' vv 'stat.mat'])).stats.mean;
@@ -113,31 +99,7 @@ for i = 1:1 % just the original
 %         wj.run;
 %     end
 end
-%% full-grid parameter recovery (with only random noise and only deterministic noise)
-vv = '';
-vv2 = '';
-% load fitted params
-paramsub = load(fullfile(outputdir, [HBItest 'HBI_DetRanNoise_' vv 'stat.mat'])).stats.mean;
-[nh, nsub] = size(paramsub.NoiseDet_sub);
-if ~isfield(paramsub, 'bias_sub')
-    paramsub.bias_sub = zeros(nh, nsub);
-end
-% simulate behavior
-data = load(fullfile(fullfile('../data',ver), ['bayes_2noise' vv2 '.mat'])).(['bayes_data' vv2]);
-data.modelname = '2noisemodel';
-for numi = 0:10
-    for numj = 0:10
-        disp(sprintf('%d,%d', numi, numj));
-        % zero det noise
-        simugame = EEsimulate_bayes_2noise(data, paramsub.Infobonus_sub', ...
-            paramsub.bias_sub', ones(nsub, nh) * numi, ones(nsub, nh) * numj);
-        % fit
-        wj.setup_data_dir(simugame, fullfile(outputdir, 'simugrid'));
-        wjinfo = EEbayes_analysis(simugame, nchains, mdpath);
-        wj.setup(wjinfo.modelfile, wjinfo.params, wjinfo.init0, ['DetRanNoise_' vv sprintf('simugrid_ran%ddet%d',numi,numj)]);
-        wj.run;
-    end
-end
+
 %% simulate model recovery of simulaions of 6 behaviors
 % get simu
 for repi = 1:10
