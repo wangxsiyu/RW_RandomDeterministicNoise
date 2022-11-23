@@ -1,23 +1,21 @@
-function EEplot_2noise_pinconsistent(plt, gp)
-    plt.figure(1,2,'istitle',1);
-    plt.setfig('color', {{'AZcactus', 'AZblue', 'AZred'}, {'AZsand', 'AZblue', 'AZred'}});
-    plt.setfig('xlabel', 'horizon', 'ylabel', {'p(inconsistent)','p(inconsistent)'}, ...
-        'title', {'[1 3] condition','[2 2] condition'}, 'legloc', {'SouthWest','SouthWest'}, ...
-        'legend', {'behavioral data','deterministic noise only','random noise only'}, ...
-        'xlim', [0.5 2.5], 'xtick', [1 2], 'xticklabel', [1 6]);
-    plt.param_fig.colordelete = 1;
+function plt = EEplot_2noise_pinconsistent(plt, gp)
+    leg = {'behavioral data','deterministic noise only','random noise only'};
+    plt.setfig('xlabel', {'horizon','horizon'}, 'ylabel', {'p(inconsistent)','p(inconsistent)'}, ...
+        'title', {'[1 3] condition','[2 2] condition'}, 'legloc', {'SW','SW'}, ...
+        'legend', {leg,leg}, ...
+        'xlim', {[0.5 2.5],[0.5 2.5]}, 'xtick', {[1 2],[1 2]}, 'xticklabel', {[1 6],[1 6]});
+    plt.plot(1:2,gp.GPav_p_inconsistent13, gp.GPste_p_inconsistent13, 'line', ...
+        'color', 'AZcactus');
+    plt.plot(1:2,[0 0], [0 0],'line', 'color', 'AZblue');
+    plt.plot(1:2,gp.GPav_p_inconsistent13_randomtheory, ...
+        gp.GPste_p_inconsistent13_randomtheory,'line', 'color', 'AZred');
+    plt.sigstar_y(gp.GPav_p_inconsistent13, 1:2, gp.GPpvalue_p_inconsistent13, 'right');
     plt.new;
-    plt.lineplot(gp.av_p_inconsistent13, gp.ste_p_inconsistent13);
-    plt.lineplot([0 0], [0 0]);
-    plt.lineplot(gp.av_p_inconsistent13_randomtheory, gp.ste_p_inconsistent13_randomtheory);
-    plt.sigstar_y(gp.av_p_inconsistent13, 1:2, gp.pvalue_p_inconsistent13, 'right');
-    plt.new;
-    plt.lineplot(gp.av_p_inconsistent22, gp.ste_p_inconsistent22);
-    plt.lineplot([0 0], [0 0]);
-    plt.lineplot(gp.av_p_inconsistent22_randomtheory, gp.ste_p_inconsistent22_randomtheory);
-    plt.sigstar_y(gp.av_p_inconsistent22, 1:2, gp.pvalue_p_inconsistent22, 'right');
-    plt.update;
-    plt.param_fig.colordelete = 0;
-    plt.addABCs;
-    plt.save('2noise');
+    plt.plot(1:2,gp.GPav_p_inconsistent22, gp.GPste_p_inconsistent22,'line', ...
+        'color', 'AZsand');
+    plt.plot(1:2,[0 0], [0 0],'line', 'color', 'AZblue');
+    plt.plot(1:2,gp.GPav_p_inconsistent22_randomtheory, ...
+        gp.GPste_p_inconsistent22_randomtheory,'line', 'color', 'AZred');
+    plt.sigstar_y(gp.GPav_p_inconsistent22, 1:2, gp.GPpvalue_p_inconsistent22, 'right');
+    plt.update('pinconsistent');
 end
