@@ -128,22 +128,6 @@ for i = 0:10
         randet{2}(i+1,j+1) = mean(st.mean.NoiseDet);
     end
 end
-%% 
-randetsp = {{},{}};
-for i = 0:10
-    for j = 0:10
-        disp(sprintf('%d,%d', i,j));
-        simui = num2str(i);
-        simuj = num2str(j);
-        sp = load(fullfile(griddir, ['HBI_DetRanNoise_' vv 'simugrid_ran' simui 'det' simuj '_samples.mat'])).samples;
-        randetsp{1}{i+1,j+1} = mean(sp.NoiseRan, 3);
-        randetsp{2}{i+1,j+1} = mean(sp.NoiseDet, 3);
-    end
-end
-%%
-rdsp = {};
-rdsp{1} = W.cellfun(@(x)reshape(x, [],1), randetsp{1});
-rdsp{2} = W.cellfun(@(x)reshape(x, [],1), randetsp{2});
 %%
 plt.setup_W_plt('fig_dir', fullfile(figdir,''),...
     'fig_suffix', '', 'fig_projectname', ['RanDetNoise_PureRanDet' vv], ...
@@ -180,39 +164,7 @@ hold on;
 plt.lineplot(0:10, [],1:11,'*');
 plt.update;
 plt.save('parameterrecovery_pureRanDet');
-%% all levels
-plt.setup_W_plt('fig_dir', fullfile(figdir,''),...
-    'fig_suffix', '', 'fig_projectname', ['RanDetNoise_PureRanDet' vv], ...
-    'isshow', true);
-plt.figure(11,2,'rect', [0 0 0.6 0.9], 'margin',[0.1 0.07 0.05 0.02], 'gap', [0.01 0.1]);
-plt.setfig('xtick',[1:11], 'xticklabel', 0:10);
-for i = 1:2
-    for j = 1:11
-        plt.ax(j, i);
-        plt.setfig_ax('ylim', [j-3 j+1], 'ytick', j-1);
-        if j == 6
-            plt.setfig_ax('ylabel', W.iif(i == 1, {'fit random noise'}, 'fit deterministic noise'));
-        end
-        if j == 11
-            plt.setfig_ax('xlabel', W.iif(i == 1, 'concurrent deterministic noise','concurrent random noise'));
-        end
-        if j == 1
-            plt.setfig_ax('title', W.iif(i == 1, 'Random noise','Deterministic noise'));
-        end
-        if i == 1
-            ddd = [rdsp{i}(j,:)];
-        else
-            ddd = [rdsp{i}(:,j)'];
-        end
-        tcol = W.iif(i ==1, plt.param_preset.colors.AZred, plt.param_preset.colors.AZblue);
-        ttt = violin(ddd, 'medc',[],'plotlegend','','facecolor', tcol);
-        hold on;
-        plt.setfig_ax('color', 'AZsand');
-        plt.lineplot(ones(1,13)* (j-1), [],0:12,'-');
-    end
-end
-plt.update;
-plt.save('parameterrecovery_gridRanDet');
+
 %%
 % plt.figure(1,2,'istitle');
 % cols = {'AZsand', 'AZred10','AZred20','AZred30','AZred40','AZred50',...
