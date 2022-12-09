@@ -5,7 +5,7 @@ data = load(fullfile('../data/all/bayes_2noise.mat')).(['bayes_data']);
 for repi = 1:100
     name = {'','B_','C_','D_','E_','F_'};
     simu = {};
-    tfile = fullfile('../bayesoutput/simu6model', sprintf('bayes_6model_simu_rep%d.mat', repi));
+    tfile = fullfile(W.mkdir('../bayesoutput/simu6model'), sprintf('bayes_6model_simu_rep%d.mat', repi));
     if ~exist(tfile, 'file')
         for mi = 1:6
             tparam = load(fullfile(outputdir, ['HBI_DetRanNoise_' name{mi} 'stat.mat'])).stats.mean;
@@ -23,7 +23,7 @@ for repi = 1:100
     %%
     data1 = importdata(tfile);
     for mi = 1:6
-        wj.setup_data_dir(data1{mi}, outputdir);
+        wj.setup_data_dir(data1{mi}, '../bayesoutput/simu6model');
         wjinfo = EEbayes_analysis(data1{mi}, nchains);
         wj.setup(wjinfo.modelfile, wjinfo.params, struct, [sprintf('DetRanNoise_fitmodel_rep%d_', repi) char(64 + mi)]);
         wj.run;
