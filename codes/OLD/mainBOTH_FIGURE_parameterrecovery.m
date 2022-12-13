@@ -129,41 +129,7 @@ for i = 0:10
     end
 end
 %%
-plt.setup_W_plt('fig_dir', fullfile(figdir,''),...
-    'fig_suffix', '', 'fig_projectname', ['RanDetNoise_PureRanDet' vv], ...
-    'isshow', true);
-plt.figure(2,2);
-plt.setfig('ylabel', {'Random only', '','Deterministic only',''}, ...
-    'ylim', [0 13],'xtick',[1:11], 'xticklabel', 0:10, 'legloc', 'NorthWest', ...
-    'xlabel', {'true random noise','true random noise','true deterministic noise','true deterministic noise'}, ...
-    'legend', {'model','truth'});
-plt.new;
-plt.setfig_ax('title',{'fit random noise'});
-ttt = violin([rdsp{1}(:,1)'],'medc',[],'plotlegend','','facecolor', plt.param_preset.colors.AZred);
-plt.fig.leglist{1}(end+1) = ttt(1);
-hold on;
-plt.lineplot(0:10, [],1:11,'*');
-plt.new;
-plt.setfig_ax('title',{'fit deterministic noise'});
-ttt = violin([rdsp{2}(:,1)'],'medc',[],'plotlegend','','facecolor', plt.param_preset.colors.AZblue);
-plt.fig.leglist{2}(end+1) = ttt(1);
-hold on;
-plt.lineplot(zeros(1,11), [],1:11,'*');
 
-plt.new;
-plt.setfig_ax('title',{'fit random noise'});
-ttt = violin([rdsp{1}(1,:)],'medc',[],'plotlegend','','facecolor', plt.param_preset.colors.AZred);
-plt.fig.leglist{3}(end+1) = ttt(1);
-hold on;
-plt.lineplot(zeros(1,11), [],1:11,'*');
-plt.new;
-plt.setfig_ax('title',{'fit deterministic noise'});
-ttt = violin([rdsp{2}(1,:)],'medc',[],'plotlegend','','facecolor', plt.param_preset.colors.AZblue);
-plt.fig.leglist{4}(end+1) = ttt(1);
-hold on;
-plt.lineplot(0:10, [],1:11,'*');
-plt.update;
-plt.save('parameterrecovery_pureRanDet');
 
 %%
 % plt.figure(1,2,'istitle');

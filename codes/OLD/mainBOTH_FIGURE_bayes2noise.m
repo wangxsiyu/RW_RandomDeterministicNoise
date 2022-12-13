@@ -3,14 +3,6 @@ ver = 'all_50chains';
 outputdir = fullfile('../bayesoutput', ver);
 figdir = fullfile('../figures', ver);
 plt = W_plt;
-%% figure - posterior 
-suffix = {'','_all'};
-for gi = 1:2
-    plt.setup_W_plt('fig_dir', figdir,'fig_suffix', suffix{gi},'fig_projectname', 'RanDetNoise');
-    plt.setfig_loc(4, 'xlim', {[-1 10+6*gi],[-3 12], [-1 10+6*gi], [-3 12]});
-    paramsub = load(fullfile(outputdir, ['HBI_DetRanNoise' suffix{gi} '_samples.mat'])).samples;
-    EEplot_2noise_hyperpriors(plt, paramsub);
-end
 %% reduced models - dRonly, dIonly, 0model, no-bias
 plt.initialize('new', 'fig_dir', figdir,'fig_suffix', '', 'fig_projectname', 'RanDetNoise');
 sp = {};
