@@ -1,13 +1,14 @@
-function rdsp = FigureLoad_gridsimu(griddir)
+function rdsp = FigureLoad_gridsimu(griddir, rans)
 %%
 randetsp = {{},{}};
-for i = 0:10
+for ii = 1:length(rans)
+    i = rans(ii);
     for j = 0:10
         W.print('%d,%d', i,j);
         tfilename = sprintf('HBI_DetRanNoise_simugrid_ran%d_det%d_samples.mat', i, j);
         tsp = load(fullfile(griddir, tfilename)).samples;
-        randetsp{1}{i+1,j+1} = mean(tsp.NoiseRan, 3);
-        randetsp{2}{i+1,j+1} = mean(tsp.NoiseDet, 3);
+        randetsp{1}{ii,j+1} = mean(tsp.NoiseRan, 3);
+        randetsp{2}{ii,j+1} = mean(tsp.NoiseDet, 3);
     end
 end
 %%
