@@ -109,7 +109,7 @@ A key question is whether the variability in random exploration is actually rand
 	\section*{Materials and Methods}
 	\subsection*{Participants}
 	
-	80 participants (ages 18-25, 37 male, 43 female) from the University of Arizona undergraduate subject pool participated in the experiment. 14 were excluded on the basis of performance, using the same exclusion criterion as in \citep{wilson2014}. In this exclusion criteria, we measured the accuracy of each participant's choices by calculating the percentage of times that a participant chose the bandit with the higher underlying mean payouts in the last choice of a long horizon game, intuitively people should figure out which bandit has a higher mean payout by the last trial and should have an accuracy measure significantly above 50\%, specifically, we computed the likelihood that the measured accuracy can be achieved driven by making a completely random choice between the two options and excluded participants with a likelihood smaller than 99.999\%, in other words, participants who didn't show an accuracy significant above chance with $p > 0.001$ were excluded in the analysis. This left 66 for the main analysis. Note that including the 14 badly performing subjects did not change the main results (Supplementary Figures 1 - 3)% MAKE AND INCLUDE REPLICAS OF ALL FIGS BUT WITH ALL SUBJECTS
+	80 participants (ages 18-25, 37 male, 43 female) from the University of Arizona undergraduate subject pool participated in the experiment. 14 were excluded on the basis of performance, using the same exclusion criterion as in \citep{wilson2014}. In this exclusion criteria, we measured the accuracy of each participant's choices by calculating the percentage of times that a participant chose the bandit with the higher underlying mean payouts in the last choice of a long horizon game, intuitively people should figure out which bandit has a higher mean payout by the last trial and should have an accuracy measure significantly above 50\%, specifically, we computed the likelihood that the measured accuracy can be achieved driven by making a completely random choice between the two options and excluded participants with a likelihood smaller than 99.999\%, in other words, participants who didn't show an accuracy significant above chance with $p < 0.001$ were excluded in the analysis. This left 66 for the main analysis. Note that including the 14 badly performing subjects did not change the main results (Supplementary Figures 1 - 3)% MAKE AND INCLUDE REPLICAS OF ALL FIGS BUT WITH ALL SUBJECTS
 	
 	\subsection*{Task}
 	The task was a modified version of the Horizon Task \citep{wilson2014} (Figure \ref{fig:taskfig}). In this task, participants play a set of games in which they make choices between two slot machines (one-armed bandits) that pay out rewards from different Gaussian distributions. In each game they made multiple decisions between two options. Each option paid out a random reward between 1 and 100 points sampled from a Gaussian distribution. The means of the underlying Gaussians were different for the two bandit options, remained the same within a game, but changed with each new game. One of the bandits always had a higher mean than the other. Participants were instructed to maximize the points earned over the entire task. To maximize their rewards in each game, participants need to exploit the slot machine with the highest mean, but they cannot identify this best option without exploring both options first. 
@@ -118,13 +118,13 @@ A key question is whether the variability in random exploration is actually rand
 		\begin{center}
 			\includegraphics[width=\textwidth]{figures/taskfiga.pdf}
 			\caption{ 
-			Schematic of the experiment. (A) Dynamics of an example horizon 6 game.  Here the first four trials are forced trials in which participants are instructed which option to play.  After the forced trials, participants are free to choose between the two options for the remainder of the game.  (B) Different possible states of the game after the first free choice over the course of the experiment. Overall participants play 160 such games, with varying horizon (1 vs 6), uncertainty condition ([1 3] vs [2 2]) and observed rewards.  In addition, all games are repeated (as Game 18 and 100 are here) such that participants will be faced with the exact same pattern of forced trials and exact same outcomes from those forced trials twice within each experiment.  These repeated games allow us to compute the relative contribution of deterministic and random noise by analyzing the extent to which choices are {\em consistent} across the repeated games.}
+			Schematic of the experiment. (A) Dynamics of an example horizon 6 game.  Here the first four trials are forced trials in which participants are instructed which option to play.  After the forced trials, participants are free to choose between the two options for the remainder of the game.  (B) Different possible states of the game after the first free choice over the course of the experiment. On average, participants play more than 150 such games, with varying horizon (1 vs 6), uncertainty condition ([1 3] vs [2 2]) and observed rewards.  In addition, all games are repeated (as Game 18 and 100 are here) such that participants will be faced with the exact same pattern of forced trials and exact same outcomes from those forced trials twice within each experiment.  These repeated games allow us to compute the relative contribution of deterministic and random noise by analyzing the extent to which choices are {\em consistent} across the repeated games.}
 			\label{fig:taskfig}
 		\end{center}
 	\end{figure}
 	
 	
-	The number of games participants played depended on how well they performed, which acted as the primary incentive for performing the task. Thus, the better participants performed, the sooner they got to leave the experiment. On average, participants played 151.6 games (minimum = 90 games, maximum = 192 games) and the whole task lasted between 12.34 and 32.74 minutes (mean 23.31 minutes). Participants played an average of 67.31 repeated pairs of games (minimum = 25 repeated pairs, maximum =  100 repeated pairs).
+	The number of games participants played depended on how well they performed, which acted as the primary incentive for performing the task. Thus, the better participants performed, the sooner they got to leave the experiment. On average, participants played 153.7 games (minimum = 90 games, maximum = 192 games) and the whole task lasted between 12.37 and 32.15 minutes (mean 22.78 minutes). Participants played an average of 65.3 repeated pairs of games (minimum = 30 repeated pairs, maximum =  79 repeated pairs).
 	%BOB SAYS: ADD HOW MANY REPEATED GAMES THEY PLAYED - GIVE A MEAN AND RANGE FOR THIS NUMBER
 	
 	As in the original paper \citep{wilson2014}, the distributions of payoffs tied to bandits were independent between games and drawn from a Gaussian distribution with variable means and fixed standard deviation of 8 points. Differences between the mean payouts of the two slot machines were set to either 4, 8, 12 or 20. One of the means was always equal to either 40 or 60 and the second was set accordingly. Participants were informed that in every game one of the bandits always has a higher mean reward than the other. The order of games was randomized. Mean sizes and order of presentation were counterbalanced. 
@@ -142,11 +142,11 @@ A key question is whether the variability in random exploration is actually rand
 	\begin{equation}
 	\Delta Q= \Delta R+A \Delta I+b+n_{det}+n_{ran}
 	\end{equation}
-	where, the experimentally controlled variables are $\Delta R=R_{right}-R_{left}$, the difference between the mean of the rewards shown on the forced trials, and $\Delta I$, the difference information available for playing the two options on the first free-choice trial. For simplicity, and because information is manipulated categorically in the Horizon Task, we define $\Delta I$ to be +1, -1 or 0, +1 if one reward is drawn from the right option and three are drawn from the left in the [1 3] condition, -1 if one from the left and three from the right, and in [2 2] condition, $\Delta I$ is 0. $n_{det}$ and $n_{ran}$ are deterministic noise and random noise respectively. 
+	where, the experimentally controlled variables are $\Delta R=R_{right}-R_{left}$, the difference between the mean of the rewards shown on the forced trials, and $\Delta I$, the difference of information available for playing the two options on the first free-choice trial. For simplicity, and because information is manipulated categorically in the Horizon Task, we define $\Delta I$ to be +1, -1 or 0, +1 if one reward is drawn from the right option and three are drawn from the left in the [1 3] condition, -1 if one from the left and three from the right, and in [2 2] condition, $\Delta I$ is 0. 
 	
-	The other variables are: the spatial bias, $b$, which determines the extent to which participants prefer the option on the right; the information bonus $A$, which controls the level of directed exploration; $n_{det}$ denotes the deterministic noise, which is identical on the repeat versions of each game; and $n_{ran}$ denotes random noise, which is uncorrelated between repeat plays and changes every game.
+	The other variables are: the spatial bias, $b$, which determines the extent to which participants prefer the option on the right; the information bonus $A$, which controls the level of directed exploration; $n_{det}$ and $n_{ran}$ are deterministic noise and random noise respectively. $n_{det}$ denotes the deterministic noise, which is identical on the repeat versions of each game; and $n_{ran}$ denotes random noise, which is uncorrelated between repeat plays and changes every game.
 	
-	Each subject's behavior in each horizon condition is described by 4 free parameters: the information bonus $A$, the spatial bias, $b$, the standard deviation of the deterministic noise, $\sigma_{det}$, and the standard deviation of the random noise, $\sigma_{ran}$ (Table \ref{tab:pars2}, Figure \ref{fig:model}). Each of the free parameters is fit to the behavior of each subject using a hierarchical Bayesian approach \citep{hbm1}.  In this approach to model fitting, each parameter for each subject is assumed to be sampled from a group-level prior distribution whose parameters, the so-called `hyperparameters', are estimated using a Markov Chain Monte Carlo (MCMC) sampling procedure. The hyper-parameters themselves are assumed to be sampled from `hyperprior' distributions whose parameters are defined such that these hyperpriors are broad.  
+	Each subject's behavior in each horizon condition is described by 4 free parameters (Table \ref{tab:pars2}): the information bonus $A$, the spatial bias, $b$, the standard deviation of the deterministic noise, $\sigma_{det}$, and the standard deviation of the random noise, $\sigma_{ran}$. Each of the free parameters is fit to the behavior of each subject using a hierarchical Bayesian approach \citep{hbm1}.  In this approach to model fitting, each parameter for each subject is assumed to be sampled from a group-level prior distribution whose parameters, the so-called `hyperparameters', are estimated using a Markov Chain Monte Carlo (MCMC) sampling procedure (Figure \ref{fig:model}). The hyper-parameters themselves are assumed to be sampled from `hyperprior' distributions whose parameters are defined such that these hyperpriors are broad.  
 	
 	The particular priors and hyperpriors for each parameter are shown in Table \ref{tab:pars2}. For example, we assume that the information bonus, $A^{is}$, for each horizon condition $i$ and for each participant $s$, is sampled from a Gaussian prior with mean $\mu^{A}_{i}$ and standard deviation $\sigma_{i}^A$. These prior parameters are sampled in turn from their respective hyperpriors: $\mu_{i}^{A}$, from a Gaussian distribution with mean 0 and standard deviation 10, and $\sigma_{i}^A$ from an Exponential distribution with parameters 0.1.
 	
@@ -171,14 +171,14 @@ A key question is whether the variability in random exploration is actually rand
 				$\sigma_i^{b} \sim $ Exponential(0.01)}		\\
 			\hline
 			deviation of deterministic noise, $\sigma^{det}_{isg}$ 
-			& $\sigma_{i} \sim $  Gamma($k_i^{det}$, $\lambda_{i}^{det}$) 
+			& $\sigma^{det}_{is} \sim $  Gamma($k_i^{det}$, $\lambda_{i}^{det}$) 
 			& $\theta_{i}^{det} = (k_i^{det}, \lambda_i^{det}) $
 			& \specialcell{
 				$k_i^{det} \sim $ Exponential(0.01) \\ 
 				$\lambda_i^{det} \sim $ Exponential(10)}		\\
 			\hline
 			deviation of random noise, $\sigma^{ran}_{isgr}$ 
-			& $\sigma_{is} \sim $  Gamma($k_i^{ran}$, $\lambda_{i}^{ran}$) 
+			& $\sigma^{ran}_{is} \sim $  Gamma($k_i^{ran}$, $\lambda_{i}^{ran}$) 
 			& $\theta_{i}^{ran} = (k_i^{ran}, \lambda_i^{ran}) $
 			& \specialcell{
 				$k_i^{ran} \sim $ Exponential(0.01) \\ 
@@ -192,11 +192,11 @@ A key question is whether the variability in random exploration is actually rand
 	\subsubsection*{Model fitting using MCMC}
 	The model was fit to the data using Markov Chain Monte Carlo approach implemented in the JAGS package \citep{jags} via the MATJAGS interface (psiexp.ss.uci.edu/research/programs\_data/jags). This package approximates the posterior distribution over model parameters by generating samples from this posterior distribution given the observed behavioral data.  
 	
-	In particular we used 4 independent Markov chains to generate 16000 samples from the posterior distribution over parameters (4000 samples per chain).  Each chain had a burn in period of 2000 samples, which were discarded to reduce the effects of initial conditions, and posterior samples were acquired at a thin rate of 1.  Convergence of the Markov chains was confirmed {\it post hoc} by eye. 
+	In particular we used 10 independent Markov chains to generate 50000 samples from the posterior distribution over parameters (5000 samples per chain).  Each chain had a burn in period of 5000 samples, which were discarded to reduce the effects of initial conditions, and posterior samples were acquired at a thin rate of 1.  Convergence of the Markov chains was confirmed {\it post hoc} by eye. 
 	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=1\textwidth]{figures/Siyu_EEHorizon_2sigma_final.pdf}
+			\includegraphics[width=1\textwidth]{figures/EEHorizon_2sigma.pdf}
     			\caption{Schematic of the hierarchical Bayesian model using notation of \cite{lee_wagenmakers_2014}}
 			\label{fig:model}
 		\end{center}
@@ -219,7 +219,7 @@ A key question is whether the variability in random exploration is actually rand
 	
 	\begin{figure}[hp]
 		\begin{center}
-			\includegraphics[width=1\textwidth]{figures/RanDetNoise_pure_ran_det_simu_hyperprior.png}
+			\includegraphics[width=1\textwidth]{figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg}
 			\caption{Parameter recovery over the posterior of random noise variance, $\sigma_{ran}$, and deterministic noise variance, $\sigma_{det}$, for purely random noise (left column) and purely deterministic noise (right column) games. 
 			}
 			\label{fig:pararecover2}
@@ -232,7 +232,7 @@ A key question is whether the variability in random exploration is actually rand
 	%Overall, we are able to recover both deterministic and random noises using our model to a satisfactory extent.
 	
 	\subsection*{Data and code}
-	Behavioral data as well as Matlab code to recreate the main figures from this paper will be made available on the Dataverse website upon publication. %website at https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CZT6EE.
+	Behavioral data as well as MATLAB codes to recreate the main figures from this paper will be made available upon publication. %website at https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CZT6EE.
 	
 	\section*{Results}
 	
@@ -258,7 +258,7 @@ A key question is whether the variability in random exploration is actually rand
 	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=\textwidth]{figures/line_modelfree.png}
+			\includegraphics[width=\textwidth]{figures/RanDetNoise_modelfree.jpg}
 			\caption{
 			Replication of previous findings. Both  $p(\mbox{low mean})$ (A) and $p(\mbox{high info})$ (B) increase with horizon suggesting that people use both random and directed exploration in this task.  }
 			\label{fig:modelfree}
@@ -273,7 +273,7 @@ A key question is whether the variability in random exploration is actually rand
 	
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=\textwidth]{figures/theory_da_info.png}
+			\includegraphics[width=\textwidth]{figures/RanDetNoise_pinconsistent.jpg}
 			\caption{Model-free analysis suggests that both deterministic and random noise contribute to the choice variability in random exploration. For both the [1 3] (A) and [2 2] (B) condition, people show greater choice inconsistency in horizon 6 than horizon 1. However, the extent to which their choices are inconsistent lies between what is predicted by purely deterministic and random noise, suggesting that both noise sources influence the decision.}
 			\label{fig:mf2}
 		\end{center}
@@ -318,7 +318,7 @@ A key question is whether the variability in random exploration is actually rand
 	
 	\begin{figure}[hp]
 		\begin{center}
-			\includegraphics[width=1\textwidth]{figures/hyperprior.png}
+			\includegraphics[width=1\textwidth]{figures/RDBayes_hyperprior.jpg}
 			\caption{Model based analysis showing the posterior distributions over the group-level mean of the standard deviations of  random and deterministic noise. Both random (A, B) and deterministic (C,D) noises are nonzero (A, C) and change with horizon (B, D).  However, random noise has both a greater magnitude overall (A, C) and a greater change with horizon (B, D) than deterministic noise.}
 			%BOB SAYS: DON'T NEED THE NUMBERS ON THE Y-AXES. 
 			\label{fig:mb1}

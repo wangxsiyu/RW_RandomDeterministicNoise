@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -43,6 +43,11 @@ J.~Banks, M.~Olson, and D.~Porter.
 \bibitem[Basu et~al.(2018)Basu, Senellart, and Bressan]{eeBasu18}
 Debabrota Basu, Pierre Senellart, and Stéphane Bressan.
 \newblock Belman: Bayesian bandits on the belief--reward manifold, 2018.
+
+\bibitem[Brainard(1997)]{psychtoolbox1}
+D.~H. Brainard.
+\newblock The psychophysics toolbox.
+\newblock \emph{Spatial vision}, 10\penalty0 (4):\penalty0 433–436, 1997.
 
 \bibitem[Brainard and Doupe(2002)]{songbird1}
 M.~S. Brainard and A.~J. Doupe.

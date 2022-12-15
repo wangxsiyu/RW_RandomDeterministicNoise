@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  11 DEC 2022 15:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  15 DEC 2022 03:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -432,91 +432,93 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/Siyu_Wang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-LaTeX Warning: File `figures/RanDetNoise_modelfree_all.png' not found on input 
+<figures/RanDetNoise_modelfree__all.jpg, id=9, 1238.6275pt x 666.49pt>
+File: figures/RanDetNoise_modelfree__all.jpg Graphic file (type jpg)
+<use figures/RanDetNoise_modelfree__all.jpg>
+Package pdftex.def Info: figures/RanDetNoise_modelfree__all.jpg  used on input 
 line 73.
-
-
-! Package pdftex.def Error: File `figures/RanDetNoise_modelfree_all.png' not fo
-und: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...th]{figures/RanDetNoise_modelfree_all.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 7
-3.
-(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+(pdftex.def)             Requested size: 505.89pt x 272.21518pt.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
 4.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
+<figures/RanDetNoise_pinconsistent__all.jpg, id=10, 1238.6275pt x 666.49pt>
+File: figures/RanDetNoise_pinconsistent__all.jpg Graphic file (type jpg)
+<use figures/RanDetNoise_pinconsistent__all.jpg>
+Package pdftex.def Info: figures/RanDetNoise_pinconsistent__all.jpg  used on in
+put line 81.
+(pdftex.def)             Requested size: 505.89pt x 272.21518pt.
 
-LaTeX Warning: File `figures/RanDetNoise_2noise_all.png' not found on input lin
-e 81.
+[2 <./figures/RanDetNoise_modelfree__all.jpg>] [3 <./figures/RanDetNoise_pincon
+sistent__all.jpg>]
+<figures/RDBayes_hyperprior__all.jpg, id=24, 1238.6275pt x 1285.80376pt>
+File: figures/RDBayes_hyperprior__all.jpg Graphic file (type jpg)
+<use figures/RDBayes_hyperprior__all.jpg>
+Package pdftex.def Info: figures/RDBayes_hyperprior__all.jpg  used on input lin
+e 89.
+(pdftex.def)             Requested size: 505.89pt x 525.16212pt.
+ [4 <./figures/RDBayes_hyperprior__all.jpg>]
+<figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg, id=30, 1238.6275pt 
+x 1285.80376pt>
+File: figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg Graphic file (t
+ype jpg)
+<use figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg>
+Package pdftex.def Info: figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.
+jpg  used on input line 99.
+(pdftex.def)             Requested size: 505.89pt x 525.16212pt.
+ [5 <./figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg>]
+<figures/RDBayes_parameterrecovery_gridsimu_all.jpg, id=36, 2336.73pt x 1709.38
+625pt>
+File: figures/RDBayes_parameterrecovery_gridsimu_all.jpg Graphic file (type jpg
+)
+<use figures/RDBayes_parameterrecovery_gridsimu_all.jpg>
+Package pdftex.def Info: figures/RDBayes_parameterrecovery_gridsimu_all.jpg  us
+ed on input line 107.
+(pdftex.def)             Requested size: 505.89pt x 370.06703pt.
+ [6 <./figures/RDBayes_parameterrecovery_gridsimu_all.jpg>]
+<figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg, id=42, 2336.73pt x 170
+9.38625pt>
+File: figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg Graphic file (type
+ jpg)
+<use figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg>
+Package pdftex.def Info: figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg
+  used on input line 115.
+(pdftex.def)             Requested size: 505.89pt x 370.06703pt.
+ [7 <./figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg>]
+
+LaTeX Warning: File `figures/pinconsistent_6panel_age_acchance.png' not found o
+n input line 148.
 
 
-! Package pdftex.def Error: File `figures/RanDetNoise_2noise_all.png' not found
-: using draft setting.
+! Package pdftex.def Error: File `figures/pinconsistent_6panel_age_acchance.png
+' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...width]{figures/RanDetNoise_2noise_all.png}
+l.148 ...es/pinconsistent_6panel_age_acchance.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[2] [3]
-
-LaTeX Warning: File `figures/RanDetNoise_hyperprior_all.png' not found on input
- line 89.
-
-
-! Package pdftex.def Error: File `figures/RanDetNoise_hyperprior_all.png' not f
-ound: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 ...h]{figures/RanDetNoise_hyperprior_all.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4]
-<figures/pinconsistent_6panel_age_acchance.png, id=28, 3338.4725pt x 949.5475pt
->
-File: figures/pinconsistent_6panel_age_acchance.png Graphic file (type png)
-<use figures/pinconsistent_6panel_age_acchance.png>
-Package pdftex.def Info: figures/pinconsistent_6panel_age_acchance.png  used on
- input line 125.
-(pdftex.def)             Requested size: 505.89pt x 143.87486pt.
- [5 <./figures/pinconsistent_6panel_age_acchance.png (PNG copy)>]
-(DetRanNoise_Supplementary.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+48.
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+[8] [9] (DetRanNoise_Supplementary.aux)
 Package rerunfilecheck Info: File `DetRanNoise_Supplementary.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11507 strings out of 478338
- 189876 string characters out of 2834777
- 471439 words of memory out of 3000000
- 29751 multiletter control sequences out of 15000+600000
+ 11484 strings out of 478338
+ 189079 string characters out of 2834777
+ 472129 words of memory out of 3000000
+ 29720 multiletter control sequences out of 15000+600000
  487610 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,8n,77p,674b,500s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -527,9 +529,9 @@ lic/amsfonts/cm/cmr10.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/courier/ucrr8a.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Siyu Wang/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on DetRanNoise_Supplementary.pdf (5 pages, 132149 bytes).
+Output written on DetRanNoise_Supplementary.pdf (9 pages, 1784982 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

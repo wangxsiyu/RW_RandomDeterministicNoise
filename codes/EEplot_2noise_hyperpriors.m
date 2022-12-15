@@ -16,12 +16,10 @@ function EEplot_2noise_hyperpriors(plt, sp, stepsize)
         xbins = [-10:stepsize(i):50];
         fn = fns{i};
         plt.ax(i*2-1);
+        td = sp.(fn);
         for hi = 1:2
-            td = sp.(fn);
-            td = squeeze(td(:,:,hi));
-            td = reshape(td, 1, []);
-            tl = hist(td, xbins)/(length(td)*stepsize(i));
-            plt.plot(xbins, tl, [], 'line', 'color', color{i}{hi});
+            [tl, tm] = W.JAGS_density(td(:,:,hi), xbins);
+            plt.plot(tm, tl, [], 'line', 'color', color{i}{hi});
         end
         hold on;
         ylm = get(gca,'ylim');
@@ -30,9 +28,8 @@ function EEplot_2noise_hyperpriors(plt, sp, stepsize)
         
         plt.ax(i*2);
         td = sp.(['d' fn]);
-        td = reshape(td, 1, []);
-        tl = hist(td, xbins)/(length(td)*stepsize(i));
-        plt.plot(xbins, tl, [], 'line', 'color', 'black');
+        [tl, tm] = W.JAGS_density(td, xbins);
+        plt.plot(tm, tl, [], 'line', 'color', 'black');
         hold on;
 %         ylm = get(gca,'ylim');
         plot([0 0],ylm, '--k','LineWidth', plt.param_plt.linewidth/2);

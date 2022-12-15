@@ -4,6 +4,7 @@ savedir = '../data/all';
 files = dir(fullfile(rawdatadir,'Imported_EE_blinkCuriosity_2016S.csv'));
 filename = fullfile(files.folder, files.name);
 %% basic analysis
+W.library_wang('Wang_EEHorizon')
 opt_sub = {'subjectID', 'date', 'time'};
 opt_preprocess = 'EEpreprocess_game_basic';
 opt_game_sub = {'EEpreprocess_game_sub_repeatedgame'};

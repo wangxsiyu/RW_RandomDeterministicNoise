@@ -5,49 +5,48 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: Refs/refs.bib
-Warning--I didn't find a database entry for "psychtoolbox1"
 Warning--empty journal in hbm1
 Warning--empty journal in eeauer02
 Warning--empty journal in matjags
-You've used 39 entries,
+You've used 40 entries,
             2773 wiz_defined-function locations,
-            849 strings with 11646 characters,
-and the built_in function-call counts, 18268 in all, are:
-= -- 1621
-> -- 1110
-< -- 21
-+ -- 375
-- -- 335
-* -- 1551
-:= -- 2864
-add.period$ -- 136
-call.type$ -- 39
-change.case$ -- 225
-chr.to.int$ -- 38
-cite$ -- 81
-duplicate$ -- 795
-empty$ -- 1449
-format.name$ -- 400
-if$ -- 3783
+            853 strings with 11709 characters,
+and the built_in function-call counts, 18664 in all, are:
+= -- 1657
+> -- 1120
+< -- 22
++ -- 379
+- -- 338
+* -- 1581
+:= -- 2924
+add.period$ -- 139
+call.type$ -- 40
+change.case$ -- 229
+chr.to.int$ -- 39
+cite$ -- 83
+duplicate$ -- 815
+empty$ -- 1491
+format.name$ -- 404
+if$ -- 3867
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 39
-newline$ -- 221
-num.names$ -- 158
-pop$ -- 412
+missing$ -- 40
+newline$ -- 226
+num.names$ -- 162
+pop$ -- 419
 preamble$ -- 1
-purify$ -- 188
+purify$ -- 191
 quote$ -- 0
-skip$ -- 606
+skip$ -- 619
 stack$ -- 0
-substring$ -- 640
-swap$ -- 60
+substring$ -- 669
+swap$ -- 61
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 419
+type$ -- 430
 warning$ -- 3
-while$ -- 158
+while$ -- 162
 width$ -- 0
-write$ -- 536
-(There were 4 warnings)
+write$ -- 549
+(There were 3 warnings)
