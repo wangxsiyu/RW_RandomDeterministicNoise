@@ -1,0 +1,33 @@
+function EEplot_2noise_modelcomparison1(plt, gp, simugp)
+    plt.figure(1,4,'is_title',1);
+    plt.setfig('xlabel', [repmat({'horizon'},1,4)], ...
+        'ylabel', [{'p(high info)', 'p(low mean)', 'p(inconsistent), [1 3]', 'p(inconsistent), [2 2]'}], ...
+        'legend', [repmat({{'data', 'model'}},1,4)], ...
+        'ylim', repmat({[0.35 0.65],[0 0.35],[0 0.45],[0 0.45]},1,1), ...
+        'ytick', repmat({[0.4:0.1:0.6],[0:.1:0.3],[0:.1:0.5],[0:.1:0.5]},1,1));
+    plt.setfig_all('xlim', [0.5 2.5], 'xtick', [1 2], 'xticklabel', [1 6], ...
+        'legloc', 'SE');
+    for mi = 1:1
+        tgp = simugp.(['model' char(64+mi)]);
+        plt.ax(mi,1);
+        plt.plot(1:2,gp.GPav_p_hi13, gp.GPste_p_hi13,'line','color','AZred');
+        plt.plot(1:2,tgp.GPav_GPav_p_hi13, tgp.GPav_GPste_p_hi13,'line','color','AZblue');
+        
+        plt.ax(mi,2);
+        plt.plot(1:2,gp.GPav_p_lm22, gp.GPste_p_lm22,'line','color','AZred');
+        plt.plot(1:2,tgp.GPav_GPav_p_lm22, tgp.GPav_GPste_p_lm22,'line','color','AZblue');
+        
+        plt.ax(mi,3);
+        plt.plot(1:2,gp.GPav_p_inconsistent13, gp.GPste_p_inconsistent13,'line', 'color', 'AZred');
+%         plt.plot(1:2,gp.GPav_p_inconsistent13_randomtheory, gp.GPste_p_inconsistent13_randomtheory,'line', 'color', 'AZred50','linestyle','--');
+%         plt.plot(1:2,tgp.GPav_GPav_p_inconsistent13_randomtheory, tgp.GPste_GPav_p_inconsistent13_randomtheory,'line', 'color', 'AZblue50','linestyle','--');
+        plt.plot(1:2,tgp.GPav_GPav_p_inconsistent13, tgp.GPav_GPste_p_inconsistent13,'line', 'color', 'AZblue');
+        
+        plt.ax(mi,4);
+        plt.plot(1:2,gp.GPav_p_inconsistent22, gp.GPste_p_inconsistent22,'line', 'color', 'AZred')
+%         plt.plot(1:2,gp.GPav_p_inconsistent22_randomtheory, gp.GPste_p_inconsistent22_randomtheory,'line', 'color', 'AZred50','linestyle','--');
+%         plt.plot(1:2,tgp.GPav_GPav_p_inconsistent22_randomtheory, tgp.GPste_GPav_p_inconsistent22_randomtheory,'line', 'color', 'AZblue50','linestyle','--');
+        plt.plot(1:2,tgp.GPav_GPav_p_inconsistent22, tgp.GPav_GPste_p_inconsistent22,'line', 'color', 'AZblue');
+    end
+    plt.update('2noise_modelA');
+end

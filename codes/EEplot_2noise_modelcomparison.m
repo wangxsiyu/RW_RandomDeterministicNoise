@@ -1,0 +1,37 @@
+function EEplot_2noise_modelcomparison(plt, gp, simugp)
+    plt.figure(6,4,'fontsize_label', 18, 'fontsize_leg',15, 'fontsize_axes',18, 'fontsize_title', 20, ...
+        'gapH_custom', [10 0 0 0 0 0 10], 'gapW_custom', [10 0 0 0 0]);   
+    plt.setfig('xlabel', [repmat({''},1,20), repmat({'horizon'},1,4)], ...
+        'ylabel', [{'model A'} repmat({''},1,3), {'model B'} repmat({''},1,3), ...
+        {'model C'} repmat({''},1,3), {'model D'} repmat({''},1,3), ...
+        {'model E'} repmat({''},1,3), {'model F'} repmat({''},1,3)], ...
+        'title', [{'p(high info)', 'p(low mean)', 'p(inconsistent), [1 3]', 'p(inconsistent), [2 2]', ...
+        } repmat({''}, 1, 20)], 'xlim', [0.5 2.5], 'xtick', [1 2], 'xticklabel', [1 6], ...
+        'legend', [repmat({{'data', 'model'}},1,24)], ...
+        'ylim', repmat({[0.35 0.65],[0 0.35],[0 0.45],[0 0.45]},1,6), ...
+        'ytick', repmat({[0.4:0.1:0.6],[0:.1:0.3],[0:.1:0.5],[0:.1:0.5]},1,6));
+    plt.setfig_all('legloc', 'SE');
+    for mi = 1:6
+        tgp = simugp.(['model' char(64+mi)]);
+        plt.ax(mi,1);
+        plt.plot(1:2,gp.GPav_p_hi13, gp.GPste_p_hi13,'line','color','AZred');
+        plt.plot(1:2,tgp.GPav_GPav_p_hi13, tgp.GPav_GPste_p_hi13,'line','color','AZblue');
+        
+        plt.ax(mi,2);
+        plt.plot(1:2,gp.GPav_p_lm22, gp.GPste_p_lm22,'line','color','AZred');
+        plt.plot(1:2,tgp.GPav_GPav_p_lm22, tgp.GPav_GPste_p_lm22,'line','color','AZblue');
+        
+        plt.ax(mi,3);
+        plt.plot(1:2,gp.GPav_p_inconsistent13, gp.GPste_p_inconsistent13,'line', 'color', 'AZred');
+%         plt.plot(1:2,gp.GPav_p_inconsistent13_randomtheory, gp.GPste_p_inconsistent13_randomtheory,'line', 'color', 'AZred50','linestyle','--');
+%         plt.plot(1:2,tgp.GPav_GPav_p_inconsistent13_randomtheory, tgp.GPste_GPav_p_inconsistent13_randomtheory,'line', 'color', 'AZblue50','linestyle','--');
+        plt.plot(1:2,tgp.GPav_GPav_p_inconsistent13, tgp.GPav_GPste_p_inconsistent13,'line', 'color', 'AZblue');
+        
+        plt.ax(mi,4);
+        plt.plot(1:2,gp.GPav_p_inconsistent22, gp.GPste_p_inconsistent22,'line', 'color', 'AZred')
+%         plt.plot(1:2,gp.GPav_p_inconsistent22_randomtheory, gp.GPste_p_inconsistent22_randomtheory,'line', 'color', 'AZred50','linestyle','--');
+%         plt.plot(1:2,tgp.GPav_GPav_p_inconsistent22_randomtheory, tgp.GPste_GPav_p_inconsistent22_randomtheory,'line', 'color', 'AZblue50','linestyle','--');
+        plt.plot(1:2,tgp.GPav_GPav_p_inconsistent22, tgp.GPav_GPste_p_inconsistent22,'line', 'color', 'AZblue');
+    end
+    plt.update('2noise_6modelcomparison');
+end

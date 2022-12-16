@@ -1,14 +1,6 @@
-%% original models (A-F)
-outputdir = '../bayesoutput/all';
-name = {'','B_','C_','D_','E_','F_'};
-sp = cell(1,6);
-for i = 1:6
-    sp{i} = load(fullfile(outputdir, ['HBI_DetRanNoise_' name{i} 'samples.mat'])).samples;
-end
 %%
 plt = W_plt('savedir', '../figures', 'savepfx', 'RDBayes', 'isshow', true, ...
     'issave', true);
-EEplot_2noise_hyperpriors_6model(plt, sp);
 %% load simulations
 game0 = readtable('../data/all/data_all.csv', 'Delimiter', ',');
 idx = load('../data/all/idxsub_exclude');
@@ -39,3 +31,12 @@ for repi = 1:50
         simugp{repi, mi} = W.analysis_1group(tsimu_sub);
     end
 end
+%%
+sgp = struct;
+for mi = 1:6
+    sgp.(['model' char(64 + mi)]) = W.analysis_1group(vertcat(simugp{:,mi}));
+end
+%%
+EEplot_2noise_modelcomparison(plt, gp, sgp);
+%%
+EEplot_2noise_modelcomparison1(plt, gp, sgp);

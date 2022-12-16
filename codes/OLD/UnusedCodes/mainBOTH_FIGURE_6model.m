@@ -70,8 +70,8 @@ plt.setup_W_plt('fig_dir', fullfile(figdir,verout), 'fig_suffix', '','fig_projec
 %     sgp.(['model' char(64 + mi)]) = W_sub.analysis_1group(vertcat(simugp{:,mi}),[],[],'');
 % end
 %% plotting 6 panel
-EEplot_2noise_modelcomparison1(plt, gp, simugp);
-EEplot_2noise_modelcomparison(plt, gp, sgp);
+% EEplot_2noise_modelcomparison1(plt, gp, simugp);
+% EEplot_2noise_modelcomparison(plt, gp, sgp);
 % %% parameter recovery of fitted simulations (A-F)
 % name = {'A_','B_','C_','D_','E_','F_'};
 % sp = {};
