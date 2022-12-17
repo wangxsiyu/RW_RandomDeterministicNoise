@@ -12,6 +12,8 @@ for repi = 1:200
     recovered = W.struct_cat_bydim(recovered, tsp, 2);
 end
 W.save('./Temp/param_recovery.mat','recovered', recovered);
+%%
+load('./Temp/param_recovery.mat')
 %% hyper prior recovery
 plt = W_plt('savedir', '../figures', 'savepfx', 'RDBayes', 'isshow', true, ...
     'issave', true);
@@ -21,7 +23,7 @@ xbins = -10:0.02:50;
 color = {{'AZred','AZred'},{'AZblue','AZblue'}};
 plt.setfig([1 4 2 5 3 6], 'xtick',{0:4:50,-3:3:15,0:4:50,-3:3:15, 0:4:50,-3:3:15});
 plt.setfig([1 4 2 5 3 6], 'xlim', {[-1 10+10*1],[-3 8+ 1 *4], [-1 10+10*1],[-3 8+ 1 *4], [-1 10+10*1], [-3 8 + 1 *4]});
-plt.setfig_all('ytick', [],'ylim', [0 0.8], 'legend', {'fitted posterior mean', 'true posterior'});
+plt.setfig_all('ytick', [],'ylim', [0 0.8], 'legend', {'fitted posterior', 'true posterior'});
 plt.setfig('legloc',{'NE','NW','NE','NE','NW','NE'})
 plt.setfig([1:3],'xlabel','random noise', 'ylabel', 'histogram/posterior', ...
     'title', {'H = 1', 'H = 6', '\Delta noise'});
@@ -48,6 +50,21 @@ for i = 1:2
     plt.plot(tm, tl,[],'line', 'color', 'black');
 end
 plt.update('parameterrecovery_hyperprior_v2');
+% %% check overall random noise level
+% totn = sp.NoiseDet + sp.NoiseRan;
+% totn2 = recovered.NoiseDet + recovered.NoiseRan;
+% plt.figure(1,2);
+% color = {{'AZred','AZred'},{'AZblue','AZblue'}};
+% xbins = -10:0.02:50;
+% for hi = 1:2
+%     plt.ax(hi);
+%     [tl, tm] = W.JAGS_density(totn2(:,:,hi), xbins);
+%     plt.plot(tm, tl,[],'bar', 'color', strcat(color{i}{h},'50'));
+%     plt.plot(tm, tl,[],'line', 'color', strcat(color{i}{h},'50'), 'addtolegend', false);
+%     [tl,tm] = W.JAGS_density(totn(:,:,hi), xbins);
+%     plt.plot(tm, tl,[],'line', 'color', color{i}{h});
+% end
+% plt.update;
 %%
 
 %     simunum = num2str(i);
