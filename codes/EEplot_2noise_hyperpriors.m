@@ -1,5 +1,5 @@
 function EEplot_2noise_hyperpriors(plt, sp, stepsize)
-    if ~exist('stepsize')
+    if ~exist('stepsize', 'var')
         stepsize = [0.02, 0.02];
     end
     names = {'Random noise - \sigma_{ran}','Random noise - \sigma_{ran}',...

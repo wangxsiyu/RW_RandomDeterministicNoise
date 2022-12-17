@@ -31,11 +31,13 @@ for repi = 1:50
         simugp{repi, mi} = W.analysis_1group(tsimu_sub);
     end
 end
+W.save('./Temp/6model_simubeh.mat', 'simugp', simugp);
 %%
 sgp = struct;
 for mi = 1:6
     sgp.(['model' char(64 + mi)]) = W.analysis_1group(vertcat(simugp{:,mi}));
 end
+W.save('./Temp/6model_simubeh.mat', 'simugp', simugp, 'simuavgp', sgp);
 %%
 EEplot_2noise_modelcomparison(plt, gp, sgp);
 %%

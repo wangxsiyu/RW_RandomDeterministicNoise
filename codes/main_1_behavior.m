@@ -40,7 +40,7 @@ for gi = 1:2
     plt.figure(1,2,'is_title',1);
     plt.setfig(1:2, 'ylim', {[0 0.45],[0 0.45]}, ...
         'ytick', 0:0.1:0.4);
-    plt = EEplot_2noise_pinconsistent(plt, gp{gi});
+    plt = EEplot_2noise_pinconsistent(plt, gp{gi}, '_byR');
 end
 %% save bayes data
 load('../data/all/idxsub_exclude.mat');
