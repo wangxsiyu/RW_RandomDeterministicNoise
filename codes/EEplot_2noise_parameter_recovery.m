@@ -15,7 +15,7 @@ function EEplot_2noise_parameter_recovery(plt, p1, p2)
             d1 = [d1{:}];
             d2 = [d2{:}];
             str{i*2-2+hi} = plt.scatter(d1', d2', 'diag');
-            lsline
+%             lsline
         end
     end
     plt.setfig('legend', str);

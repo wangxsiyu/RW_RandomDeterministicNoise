@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  15 DEC 2022 03:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  19 DEC 2022 04:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,8 +350,434 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box54
 )
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/changes\changes.sty
+Package: changes 2021/07/15 v4.2.1 changes package
+*** changes package 2021/07/15 v4.2.1 ***
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.t
+ex
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.
+tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count289
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.s
+ty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count290
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.t
+ex
+\integerpart=\count291
+\decimalpart=\count292
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+ulem-option 'normalem,normalbf', passed to package ulem
+truncate-option 'breakall,fit', passed to package truncate
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.
+cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathco
+lor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box55
+\UL@hyphenbox=\box56
+\UL@skip=\skip57
+\UL@hook=\toks26
+\UL@height=\dimen162
+\UL@pe=\count293
+\UL@pixel=\dimen163
+\ULC@box=\box57
+Package: ulem 2019/11/18
+\ULdepth=\dimen164
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/todonotes\todonotes
+.sty
+Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
+Package: todonotes 2021/06/04
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\t
+ikz.sty
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.
+sty
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrc
+s.sty
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+util-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen165
+\pgfutil@tempdimb=\dimen166
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+util-common-lists.tex))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+util-latex.def
+\pgfutil@abb=\box58
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+rcs.code.tex
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.
+tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfc
+ore.sty
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgf
+sys.sty
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+keys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+keysfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen167
+\pgf@y=\dimen168
+\pgf@xa=\dimen169
+\pgf@ya=\dimen170
+\pgf@xb=\dimen171
+\pgf@yb=\dimen172
+\pgf@xc=\dimen173
+\pgf@yc=\dimen174
+\pgf@xd=\dimen175
+\pgf@yd=\dimen176
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count294
+\c@pgf@countb=\count295
+\c@pgf@countc=\count296
+\c@pgf@countd=\count297
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count298
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count299
+\pgfsyssoftpath@bigbuffer@items=\count300
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.
+code.tex
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathc
+alc.code.tex
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathu
+til.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathp
+arser.code.tex
+\pgfmath@dimen=\dimen177
+\pgfmath@count=\count301
+\pgfmath@box=\box59
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.code.tex
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.basic.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.trigonometric.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.random.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.comparison.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.base.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.round.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.misc.code.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.integerarithmetics.code.tex)))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+loat.code.tex
+\c@pgfmathroundto@lastzeros=\count302
+))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.c
+ode.tex)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen178
+\pgf@picmaxx=\dimen179
+\pgf@picminy=\dimen180
+\pgf@picmaxy=\dimen181
+\pgf@pathminx=\dimen182
+\pgf@pathmaxx=\dimen183
+\pgf@pathminy=\dimen184
+\pgf@pathmaxy=\dimen185
+\pgf@xx=\dimen186
+\pgf@xy=\dimen187
+\pgf@yx=\dimen188
+\pgf@yy=\dimen189
+\pgf@zx=\dimen190
+\pgf@zy=\dimen191
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen192
+\pgf@path@lasty=\dimen193
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen194
+\pgf@shorten@start@additional=\dimen195
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count303
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen196
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen197
+\pgf@pt@y=\dimen198
+\pgf@pt@temp=\dimen199
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen256
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen257
+\pgf@sys@shading@range@num=\count304
+\pgf@shadingcount=\count305
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box63
+))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
+duleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box64
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
+duleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
+gfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen258
+\pgf@nodesepend=\dimen259
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
+gfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffo
+r.sty
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfke
+ys.sty
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+keys.code.tex))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.st
+y
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.
+code.tex))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+for.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.
+code.tex)
+\pgffor@iter=\dimen260
+\pgffor@skip=\dimen261
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count306
+\pgfplotmarksize=\dimen262
+)
+\tikz@lastx=\dimen263
+\tikz@lasty=\dimen264
+\tikz@lastxsaved=\dimen265
+\tikz@lastysaved=\dimen266
+\tikz@lastmovetox=\dimen267
+\tikz@lastmovetoy=\dimen268
+\tikzleveldistance=\dimen269
+\tikzsiblingdistance=\dimen270
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count307
+\tikznumberofchildren=\count308
+\tikznumberofcurrentchild=\count309
+\tikz@fig@count=\count310
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
+dulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count311
+\pgfmatrixcurrentcolumn=\count312
+\pgf@matrix@numberofcolumns=\count313
+)
+\tikz@expandcount=\count314
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count315
+\calc@Bcount=\count316
+\calc@Adimen=\dimen271
+\calc@Bdimen=\dimen272
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count317
+\calc@Cskip=\skip60
+)
+\c@@todonotes@numberoftodonotes=\count318
+)
+\c@Changes@AuthorCount=\count319
+\c@Changes@Author=\count320
+\c@Changes@addedCount=\count321
+\c@Changes@deletedCount=\count322
+\c@Changes@replacedCount=\count323
+\c@Changes@highlightCount=\count324
+\c@Changes@commentCount=\count325
+\c@authorcommentcount=\count326
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/truncate\truncate.s
+ty
+Package: truncate 2001/08/20  ver 3.6
+\@Trunc@RestHyph=\toks39
+)
+\Changestruncatewidth=\skip61
+\Changes@summary@width=\skip62
+)
+\c@Changes@addedCountsiyu=\count327
+\c@Changes@deletedCountsiyu=\count328
+\c@Changes@replacedCountsiyu=\count329
+\c@Changes@highlightCountsiyu=\count330
+\c@Changes@commentCountsiyu=\count331
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
-4.
+5.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -359,56 +785,64 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
 -pdftex.def
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count332
+\l__pdf_internal_box=\box69
 ) (DetRanNoise_Supplementary.aux)
 \openout1 = `DetRanNoise_Supplementary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-Package hyperref Info: Link coloring OFF on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+Package hyperref Info: Link coloring OFF on input line 65.
  (DetRanNoise_Supplementary.out)
 (DetRanNoise_Supplementary.out)
-\@outlinefile=\write3
-\openout3 = `DetRanNoise_Supplementary.out'.
+\@outlinefile=\write4
+\openout4 = `DetRanNoise_Supplementary.out'.
 
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pd
 f.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen162
-\scratchbox=\box56
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen163
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count333
+\scratchdimen=\dimen273
+\scratchbox=\box70
+\nofMPsegments=\count334
+\nofMParguments=\count335
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen274
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
+\everyMPtoPDFconversion=\toks41
 )
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstop
 df-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-s
 ys.cfg
@@ -417,121 +851,154 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
 
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will 
+most likely cause issues with the appearance of inserted todonotes. The issue c
+an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
+loading the todonotes package. on input line 65.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
 
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Package hyperref Info: bookmark level for unknown replaced defaults to 0 on inp
+ut line 66.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+6.
+
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 [1
 
 {C:/Users/Siyu_Wang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<figures/RanDetNoise_modelfree__all.jpg, id=9, 1238.6275pt x 666.49pt>
+<figures/RanDetNoise_modelfree__all.jpg, id=13, 1238.6275pt x 666.49pt>
 File: figures/RanDetNoise_modelfree__all.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_modelfree__all.jpg>
 Package pdftex.def Info: figures/RanDetNoise_modelfree__all.jpg  used on input 
-line 73.
+line 71.
 (pdftex.def)             Requested size: 505.89pt x 272.21518pt.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
-4.
+2.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-<figures/RanDetNoise_pinconsistent__all.jpg, id=10, 1238.6275pt x 666.49pt>
+[2 <./figures/RanDetNoise_modelfree__all.jpg>]
+<figures/RanDetNoise_pinconsistent__all.jpg, id=22, 1238.6275pt x 666.49pt>
 File: figures/RanDetNoise_pinconsistent__all.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_pinconsistent__all.jpg>
 Package pdftex.def Info: figures/RanDetNoise_pinconsistent__all.jpg  used on in
-put line 81.
+put line 80.
 (pdftex.def)             Requested size: 505.89pt x 272.21518pt.
+ [3 <./figures/RanDetNoise_pinconsistent__all.jpg>]
+<figures/RDBayes_pinconsistent_validation.jpg, id=28, 1238.6275pt x 666.49pt>
+File: figures/RDBayes_pinconsistent_validation.jpg Graphic file (type jpg)
+<use figures/RDBayes_pinconsistent_validation.jpg>
+Package pdftex.def Info: figures/RDBayes_pinconsistent_validation.jpg  used on 
+input line 90.
+(pdftex.def)             Requested size: 505.89pt x 272.21518pt.
+ [4 <./figures/RDBayes_pinconsistent_validation.jpg>]
+<figures/RDBayes_parameterrecovery_hyperprior.jpg, id=34, 1850.915pt x 1246.657
+5pt>
+File: figures/RDBayes_parameterrecovery_hyperprior.jpg Graphic file (type jpg)
+<use figures/RDBayes_parameterrecovery_hyperprior.jpg>
+Package pdftex.def Info: figures/RDBayes_parameterrecovery_hyperprior.jpg  used
+ on input line 99.
+(pdftex.def)             Requested size: 505.89pt x 340.72989pt.
 
-[2 <./figures/RanDetNoise_modelfree__all.jpg>] [3 <./figures/RanDetNoise_pincon
-sistent__all.jpg>]
-<figures/RDBayes_hyperprior__all.jpg, id=24, 1238.6275pt x 1285.80376pt>
-File: figures/RDBayes_hyperprior__all.jpg Graphic file (type jpg)
-<use figures/RDBayes_hyperprior__all.jpg>
-Package pdftex.def Info: figures/RDBayes_hyperprior__all.jpg  used on input lin
-e 89.
-(pdftex.def)             Requested size: 505.89pt x 525.16212pt.
- [4 <./figures/RDBayes_hyperprior__all.jpg>]
-<figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg, id=30, 1238.6275pt 
-x 1285.80376pt>
-File: figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg Graphic file (t
-ype jpg)
-<use figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg>
-Package pdftex.def Info: figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.
-jpg  used on input line 99.
-(pdftex.def)             Requested size: 505.89pt x 525.16212pt.
- [5 <./figures/RDBayes_parameterrecovery_grid_pureRanDet_R20.jpg>]
-<figures/RDBayes_parameterrecovery_gridsimu_all.jpg, id=36, 2336.73pt x 1709.38
+[5 <./figures/RDBayes_parameterrecovery_hyperprior.jpg>]
+<figures/RDBayes_parameterrecovery_subject_examplesession.jpg, id=41, 1045.9075
+pt x 2032.59375pt>
+File: figures/RDBayes_parameterrecovery_subject_examplesession.jpg Graphic file
+ (type jpg)
+<use figures/RDBayes_parameterrecovery_subject_examplesession.jpg>
+Package pdftex.def Info: figures/RDBayes_parameterrecovery_subject_examplesessi
+on.jpg  used on input line 109.
+(pdftex.def)             Requested size: 303.53708pt x 589.90233pt.
+
+
+LaTeX Warning: Float too large for page by 1.99113pt on input line 113.
+
+<figures/RDBayes_parameterrecovery_subject.jpg, id=42, 1045.9075pt x 2032.59375
+pt>
+File: figures/RDBayes_parameterrecovery_subject.jpg Graphic file (type jpg)
+<use figures/RDBayes_parameterrecovery_subject.jpg>
+Package pdftex.def Info: figures/RDBayes_parameterrecovery_subject.jpg  used on
+ input line 118.
+(pdftex.def)             Requested size: 303.53708pt x 589.90233pt.
+<figures/RDBayes_parameterrecovery_gridsimu_all.jpg, id=43, 2336.73pt x 1709.38
 625pt>
 File: figures/RDBayes_parameterrecovery_gridsimu_all.jpg Graphic file (type jpg
 )
 <use figures/RDBayes_parameterrecovery_gridsimu_all.jpg>
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_gridsimu_all.jpg  us
-ed on input line 107.
+ed on input line 128.
 (pdftex.def)             Requested size: 505.89pt x 370.06703pt.
- [6 <./figures/RDBayes_parameterrecovery_gridsimu_all.jpg>]
-<figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg, id=42, 2336.73pt x 170
-9.38625pt>
-File: figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg Graphic file (type
- jpg)
-<use figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg>
-Package pdftex.def Info: figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg
-  used on input line 115.
-(pdftex.def)             Requested size: 505.89pt x 370.06703pt.
- [7 <./figures/RDBayes_parameterrecovery_gridsimu_all_R20.jpg>]
+<figures/RDBayes_hyperprior__all.jpg, id=44, 1238.6275pt x 1285.80376pt>
+File: figures/RDBayes_hyperprior__all.jpg Graphic file (type jpg)
+<use figures/RDBayes_hyperprior__all.jpg>
+Package pdftex.def Info: figures/RDBayes_hyperprior__all.jpg  used on input lin
+e 137.
+(pdftex.def)             Requested size: 354.12144pt x 367.61545pt.
+[6 <./figures/RDBayes_hyperprior__all.jpg>] [7 <./figures/RDBayes_parameterreco
+very_subject_examplesession.jpg>] [8 <./figures/RDBayes_parameterrecovery_subje
+ct.jpg>] [9 <./figures/RDBayes_parameterrecovery_gridsimu_all.jpg>]
+<figures/RDBayes_2noise_hyperpriors_6model.jpg, id=66, 1412.27625pt x 2039.62pt
+>
+File: figures/RDBayes_2noise_hyperpriors_6model.jpg Graphic file (type jpg)
+<use figures/RDBayes_2noise_hyperpriors_6model.jpg>
+Package pdftex.def Info: figures/RDBayes_2noise_hyperpriors_6model.jpg  used on
+ input line 146.
+(pdftex.def)             Requested size: 404.71353pt x 584.4722pt.
+<figures/RDBayes_2noise_6modelcomparison.jpg, id=67, 1421.31pt x 2045.6425pt>
+File: figures/RDBayes_2noise_6modelcomparison.jpg Graphic file (type jpg)
+<use figures/RDBayes_2noise_6modelcomparison.jpg>
+Package pdftex.def Info: figures/RDBayes_2noise_6modelcomparison.jpg  used on i
+nput line 157.
+(pdftex.def)             Requested size: 404.71353pt x 582.48354pt.
 
-LaTeX Warning: File `figures/pinconsistent_6panel_age_acchance.png' not found o
-n input line 148.
 
+LaTeX Warning: Float too large for page by 14.97235pt on input line 164.
 
-! Package pdftex.def Error: File `figures/pinconsistent_6panel_age_acchance.png
-' not found: using draft setting.
+\Changes@OutFile=\write5
+\openout5 = `DetRanNoise_Supplementary.soc'.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.148 ...es/pinconsistent_6panel_age_acchance.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+\tf@loc=\write6
+\openout6 = `DetRanNoise_Supplementary.loc'.
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-48.
-(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-[8] [9] (DetRanNoise_Supplementary.aux)
+[10 <./figures/RDBayes_2noise_hyperpriors_6model.jpg>] [11 <./figures/RDBayes_2
+noise_6modelcomparison.jpg>] (DetRanNoise_Supplementary.aux)
 Package rerunfilecheck Info: File `DetRanNoise_Supplementary.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11484 strings out of 478338
- 189079 string characters out of 2834777
- 472129 words of memory out of 3000000
- 29720 multiletter control sequences out of 15000+600000
- 487610 words of font info for 73 fonts, out of 8000000 for 9000
+ 23600 strings out of 478338
+ 448746 string characters out of 2834777
+ 709123 words of memory out of 3000000
+ 41573 multiletter control sequences out of 15000+600000
+ 488723 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,674b,500s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,6n,108p,782b,552s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fon
-ts/type1/urw/courier/ucrr8a.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKT
-eX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Siyu Wang/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on DetRanNoise_Supplementary.pdf (9 pages, 1784982 bytes).
+lic/amsfonts/cm/cmmi8.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Siyu Wang/AppData/Local/Program
+s/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Siyu Wang/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on DetRanNoise_Supplementary.pdf (11 pages, 2262777 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

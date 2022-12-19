@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -21,12 +21,6 @@ G.~Aston-Jones and J.~D. Cohen.
   adaptive gain and optimal performance}.
 \newblock \emph{Annu. Rev. Neurosci.}, 28:\penalty0 403--450, 2005.
 
-\bibitem[Auer et~al.(2002)Auer, Cesa-Bianchi, and Fischer]{eeauer02}
-P.~Auer, N.~Cesa-Bianchi, and P.~Fischer.
-\newblock {Machine Learning}.
-\newblock 47\penalty0 (235), 2002.
-\newblock URL \url{https://doi.org/10.1023/A:1013689704352}.
-
 \bibitem[Bair and Koch(1996)]{Bair1996}
 Wyeth Bair and Christof Koch.
 \newblock {Temporal Precision of Spike Trains in Extrastriate Cortex of the
@@ -35,24 +29,28 @@ Wyeth Bair and Christof Koch.
 \newblock ISSN 08997667.
 \newblock \doi{10.1162/neco.1996.8.6.1185}.
 
-\bibitem[Banks et~al.(1997)Banks, Olson, and Porter]{eebanks97}
-J.~Banks, M.~Olson, and D.~Porter.
-\newblock { An experimental analysis of the bandit problem.}
-\newblock \emph{Economic Theory}, 10:\penalty0 55, 1997.
-
 \bibitem[Basu et~al.(2018)Basu, Senellart, and Bressan]{eeBasu18}
 Debabrota Basu, Pierre Senellart, and Stéphane Bressan.
 \newblock Belman: Bayesian bandits on the belief--reward manifold, 2018.
+
+\bibitem[Beck et~al.(2012)Beck, Ma, Pitkow, Latham, and Pouget]{Pouget12}
+J.~M. Beck, W.~J. Ma, X.~Pitkow, P.~E. Latham, and A.~Pouget.
+\newblock Not noisy, just wrong: the role of suboptimal inference in behavioral
+  variability.
+\newblock \emph{Neuron}, 74\penalty0 (1):\penalty0 30--9, 2012.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Print) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2012.03.016}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/22500627}.
+\newblock Beck, Jeffrey M Ma, Wei Ji Pitkow, Xaq Latham, Peter E Pouget,
+  Alexandre eng R01 EY020958/EY/NEI NIH HHS/ R01EY020958/EY/NEI NIH HHS/
+  Research Support, N.I.H., Extramural Research Support, Non-U.S. Gov't
+  Research Support, U.S. Gov't, Non-P.H.S. 2012/04/17 Neuron. 2012 Apr
+  12;74(1):30-9. doi: 10.1016/j.neuron.2012.03.016.
 
 \bibitem[Brainard(1997)]{psychtoolbox1}
 D.~H. Brainard.
 \newblock The psychophysics toolbox.
 \newblock \emph{Spatial vision}, 10\penalty0 (4):\penalty0 433–436, 1997.
-
-\bibitem[Brainard and Doupe(2002)]{songbird1}
-M.~S. Brainard and A.~J. Doupe.
-\newblock {{W}hat songbirds teach us about learning}.
-\newblock \emph{Nature}, 417\penalty0 (6886):\penalty0 351--358, May 2002.
 
 \bibitem[Bridle(1990)]{eebridle90}
 J.S. Bridle.
@@ -70,11 +68,6 @@ Olivier Chapelle and Lihong Li.
 \newblock URL
   \url{http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf}.
 
-\bibitem[Daw et~al.(2006)Daw, O'Doherty, Dayan, Seymour, and Dolan]{eedaw06}
-N.~D. Daw, J.~P. O'Doherty, P.~Dayan, B.~Seymour, and R.~J. Dolan.
-\newblock {{C}ortical substrates for exploratory decisions in humans}.
-\newblock \emph{Nature}, 441\penalty0 (7095):\penalty0 876--879, Jun 2006.
-
 \bibitem[Depaoli et~al.(2016)Depaoli, Clifton, and Cobb]{jags}
 Sarah Depaoli, James~P. Clifton, and Patrice~R. Cobb.
 \newblock Just another gibbs sampler (jags): Flexible software for mcmc
@@ -91,17 +84,20 @@ J.~Drugowitsch, V.~Wyart, A.~D. Devauchelle, and E.~Koechlin.
   {S}ource of {H}uman {C}hoice {S}uboptimality}.
 \newblock \emph{Neuron}, 92\penalty0 (6):\penalty0 1398--1411, Dec 2016.
 
-\bibitem[Ebitz et~al.(2017)Ebitz, Moore, and Buschman]{ebitz17}
-B.~Ebitz, T.~Moore, and T.~Buschman.
-\newblock {Bottom-up salience drives choice during exploration}.
-\newblock \emph{Cosyne}, 2017.
-
-\bibitem[Frank et~al.(2009)Frank, Doll, Oas-Terpstra, and Moreno]{eefrank09}
-M.~J. Frank, B.~B. Doll, J.~Oas-Terpstra, and F.~Moreno.
-\newblock {{P}refrontal and striatal dopaminergic genes predict individual
-  differences in exploration and exploitation}.
-\newblock \emph{Nat. Neurosci.}, 12\penalty0 (8):\penalty0 1062--1068, Aug
-  2009.
+\bibitem[Festa et~al.(2021)Festa, Aschner, Davila, Kohn, and
+  Coen-Cagli]{Festa2021}
+D.~Festa, A.~Aschner, A.~Davila, A.~Kohn, and R.~Coen-Cagli.
+\newblock Neuronal variability reflects probabilistic inference tuned to
+  natural image statistics.
+\newblock \emph{Nat Commun}, 12\penalty0 (1):\penalty0 3635, 2021.
+\newblock ISSN 2041-1723 (Electronic) 2041-1723 (Linking).
+\newblock \doi{10.1038/s41467-021-23838-x}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/34131142}.
+\newblock Festa, Dylan Aschner, Amir Davila, Aida Kohn, Adam Coen-Cagli, Ruben
+  eng P50 HD105352/HD/NICHD NIH HHS/ R01 EY021371/EY/NEI NIH HHS/ R01
+  EY030578/EY/NEI NIH HHS/ Research Support, N.I.H., Extramural England
+  2021/06/17 Nat Commun. 2021 Jun 15;12(1):3635. doi:
+  10.1038/s41467-021-23838-x.
 
 \bibitem[Gershman(2018)]{Gershman2018}
 Samuel~J. Gershman.
@@ -109,12 +105,6 @@ Samuel~J. Gershman.
 \newblock \emph{Cognition}, 2018.
 \newblock ISSN 18737838.
 \newblock \doi{10.1016/j.cognition.2017.12.014}.
-
-\bibitem[Gittins(1979)]{eegittins79}
-J.~C. Gittins.
-\newblock {Bandit Processes and Dynamic Allocation Indices}.
-\newblock \emph{J. R. Statist. Soc. B}, 41\penalty0 (2):\penalty0 148--177,
-  1979.
 
 \bibitem[Gittins and Jones(1974)]{eegittins74}
 J.~C. Gittins and D.~M. Jones.
@@ -130,12 +120,6 @@ M.~Jepma, R.~G. Verdonschot, H.~van Steenbergen, S.~A. Rombouts, and
   perceptual curiosity}.
 \newblock \emph{Front Behav Neurosci}, 6:\penalty0 5, 2012.
 
-\bibitem[Kao et~al.(2005)Kao, Doupe, and Brainard]{songbird2}
-M.~H. Kao, A.~J. Doupe, and M.~S. Brainard.
-\newblock {{C}ontributions of an avian basal ganglia-forebrain circuit to
-  real-time modulation of song}.
-\newblock \emph{Nature}, 433\penalty0 (7026):\penalty0 638--643, Feb 2005.
-
 \bibitem[Keung et~al.(2018)Keung, Hagen, and Wilson]{eeKeung18}
 Waitsang Keung, Todd~A Hagen, and Robert~C Wilson.
 \newblock Regulation of evidence accumulation by pupil-linked arousal
@@ -143,18 +127,6 @@ Waitsang Keung, Todd~A Hagen, and Robert~C Wilson.
 \newblock \emph{bioRxiv}, 2018.
 \newblock \doi{10.1101/309526}.
 \newblock URL \url{https://www.biorxiv.org/content/early/2018/04/28/309526}.
-
-\bibitem[Krebs et~al.(1978)Krebs, Kacelnik, and Taylor]{eekrebs78}
-J.R. Krebs, A.~Kacelnik, and P.~Taylor.
-\newblock {Test of optimal sampling by foraging great tits}.
-\newblock \emph{Nature}, 275:\penalty0 27--31, 1978.
-\newblock \doi{doi:10.1038/275027a0}.
-
-\bibitem[Lee et~al.(2011)Lee, Zhang, Munro, and Steyvers]{eelee11}
-M.D. Lee, S.~Zhang, M.N. Munro, and M.~Steyvers.
-\newblock Psychological models of human and optimal performance on bandit
-  problem.
-\newblock \emph{Cognitive Systems Research}, 12:\penalty0 164--174, 2011.
 
 \bibitem[Lee and Wagenmakers(2014{\natexlab{a}})]{lee2014}
 Michael~D. Lee and Eric-Jan Wagenmakers.
@@ -168,11 +140,29 @@ Michael~D. Lee and Eric-Jan Wagenmakers.
 \newblock Cambridge University Press, 2014{\natexlab{b}}.
 \newblock \doi{10.1017/CBO9781139087759}.
 
-\bibitem[Meyer and Shi(1995)]{eemeyer95}
-R.~Meyer and Y.~Shi.
-\newblock {Choice under ambiguity: Intuitive solutions to the armed-bandit
-  problem}.
-\newblock \emph{Management Science}, 41:\penalty0 817, 1995.
+\bibitem[Mehlhorn et~al.(2015)Mehlhorn, Newell, Todd, Lee, Morgan, Braithwaite,
+  Hausmann, Fiedler, and Gonzalez]{Mehlhorn15}
+Katja Mehlhorn, Ben Newell, Peter Todd, Michael Lee, Kate Morgan, Victoria
+  Braithwaite, Daniel Hausmann, Klaus Fiedler, and Cleotilde Gonzalez.
+\newblock Unpacking the exploration–exploitation tradeoff: A synthesis of
+  human and animal literatures.
+\newblock \emph{Decision}, 2, 07 2015.
+\newblock \doi{10.1037/dec0000033}.
+
+\bibitem[Musall et~al.(2019)Musall, Kaufman, Juavinett, Gluf, and
+  Churchland]{Musall2019}
+S.~Musall, M.~T. Kaufman, A.~L. Juavinett, S.~Gluf, and A.~K. Churchland.
+\newblock Single-trial neural dynamics are dominated by richly varied
+  movements.
+\newblock \emph{Nat Neurosci}, 22\penalty0 (10):\penalty0 1677--1686, 2019.
+\newblock ISSN 1546-1726 (Electronic) 1097-6256 (Print) 1097-6256 (Linking).
+\newblock \doi{10.1038/s41593-019-0502-4}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/31551604}.
+\newblock Musall, Simon Kaufman, Matthew T Juavinett, Ashley L Gluf, Steven
+  Churchland, Anne K eng R01 EY022979/EY/NEI NIH HHS/ Research Support, N.I.H.,
+  Extramural Research Support, Non-U.S. Gov't Research Support, U.S. Gov't,
+  Non-P.H.S. 2019/09/26 Nat Neurosci. 2019 Oct;22(10):1677-1686. doi:
+  10.1038/s41593-019-0502-4. Epub 2019 Sep 24.
 
 \bibitem[Nieuwenhuis et~al.(2005)Nieuwenhuis, Heslenfeld, von Geusau, Mars,
   Holroyd, and Yeung]{nieuwenhuis05}
@@ -182,36 +172,27 @@ S.~Nieuwenhuis, D.~J. Heslenfeld, N.~J. von Geusau, R.~B. Mars, C.~B. Holroyd,
   dependent}.
 \newblock \emph{Neuroimage}, 25\penalty0 (4):\penalty0 1302--1309, May 2005.
 
-\bibitem[Payzan-LeNestour and Bossaerts(2011)]{eepl11}
-E.~Payzan-LeNestour and P.~Bossaerts.
-\newblock {{R}isk, unexpected uncertainty, and estimation uncertainty:
-  {B}ayesian learning in unstable settings}.
-\newblock \emph{PLoS Comput. Biol.}, 7\penalty0 (1):\penalty0 e1001048, Jan
-  2011.
-
-\bibitem[Payzan-Lenestour and Bossaerts(2012)]{eepl12}
-E.~Payzan-Lenestour and P.~Bossaerts.
-\newblock {{D}o not {B}et on the {U}nknown {V}ersus {T}ry to {F}ind {O}ut
-  {M}ore: {E}stimation {U}ncertainty and "{U}nexpected {U}ncertainty" {B}oth
-  {M}odulate {E}xploration}.
-\newblock \emph{Front Neurosci}, 6:\penalty0 150, 2012.
-
 \bibitem[Pelli(1997)]{psychtoolbox2}
 D.~G. Pelli.
 \newblock {{T}he {V}ideo{T}oolbox software for visual psychophysics:
   transforming numbers into movies}.
 \newblock \emph{Spat Vis}, 10\penalty0 (4):\penalty0 437--442, 1997.
 
+\bibitem[Schulz and Gershman(2019)]{SCHULZ20197}
+Eric Schulz and Samuel~J. Gershman.
+\newblock The algorithmic architecture of exploration in the human brain.
+\newblock \emph{Current Opinion in Neurobiology}, 55:\penalty0 7--14, 2019.
+\newblock ISSN 0959-4388.
+\newblock \doi{https://doi.org/10.1016/j.conb.2018.11.003}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0959438818300904}.
+\newblock Machine Learning, Big Data, and Neuroscience.
+
 \bibitem[Steyvers(2011)]{matjags}
 M.~Steyvers.
 \newblock {{m}atjags. An interface for MATLAB to JAGS version 1.3.}
 \newblock 2011.
 \newblock URL \url{http://psiexp.ss.uci.edu/research/programs_data/jags/}.
-
-\bibitem[Steyvers et~al.(2009)Steyvers, Lee, and Wagenmakers]{eesteyvers09}
-M.~Steyvers, M.~Lee, and E.~Wagenmakers.
-\newblock {A Bayesian analysis of human decisionmaking on bandit problems}.
-\newblock \emph{Journal of Mathematical Psychology}, 53:\penalty0 168, 2009.
 
 \bibitem[Tervo et~al.(2014)Tervo, Proskurin, Manakov, Kabra, Vollmer, Branson,
   and Karpova]{eeKarpova14}
@@ -259,11 +240,16 @@ Robert~C. Wilson and Anne~G.E. Collins.
 \newblock ISSN 2050084X.
 \newblock \doi{10.7554/eLife.49547}.
 
-\bibitem[Zhang and Yu(2013)]{eezhang13}
-S.~Zhang and A.~J. Yu.
-\newblock Forgetful bayes and myopic planning: Human learning and decision
-  making in a bandit setting.
-\newblock \emph{Advances in Neural Information Processing Systems},
-  26:\penalty0 2607--2615, 2013.
+\bibitem[Wilson et~al.(2021)Wilson, Bonawitz, Costa, and Ebitz]{WILSON202149}
+Robert~C Wilson, Elizabeth Bonawitz, Vincent~D Costa, and R~Becket Ebitz.
+\newblock Balancing exploration and exploitation with information and
+  randomization.
+\newblock \emph{Current Opinion in Behavioral Sciences}, 38:\penalty0 49--56,
+  2021.
+\newblock ISSN 2352-1546.
+\newblock \doi{https://doi.org/10.1016/j.cobeha.2020.10.001}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2352154620301467}.
+\newblock Computational cognitive neuroscience.
 
 \end{thebibliography}

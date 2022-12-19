@@ -25,4 +25,6 @@ for i = 1:6
 end
 W.save('./Temp/6model_recovery.mat','spsimu', spsimu);
 %%
+load('./Temp/6model_recovery.mat');
+%%
 EEplot_2noise_hyperprior_6model_recovery(plt, spsimu);

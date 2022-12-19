@@ -20,7 +20,7 @@ save(fullfile(savedir, 'idxsub_exclude.mat'), 'id', 'idall','idxsub');
 %% analyze group
 clear gp;
 additionalcompare = {{'p_inconsistent13'},{'p_inconsistent22'},...
-    {'p_inconsistent13','p_inconsistent13_randomtheory'},{'p_inconsistent22','p_inconsistent22_randomtheory'}};
+    {'p_inconsistent13','p_inconsistent13_randomtheory_byR'},{'p_inconsistent22','p_inconsistent22_randomtheory_byR'}};
 gp{1} = W.analysis_1group(sub, true, additionalcompare);
 gp{2} = W.analysis_1group(suball, true, additionalcompare);
 suffix = {'','_all'};
@@ -34,13 +34,13 @@ for gi = 1:2
     plt.figure(1,2,'is_title',1);
     plt.setfig(1:2, 'ylim', {[0, 0.3] + gi*0.05,[0.35 0.65]}, ...
         'ytick', {0.1:.1:0.4, 0.4:.1:0.6}, ...
-        'legend', {{'[1 3]'},{'[2 2]','[1 3]'}});
+        'legend', {{'[2 2]','[1 3]'},{'[1 3]'}}, 'legloc',{'SE','SE'});
     plt = EEplot_modelfree(plt, gp{gi},1,1);
     %% 2 noise figure
     plt.figure(1,2,'is_title',1);
     plt.setfig(1:2, 'ylim', {[0 0.45],[0 0.45]}, ...
         'ytick', 0:0.1:0.4);
-    plt = EEplot_2noise_pinconsistent(plt, gp{gi}, '_byR');
+    plt = EEplot_2noise_pinconsistent(plt, gp{gi}, '_byR', '_byR');
 end
 %% save bayes data
 load('../data/all/idxsub_exclude.mat');

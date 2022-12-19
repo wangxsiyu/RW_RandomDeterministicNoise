@@ -13,6 +13,9 @@ function EEplot_2noise_hyperpriors_6model(plt, sp)
     plt.setfig(21:24, 'xlabel', {'\sigma_{ran}','\Delta \sigma_{ran}','\sigma_{det}','\Delta \sigma_{det}'});
     plt.setfig(1:4, 'title', names);
     fns = {'NoiseRan', 'NoiseDet'};
+    plt.setfig('ylabel', [{'\sigma^{ran}_{horizon}, \sigma^{det}_{horizon}'} repmat({''},1,3), {'\sigma^{ran}_{horizon}, \sigma^{det}_{}'} repmat({''},1,3), ...
+        {'\sigma^{ran}_{}, \sigma^{det}_{horizon}'} repmat({''},1,3), {'\sigma^{ran}_{}, \sigma^{det}_{}'} repmat({''},1,3), ...
+        {'\sigma^{ran}_{horizon}'} repmat({''},1,3), {'\sigma^{det}_{horizon}'} repmat({''},1,3)]);
     for mi = 1:6
         for i = 1:length(fns)
             fn = fns{i};
@@ -38,11 +41,11 @@ function EEplot_2noise_hyperpriors_6model(plt, sp)
             end
             ymax = max(tl* 1.05,[],'all');
             plt.setfig_ax('ylim', [0 ymax], 'xtick', 0:5:40,'xlim', [0 20], ...
-                'legend', legs{i*2 - 1}, 'ylabel', ylabs{i*2-1});
+                'legend', legs{i*2 - 1});%, 'ylabel', ylabs{i*2-1});
             plt.plot(tm, tl, [], 'line','color', color{i*2 -1});
             plt.ax(mi,i*2-2 +2);
             plt.setfig_ax('ylim', [0 ymax], 'xlim', [-3 15], ... 
-                'legend', legs{i*2}, 'ylabel', ylabs{i*2});
+                'legend', legs{i*2});%, 'ylabel', ylabs{i*2});
             if isfield(sp{mi}, ['d' fn])
                 td = sp{mi}.(['d' fn]);
                 [tl, tm] = W.JAGS_density(td, xbins);
