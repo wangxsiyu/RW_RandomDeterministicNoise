@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template graphical model %
+% Author: Tom Lodewyckx    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{pst-all}
+\usepackage{com.braju.graphicalmodels}
+\usepackage{ifpdf}
+\ifpdf
+\pdfpaperheight=14in
+\pdfpaperwidth=9in
+\else
+\special{papersize=14in,9in}
+\fi
+\catcode`\@=11%
+\pagestyle{empty}
+\begin{document}
+	%\TeXtoEPSepsi
+	\psset{unit=14mm,arrowscale=1.5}
+	\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+
+\begin{pspicture}(1,1)(18,11)
+%\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+%\rput(1,1){\GM@node[NodeOptions]{name}}
+%                 \GM@label[LabelOptions]{name}{label}
+
+% dm and dI
+\rput(5,3.25){\GM@node[observed=true,observedColor=lightgray,nodeSize=12mm]{dm}}\GM@label[offset=-5.7mm]{dm}{$\Delta R_{isg}$}
+\rput(7,3.25){\GM@node[query=true,observed=true,observedColor=lightgray,nodeSize=12mm]{dI}}\GM@label[offset=-5mm]{dI}{$\Delta I_{isg}$}
+
+% choices
+\rput(6,6){\GM@node[observed=true,observedColor=lightgray,nodeSize=12mm]{c}}\GM@label[offset=-3mm]{c}{$c_{isgr}$}
+
+% subject parameters
+\rput(4,8.5){\GM@node[nodeSize=12mm]{A}}\GM@label[offset=-3mm]{A}{$A_{is}$}
+\rput(6,8.5){\GM@node[nodeSize=12mm]{b}}\GM@label[offset=-3mm]{b}{$B_{is}$}
+\rput(8,8.5){\GM@node[nodeSize=12mm]{sigma}}\GM@label[offset=-2mm]{sigma}{$\sigma^n_{is}$}
+\rput(10,8.5){\GM@node[nodeSize=12mm]{epsilon}}\GM@label[offset=-2mm]{epsilon}{$\sigma^\epsilon_{is}$}
+
+
+% hyperparameters
+\rput(3,10){\GM@node[nodeSize=12mm]{muA}}\GM@label[offset=-2mm]{muA}{$\mu^A_{i}$}
+\rput(4.07,10){\GM@node[nodeSize=12mm]{sigmaA}}\GM@label[offset=-2mm]{sigmaA}{$\sigma^A_{i}$}
+
+
+\rput(5.14,10){\GM@node[nodeSize=12mm]{mub}}\GM@label[offset=-2mm]{mub}{$\mu^B_{i}$}
+\rput(6.21,10){\GM@node[nodeSize=12mm]{sigmab}}\GM@label[offset=-2mm]{sigmab}{$\sigma^B_{i}$}
+
+\rput(7.28,10){\GM@node[nodeSize=12mm]{kSigma}}\GM@label[offset=-2mm]{kSigma}{$k^n_{i}$}
+\rput(8.35,10){\GM@node[nodeSize=12mm]{lambdaSigma}}\GM@label[offset=-2mm]{lambdaSigma}{$\lambda^n_{i}$}
+
+\rput(9.42,10){\GM@node[nodeSize=12mm]{kEpsilon}}\GM@label[offset=-2mm]{kEpsilon}{$k^\epsilon_{i}$}
+\rput(10.49,10){\GM@node[nodeSize=12mm]{lambdaEpsilon}}\GM@label[offset=-2mm]{lambdaEpsilon}{$\lambda^\epsilon_{i}$}
+
+\rput(8,6){\GM@node[nodeSize=12mm]{sigmar}}\GM@label[offset=-4mm]{sigmar}{$n_{isgr}$}
+\rput(10,4.5){\GM@node[nodeSize=12mm]{epsilonr}}\GM@label[offset=-3mm]{epsilonr}{$\epsilon_{isg}$}
+
+% differences
+%\rput(3,13){\GM@node[nodeSize=12mm]{dmuAOUT}}
+%\rput(3,13){\GM@node[nodeSize=10mm]{dmuA}}\GM@label[offset=-3mm]{dmuA}{$\delta\mu^A_{u}$}
+%\rput(5,13){\GM@node[nodeSize=12mm]{dkSigmaOUT}}
+%\rput(5,13){\GM@node[nodeSize=10mm]{dkSigma}}\GM@label[offset=-3mm]{dkSigma}{$\delta k^\sigma_{u}$}
+%\rput(7,13){\GM@node[nodeSize=12mm]{dmubOUT}}
+%\rput(7,13){\GM@node[nodeSize=10mm]{dmub}}\GM@label[offset=-3mm]{dmub}{$\delta\mu^b_{u}$}
+
+
+% 3. Arrows
+%%%%%%%%%%%
+%
+\ncline[arrows=->]{dm}{c}
+\ncline[arrows=->]{dI}{c}
+
+\ncline[arrows=->]{A}{c}
+\ncline[arrows=->]{sigmar}{c}
+\ncline[arrows=->]{b}{c}
+\ncline[arrows=->]{epsilonr}{c}
+
+
+\ncline[arrows=->]{muA}{A}
+\ncline[arrows=->]{sigmaA}{A}
+
+\ncline[arrows=->]{kSigma}{sigma}
+\ncline[arrows=->]{lambdaSigma}{sigma}
+
+\ncline[arrows=->]{kEpsilon}{epsilon}
+\ncline[arrows=->]{lambdaEpsilon}{epsilon}
+
+\ncline[arrows=->]{mub}{b}
+\ncline[arrows=->]{sigmab}{b}
+
+\ncline[arrows=->]{sigma}{sigmar}
+\ncline[arrows=->]{epsilon}{epsilonr}
+
+%\ncline[arrows=->]{muA}{dmuAOUT}
+%\ncline[arrows=->]{kSigma}{dkSigmaOUT}
+%\ncline[arrows=->]{mub}{dmubOUT}
+
+
+% 4. Plates
+%%%%%%%%%%%
+
+\rput(4.25,4.25){\GM@plate{4.5}{2.5}{repeat $r=1$:$2$   }}
+\rput(3.25,2.5){\GM@plate{7.5}{5.25}{game $g=1$:$G$   }}
+\rput(2.25,2){\GM@plate{9.5}{7.25}{subject $s=1$:$S$   }}
+\rput(1.25,1.5){\GM@plate{11.5}{9.25}{condition $i=1$:$N$   }}
+%\rput(1,1.5){\GM@plate{10}{10}{$u\in\left\{ [1\mbox{ }3], [2\mbox{ }2]\right\}$   }}
+
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% priors
+\rput(12.75,10.5){\pnode{priors}}\GM@label{priors}{Priors}
+\rput(12.75,10){\pnode{muA}}\GM@label{muA}{$\mu^A_{i} \sim \mbox{Gaussian}(0, 100)$, $\sigma^A_{i} \sim \mbox{Exponential}(0.1)$}
+\rput(12.75,9.5){\pnode{mub}}\GM@label{mub}{$\mu^B_{i} \sim \mbox{Gaussian}(0, 100)$, $\sigma^B_{i} \sim \mbox{Exponential}(0.1)$}
+\rput(12.75,9){\pnode{kSigma}}\GM@label{kSigma}{$k^n_{i} \sim \mbox{Exponential}(0.1)$, $\lambda^n_{i} \sim \mbox{Exponential}(10)$}
+\rput(12.75,8.5){\pnode{kEpsilon}}\GM@label{kEpsilon}{$k^\epsilon_{i} \sim \mbox{Exponential}(0.1)$, $\lambda^\epsilon_{i} \sim \mbox{Exponential}(10)$}
+
+% subject level params
+\rput(12.75,8){\pnode{subpars}}\GM@label{subpars}{Subject specific parameters}
+\rput(12.75,7.5){\pnode{A}}\GM@label{A}{$A_{is} \sim \mbox{Gaussian}(\mu^A_{i}, \sigma^A_{i})$}
+\rput(12.75,7){\pnode{b}}\GM@label{b}{$B_{is} \sim \mbox{Gaussian}(\mu^B_{i}, \sigma^B_{i})$}
+\rput(12.75,6.5){\pnode{sigma}}\GM@label{sigma}{$\sigma^n_{is} \sim \mbox{Gamma}(k^n_{i}, \lambda^n_{i})$}
+\rput(12.75,6){\pnode{epsilon}}\GM@label{epsilon}{$\sigma^\epsilon_{is} \sim \mbox{Gamma}(k^\epsilon_{i}, \lambda^\epsilon_{i})$}
+
+% game level params
+\rput(12.75,5){\pnode{game}}\GM@label{game}{Stimulus driven noise for repeated game}
+\rput(12.75,4.5){\pnode{epsilonr}}\GM@label{epsilonr}{$\epsilon_{isg} \sim \mbox{Gaussian}(0, \sigma^\epsilon_{is})$}
+
+% repeated game level params
+\rput(12.75,4){\pnode{repeat}}\GM@label{repeat}{Free noise for each game}
+\rput(12.75,3.5){\pnode{sigmar}}\GM@label{sigmar}{$n_{isgr} \sim \mbox{Gaussian}(0, \sigma^n_{is})$}
+
+% choices!
+%\rput(9,5.5){\pnode{c}}
+%\GM@label{c}{$p \leftarrow }  $}
+
+\rput(12.75,2.5){\pnode{choices}}\GM@label{choices}{Observed choices}
+\rput(12.75,2){\pnode{q}}
+\GM@label{q}{$\Delta Q_{isgr} \leftarrow
+\Delta R_{isg}+A_{is}\Delta I_{isg} + B_{is} + n_{isgr} + \epsilon_{isg}$}
+\rput(12.75,1.5){\pnode{c}}
+\GM@label{c}{$c_{isgr} \sim \mbox{Bernoulli}
+\left( Q_{isgr} > 0 \right)$}
+
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+
+
+
+%\endTeXtoEPS
+\end{document}

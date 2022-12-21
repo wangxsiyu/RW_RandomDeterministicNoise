@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tutorial example graphical model                                        %
+% Author: Tom Lodewyckx                                                   %
+% Based on data by Zeelenberg, Wagenmakers & Raaijmakers (2002, study 3). %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage{pst-all}
+\usepackage{com.braju.graphicalmodels}
+\catcode`\@=11%
+\pagestyle{empty}
+\begin{document}
+\TeXtoEPS
+\psset{unit=14mm,arrowscale=1.5}
+\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+\begin{pspicture}(0,0)(10,10)
+%\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+\rput(4.0,4.6){\GM@node[nodeSize=11mm]{phiSB_outer}}
+\rput(4.0,3.4){\GM@node[nodeSize=11mm]{thetaSB_outer}}
+\rput(1.5,3.4){\GM@node[nodeSize=11mm]{thetaSN_outer}}
+\rput(3.3,7.3){\GM@node[nodeSize=11mm]{mualpha_outer}}
+
+\rput(1.0,7.3){\GM@node[nodeSize=11mm]{muphiSN}}
+               \GM@label[offset=-1.5mm]{muphiSN}{$\mu_{\phi}$}
+\rput(2.0,7.3){\GM@node[nodeSize=11mm]{sdphiSN}}
+               \GM@label[offset=-1.5mm]{sdphiSN}{$\sigma_{\phi}$}
+\rput(4.0,8.3){\GM@node[nodeSize=11mm]{delta}}
+               \GM@label[offset=-0.5mm]{delta}{$\delta$}
+\rput(3.3,7.3){\GM@node[nodeSize=9mm]{mualpha}}
+               \GM@label[offset=-1.5mm]{mualpha}{$\mu_\alpha$}
+\rput(4.7,7.3){\GM@node[nodeSize=11mm]{sdalpha}}
+               \GM@label[offset=-1.5mm]{sdalpha}{$\sigma_\alpha$}
+
+\rput(1.5,4.6){\GM@node[nodeSize=11mm]{phiSN}}
+               \GM@label[offset=-3.8mm]{phiSN}{$\phi_{SN,i}$}
+\rput(1.5,3.4){\GM@node[nodeSize=9mm]{thetaSN}}
+               \GM@label[offset=-3.8mm]{thetaSN}{$\theta_{SN,i}$}
+\rput(1.5,2.2){\GM@node[nodeSize=11mm,observed=true,observedColor=lightgray,query=true]{KSN}}
+               \GM@label[offset=-4.5mm]{KSN}{$K_{SN,i}$}
+\rput(1.5,1.0){\GM@node[nodeSize=11mm,observed=true,observedColor=lightgray,query=true]{NSN}}
+               \GM@label[offset=-4.5mm]{NSN}{$N_{SN,i}$}
+
+\rput(4.0,5.8){\GM@node[nodeSize=11mm]{alpha}}
+               \GM@label[offset=-1.5mm]{alpha}{$\alpha_i$}
+\rput(4.0,4.6){\GM@node[nodeSize=9mm]{phiSB}}
+               \GM@label[offset=-3.8mm]{phiSB}{$\phi_{SB,i}$}
+\rput(4.0,3.4){\GM@node[nodeSize=9mm]{thetaSB}}
+               \GM@label[offset=-3.8mm]{thetaSB}{$\theta_{SB,i}$}
+\rput(4.0,2.2){\GM@node[nodeSize=11mm,observed=true,observedColor=lightgray,query=true]{KSB}}
+               \GM@label[offset=-4.5mm]{KSB}{$K_{SB,i}$}
+\rput(4.0,1.0){\GM@node[nodeSize=11mm,observed=true,observedColor=lightgray,query=true]{NSB}}
+               \GM@label[offset=-4.5mm]{NSB}{$N_{SB,i}$}
+
+
+% 3. Arrows
+%%%%%%%%%%%
+
+\ncline[arrows=->]{phiSN}{thetaSN_outer}
+\ncline[arrows=->]{thetaSN_outer}{KSN} 
+\ncline[arrows=->]{NSN}{KSN}
+\ncline[arrows=->]{phiSB_outer}{thetaSB_outer}
+\ncline[arrows=->]{thetaSB_outer}{KSB} 
+\ncline[arrows=->]{NSB}{KSB}
+\ncline[arrows=->]{phiSN}{phiSB_outer}
+\ncline[arrows=->]{alpha}{phiSB_outer}
+\ncline[arrows=->]{muphiSN}{phiSN}
+\ncline[arrows=->]{sdphiSN}{phiSN}
+\ncline[arrows=->]{mualpha_outer}{alpha}
+\ncline[arrows=->]{sdalpha}{alpha}
+\ncline[arrows=->]{delta}{mualpha_outer}
+\ncline[arrows=->]{sdalpha}{mualpha_outer}
+
+
+% 4. Plates
+%%%%%%%%%%%
+
+\rput(.75,0.1){\GM@plate[plateLabelPos=br]{4.0}{6.4}{$i=1,\ldots,74$}}
+
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\rput(5.5,7.6){\pnode{equation}}\GM@label{equation}{$K_{SN,i} \sim \mathrm{Binomial} \bigl( \theta_{SN,i},N_{SN,i} \bigr)$}
+\rput(5.5,6.8){\pnode{equation}}\GM@label{equation}{$\theta_{SN,i} = \Phi \bigl( \phi_{SN,i} \bigr)$}
+\rput(5.5,6.2){\pnode{equation}}\GM@label{equation}{$\phi_{SN,i} \sim \mathrm{Normal} \bigl(\mu_\phi,\sigma_\phi^2 \bigr)$}
+\rput(5.5,5.6){\pnode{equation}}\GM@label{equation}{$K_{SB,i} \sim \mathrm{Binomial} \bigl( \theta_{SB,i},N_{SB,i} \bigr)$}
+\rput(5.5,5.0){\pnode{equation}}\GM@label{equation}{$\theta_{SB,i} = \Phi \bigl( \phi_{SB,i} \bigr)$}
+\rput(5.5,4.4){\pnode{equation}}\GM@label{equation}{$\phi_{SB,i} = \phi_{SN,i} + \alpha_i$}
+\rput(5.5,3.8){\pnode{equation}}\GM@label{equation}{$\alpha_i \sim \mathrm{Normal} \bigl(\mu_\alpha, \sigma_\alpha^2 \bigr)$}
+\rput(5.5,3.2){\pnode{equation}}\GM@label{equation}{$\mu_\phi \sim \mathrm{Normal}_{(0,+ \infty)} \bigl( 0,1 \bigr)$}
+\rput(5.5,2.6){\pnode{equation}}\GM@label{equation}{$\sigma_\phi \sim \mathrm{Uniform} \bigl( 0,10 \bigr)$}
+\rput(5.5,2.0){\pnode{equation}}\GM@label{equation}{$\mu_\alpha = \delta \times \sigma_\alpha$}
+\rput(5.5,1.4){\pnode{equation}}\GM@label{equation}{$\sigma_\alpha \sim \mathrm{Uniform} \bigl( 0,10 \bigr)$}
+\rput(5.5,0.8){\pnode{equation}}\GM@label{equation}{$\delta \sim \mathrm{Normal} \bigl( 0,1 \bigr)$}
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+\endTeXtoEPS
+\end{document}
+

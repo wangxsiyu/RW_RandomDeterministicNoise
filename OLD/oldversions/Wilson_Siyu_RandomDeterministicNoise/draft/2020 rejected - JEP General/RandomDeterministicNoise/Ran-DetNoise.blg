@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Ran-DetNoise.aux
+The style file: plainnat.bst
+Database file #1: Refs/refs.bib
+Repeated entry---line 384 of file Refs/refs.bib
+ : %@book{lee_wagenmakers_2014
+ :                            , place={Cambridge}, title={Bayesian Cognitive Modeling: A Practical Course}, DOI={10.1017/CBO9781139087759}, publisher={Cambridge University Press}, author={Lee, Michael D. and Wagenmakers, Eric-Jan}, year={2014}}
+I'm skipping whatever remains of this entry
+Warning--empty journal in hbm1
+Warning--empty journal in eeauer02
+Warning--empty journal in matjags
+You've used 38 entries,
+            2773 wiz_defined-function locations,
+            835 strings with 11290 characters,
+and the built_in function-call counts, 17768 in all, are:
+= -- 1569
+> -- 1078
+< -- 20
++ -- 365
+- -- 326
+* -- 1512
+:= -- 2783
+add.period$ -- 129
+call.type$ -- 38
+change.case$ -- 219
+chr.to.int$ -- 37
+cite$ -- 79
+duplicate$ -- 776
+empty$ -- 1417
+format.name$ -- 386
+if$ -- 3677
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 38
+newline$ -- 212
+num.names$ -- 154
+pop$ -- 405
+preamble$ -- 1
+purify$ -- 183
+quote$ -- 0
+skip$ -- 587
+stack$ -- 0
+substring$ -- 632
+swap$ -- 59
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 408
+warning$ -- 3
+while$ -- 155
+width$ -- 0
+write$ -- 516
+(There was 1 error message)

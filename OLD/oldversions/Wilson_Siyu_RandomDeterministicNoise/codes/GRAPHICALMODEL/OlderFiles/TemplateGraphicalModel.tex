@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template graphical model %
+% Author: Tom Lodewyckx    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage{pst-all}
+\usepackage{com.braju.graphicalmodels}
+\catcode`\@=11%
+\pagestyle{empty}
+\begin{document}
+%\TeXtoEPS
+\psset{unit=14mm,arrowscale=1.5}
+\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+\begin{pspicture}(1,1)(10,10)
+\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+%\rput(1,1){\GM@node[NodeOptions]{name}}
+%                 \GM@label[LabelOptions]{name}{label}
+
+\rput(1,1){\GM@node[observed=true,nodeSize=11mm,query=true]{alpha}}\GM@label{alpha}{$\alpha$}
+\rput(3,3){\GM@node{beta}}\GM@label{beta}{$\beta$}
+
+
+% 3. Arrows
+%%%%%%%%%%%
+
+\ncline[arrows=->]{alpha}{beta}
+
+
+% 4. Plates
+%%%%%%%%%%%
+
+%\rput(orix,oriy){\GM@plate[options]{sizex}{sizey}{label}}
+
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\rput(5,5){\pnode{alpha}}\GM@label{alpha}{$\alpha \sim p$}
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+%\endTeXtoEPS
+\end{document}
