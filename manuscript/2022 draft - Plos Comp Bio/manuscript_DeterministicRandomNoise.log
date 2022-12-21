@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  21 DEC 2022 00:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  21 DEC 2022 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1058,8 +1058,8 @@ Package rerunfilecheck Info: File `manuscript_DeterministicRandomNoise.out' has
  ) 
 Here is how much of TeX's memory you used:
  24436 strings out of 478338
- 465048 string characters out of 2834777
- 773687 words of memory out of 3000000
+ 465034 string characters out of 2834777
+ 773690 words of memory out of 3000000
  42238 multiletter control sequences out of 15000+600000
  503714 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1082,7 +1082,7 @@ ms/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Siyu Wang/AppData/Local
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Siyu Wang/A
 ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Siyu Wa
 ng/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript_DeterministicRandomNoise.pdf (32 pages, 2022041 by
+Output written on manuscript_DeterministicRandomNoise.pdf (32 pages, 2022221 by
 tes).
 PDF statistics:
  694 PDF objects out of 1000 (max. 8388607)
