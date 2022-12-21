@@ -26,7 +26,7 @@ gp{2} = W.analysis_1group(suball, true, additionalcompare);
 suffix = {'','_all'};
 %% behavioral plots
 plt = W_plt('savedir', '../figures', 'savepfx', 'RanDetNoise', 'isshow', true, ...
-    'issave', true);
+    'issave', true, 'extension',{'svg', 'jpg'});
 %%
 for gi = 1:2
     plt.set_pltsetting('savesfx', suffix{gi});
@@ -34,7 +34,7 @@ for gi = 1:2
     plt.figure(1,2,'is_title',1);
     plt.setfig(1:2, 'ylim', {[0, 0.3] + gi*0.05,[0.35 0.65]}, ...
         'ytick', {0.1:.1:0.4, 0.4:.1:0.6}, ...
-        'legend', {{'[2 2]','[1 3]'},{'[1 3]'}}, 'legloc',{'SE','SE'});
+        'legend', {{'[1 3]','[2 2]'},{'[1 3]'}}, 'legloc',{'SE','SE'});
     plt = EEplot_modelfree(plt, gp{gi},1,1);
     %% 2 noise figure
     plt.figure(1,2,'is_title',1);

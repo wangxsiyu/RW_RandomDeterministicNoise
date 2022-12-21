@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  19 DEC 2022 04:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  20 DEC 2022 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,7 +984,7 @@ ed.
 Here is how much of TeX's memory you used:
  23600 strings out of 478338
  448746 string characters out of 2834777
- 709123 words of memory out of 3000000
+ 709124 words of memory out of 3000000
  41573 multiletter control sequences out of 15000+600000
  488723 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -996,7 +996,7 @@ lic/amsfonts/cm/cmmi8.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Siyu Wang/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Siyu Wang/AppData/Local/
 Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on DetRanNoise_Supplementary.pdf (11 pages, 2262777 bytes).
+Output written on DetRanNoise_Supplementary.pdf (11 pages, 2262752 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)

@@ -1,6 +1,6 @@
 %% bayesian plots
 plt = W_plt('savedir', '../figures', 'savepfx', 'RDBayes', 'isshow', true, ...
-    'issave', true);
+    'issave', true, 'extension',{'svg', 'jpg'});
 outputdir = '../bayesoutput/all';
 %% figure - posterior 
 suffix = {'','_all','_paironly'};
@@ -21,10 +21,27 @@ for gii = 1:3
 end
 %% reduced models
 sp = {};
-sp{2} = paramsub{1};
-sp{1} = load(fullfile(outputdir, ['HBI_DetRanNoise_dRonly_samples.mat'])).samples;
+sp{1} = paramsub{1};
+sp{2} = load(fullfile(outputdir, ['HBI_DetRanNoise_dRonly_samples.mat'])).samples;
 %
 EEplot_2noise_reduced(plt, sp);
+%% deterministic noise ratio
+sp = load(fullfile(outputdir, ['HBI_DetRanNoise_samples.mat'])).samples;
+%%
+det = []; ran = [];
+vardet = [];
+for i = 1:2
+    det(i,:) = reshape(sp.NoiseDet(:,:,i),1,[]);
+    ran(i,:) = reshape(sp.NoiseRan(:,:,i),1,[]);
+    vardet(i,:) = det(i,:).^2./(det(i,:).^2 + ran(i,:).^2);
+end
+ddet = reshape(sp.dNoiseDet,1,[]);
+dran = reshape(sp.dNoiseRan,1,[]);
+vard = (ddet.^2./(ddet.^2+dran.^2));
+W.print('explained variance: %.2f', mean(vardet, 'all')*100)
+W.print('explained variance 5%%: %.2f', quantile(reshape(vardet,1,[]),[0.025 0.975])*100)
+
+
 %% ratio of deterministic vs random noise
 %% ratio plot (h = 6/h = 1, for ran and det, A and b)
 sp = paramsub{1};

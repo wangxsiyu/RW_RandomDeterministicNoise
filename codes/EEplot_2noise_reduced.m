@@ -6,14 +6,14 @@ function plt = EEplot_2noise_reduced(plt, sp)
     ymax = 1;
     plt.setfig('ylim', {[0 ymax],[0 ymax],[0 0.7],[0 0.7]});
     plt.setfig_all('ytick', [0:0.2:ymax]);
-    color = {{'AZred50','AZred'},{'AZblue50','AZblue'},...
-        {'AZred50','AZred'},{'AZblue50','AZblue'}};
+    color = {{'AZred','AZred50'},{'AZblue','AZblue50'},...
+        {'AZred','AZred50'},{'AZblue','AZblue50'}};
     fns = {'NoiseRan', 'NoiseDet'};
     stepsize = 0.02;
     xbins = [-10:stepsize:30];
     plt.setfig(1:2, 'title', names);
     plt.setfig([-1 0] + length(sp)*2, 'xlabel', {'noise standard deviation [points]', 'noise standard deviation [points]'});
-    plt.setfig_all('legend', {'reduced model','full model'}, 'legloc', 'NE');
+    plt.setfig_all('legend', {'full model', 'reduced model'}, 'legloc', 'NE');
     for hi = 1:2
         for i = 1:2
             fn = fns{i};

@@ -27,7 +27,7 @@ for repi = 1:200
 end
 %% hyper prior recovery
 plt = W_plt('savedir', '../figures', 'savepfx', 'RDBayes', 'isshow', true, ...
-    'issave', true);
+    'issave', true, 'extension',{'svg', 'jpg'});
 plt.figure(2,3, 'is_title', 1);
 names = ["NoiseRan", "NoiseDet"];
 xbins = -10:0.02:50;

@@ -1,6 +1,6 @@
 %%
 plt = W_plt('savedir', '../figures', 'savepfx', 'RDBayes', 'isshow', true, ...
-    'issave', true);
+    'issave', true, 'extension',{'svg', 'jpg'});
 %% load simulations
 W.library_wang('Wang_EEHorizon');
 game0 = readtable('../data/all/data_all.csv', 'Delimiter', ',');
@@ -54,7 +54,7 @@ EEplot_2noise_modelcomparison1(plt, gp, sgp);
 W.unmuteprint()
 plt.set_pltsetting('savesfx','validation');
 plt.figure(1,2,'is_title',1);
-leg = {'simulated data (random noise only)', 'deterministic noise only', 'random noise only'};
+leg = {'random noise only', 'simulated data (random noise only)', 'deterministic noise only'};
 plt.setfig(1:2, 'ylim', {[0 0.45],[0 0.45]}, ...
     'ytick', 0:0.1:0.4, 'legend',{leg,leg});
 plt = EEplot_2noise_pinconsistent(plt, sgp.modelE, '_byR', '_byR', 'GPav_');

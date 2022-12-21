@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -83,21 +83,6 @@ J.~Drugowitsch, V.~Wyart, A.~D. Devauchelle, and E.~Koechlin.
 \newblock {{C}omputational {P}recision of {M}ental {I}nference as {C}ritical
   {S}ource of {H}uman {C}hoice {S}uboptimality}.
 \newblock \emph{Neuron}, 92\penalty0 (6):\penalty0 1398--1411, Dec 2016.
-
-\bibitem[Festa et~al.(2021)Festa, Aschner, Davila, Kohn, and
-  Coen-Cagli]{Festa2021}
-D.~Festa, A.~Aschner, A.~Davila, A.~Kohn, and R.~Coen-Cagli.
-\newblock Neuronal variability reflects probabilistic inference tuned to
-  natural image statistics.
-\newblock \emph{Nat Commun}, 12\penalty0 (1):\penalty0 3635, 2021.
-\newblock ISSN 2041-1723 (Electronic) 2041-1723 (Linking).
-\newblock \doi{10.1038/s41467-021-23838-x}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/34131142}.
-\newblock Festa, Dylan Aschner, Amir Davila, Aida Kohn, Adam Coen-Cagli, Ruben
-  eng P50 HD105352/HD/NICHD NIH HHS/ R01 EY021371/EY/NEI NIH HHS/ R01
-  EY030578/EY/NEI NIH HHS/ Research Support, N.I.H., Extramural England
-  2021/06/17 Nat Commun. 2021 Jun 15;12(1):3635. doi:
-  10.1038/s41467-021-23838-x.
 
 \bibitem[Gershman(2018)]{Gershman2018}
 Samuel~J. Gershman.

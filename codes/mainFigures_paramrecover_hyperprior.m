@@ -16,7 +16,7 @@ W.save('./Temp/param_recovery.mat','recovered', recovered);
 load('./Temp/param_recovery.mat')
 %% hyper prior recovery
 plt = W_plt('savedir', '../figures', 'savepfx', 'RDBayes', 'isshow', true, ...
-    'issave', true);
+    'issave', true, 'extension',{'svg', 'jpg'});
 plt.figure(2,3, 'is_title', 1);
 names = ["NoiseRan", "NoiseDet"];
 xbins = -10:0.02:50;
