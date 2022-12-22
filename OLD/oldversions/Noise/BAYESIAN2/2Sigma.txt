@@ -1,0 +1,44 @@
+model{
+	    for (h in 1:nh) {
+			kNoise_p[h] ~ dexp(0.01);
+			lamdaNoise_p[h] ~ dexp(10);
+			Noise[h] <- kNoise_p[h]/lamdaNoise_p[h];
+            kEp_p[h] ~ dexp(0.01);
+            lamdaEp_p[h] ~ dexp(10);
+            Ep[h] <- kEp_p[h]/lamdaEp_p[h];
+			A_n[h] ~ dnorm(0,0.01);
+			dA_p[h] ~ dexp(0.01);
+			b_n[h] ~ dnorm(0,0.01);
+			db_p[h] ~ dexp(0.01);
+			for (s in 1:nS) {
+				dNs[h,s] ~ dgamma(kNoise_p[h], lamdaNoise_p[h]);
+                Eps[h,s] ~ dgamma(kEp_p[h], lamdaEp_p[h]);
+				As[h,s] ~ dnorm(A_n[h], 1/dA_p[h]);
+				bs[h,s] ~ dnorm(b_n[h], 1/db_p[h]);
+                dNs_tau[h,s] <- 1/(sqrt(2)*dNs[h,s]);
+                Eps_tau[h,s] <- 1/(sqrt(2)*Eps[h,s]);
+			}
+			
+		}
+		dNint = Noise[2] - Noise[1];
+		dNext = Ep[2] - Ep[1];
+		dA = A_n[2] - A_n[1];
+		dB = b_n[2] - b_n[1];
+	    for (h in 1:nh) {
+            for (s in 1:nS){
+                for (i in 1:ngID[s]){
+                    Epsi[h, s, i] ~ dlogis(0, Eps_tau[h, s]);
+                }       
+            }
+        }
+		for (s in 1:nS){
+			dNints[s] = dNs[2, s] - dNs[1, s];
+            dNexts[s] = Eps[2, s] - Eps[1, s];
+            for (t in 1:nTrial[s]) { 
+                dNst[s, t] ~ dlogis(0,dNs_tau[horizon[s,t],s]);
+				dQ[s, t] <- dMu[s,t] + As[horizon[s,t],s] * dInfo[s, t] + bs[horizon[s,t],s] + Epsi[horizon[s,t],s,gID[s,t]] + dNst[s, t];
+				P[s,t]  <- ifelse(dQ[s,t] >= 0, 0.999999999, 0.000000001);	
+				choice[s,t] ~ dbern( P[s,t] );
+			}
+		}
+}
