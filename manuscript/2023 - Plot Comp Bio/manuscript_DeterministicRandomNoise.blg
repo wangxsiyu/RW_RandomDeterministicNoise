@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: manuscript_DeterministicRandomNoise.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Database file #1: Refs/refs.bib
+Warning--empty journal in hbm1
+Warning--empty journal in matjags
+You've used 24 entries,
+            2773 wiz_defined-function locations,
+            769 strings with 10336 characters,
+and the built_in function-call counts, 11207 in all, are:
+= -- 1019
+> -- 651
+< -- 16
++ -- 222
+- -- 197
+* -- 917
+:= -- 1775
+add.period$ -- 102
+call.type$ -- 24
+change.case$ -- 134
+chr.to.int$ -- 23
+cite$ -- 50
+duplicate$ -- 487
+empty$ -- 884
+format.name$ -- 237
+if$ -- 2333
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 24
+newline$ -- 157
+num.names$ -- 98
+pop$ -- 243
+preamble$ -- 1
+purify$ -- 112
+quote$ -- 0
+skip$ -- 377
+stack$ -- 0
+substring$ -- 366
+swap$ -- 39
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 254
+warning$ -- 2
+while$ -- 93
+width$ -- 0
+write$ -- 366
+(There were 2 warnings)
