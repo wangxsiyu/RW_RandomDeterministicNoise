@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  13 MAY 2024 00:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  13 MAY 2024 01:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,43 +917,46 @@ of choos-ing the more in-for-ma-tive op-tion $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12
 Package hyperref Info: bookmark level for unknown added defaults to 0 on input 
 line 185.
 [8]
-<figures/RanDetNoise_modelfree.jpg, id=150, 1238.6275pt x 666.49pt>
+<figures/RanDetNoise_modelfree.jpg, id=150, 1238.6275pt x 1246.6575pt>
 File: figures/RanDetNoise_modelfree.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_modelfree.jpg>
 Package pdftex.def Info: figures/RanDetNoise_modelfree.jpg  used on input line 
 194.
-(pdftex.def)             Requested size: 505.89pt x 272.21518pt.
+(pdftex.def)             Requested size: 505.89pt x 509.17358pt.
+ [9]
 Package hyperref Info: bookmark level for unknown deleted defaults to 0 on inpu
 t line 203.
- [9 <./figures/RanDetNoise_modelfree.jpg>]
-<figures/RanDetNoise_pinconsistent.jpg, id=161, 1238.6275pt x 666.49pt>
+ [10 <./figures/RanDetNoise_modelfree.jpg>]
+<figures/RanDetNoise_pinconsistent.jpg, id=163, 1238.6275pt x 666.49pt>
 File: figures/RanDetNoise_pinconsistent.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_pinconsistent.jpg>
 Package pdftex.def Info: figures/RanDetNoise_pinconsistent.jpg  used on input l
 ine 209.
 (pdftex.def)             Requested size: 505.89pt x 272.21518pt.
- [10 <./figures/RanDetNoise_pinconsistent.jpg>]
+ [11] [12 <./figures/RanDetNoise_pinconsistent.jpg>]
 Package hyperref Info: bookmark level for unknown replaced defaults to 0 on inp
 ut line 230.
- [11]
 
-LaTeX Warning: Marginpar on page 12 moved.
 
-[12]
+LaTeX Warning: Marginpar on page 13 moved.
+
+
+LaTeX Warning: Marginpar on page 13 moved.
+
+[13] [14]
 Overfull \hbox (0.95618pt too wide) in paragraph at lines 271--273
 []\OT1/ptm/m/n/12 MOVE THE REST OF THIS SEC-TION TO THE SUP-PLE-MEN-TARY MA-TE-
 RIAL Firstly, we checked
  []
 
-[13]
-<figures/RDBayes_reduced_model.jpg, id=217, 1254.6875pt x 1246.6575pt>
+<figures/RDBayes_reduced_model.jpg, id=221, 1254.6875pt x 1246.6575pt>
 File: figures/RDBayes_reduced_model.jpg Graphic file (type jpg)
 <use figures/RDBayes_reduced_model.jpg>
 Package pdftex.def Info: figures/RDBayes_reduced_model.jpg  used on input line 
 278.
 (pdftex.def)             Requested size: 354.12144pt x 351.85802pt.
- [14 <./figures/RDBayes_reduced_model.jpg>]
-<figures/RDBayes_parameterrecovery_hyperprior_v2.jpg, id=226, 1850.915pt x 1246
+[15] [16 <./figures/RDBayes_reduced_model.jpg>]
+<figures/RDBayes_parameterrecovery_hyperprior_v2.jpg, id=235, 1850.915pt x 1246
 .6575pt>
 File: figures/RDBayes_parameterrecovery_hyperprior_v2.jpg Graphic file (type jp
 g)
@@ -961,8 +964,8 @@ g)
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_hyperprior_v2.jpg  u
 sed on input line 288.
 (pdftex.def)             Requested size: 505.89pt x 340.72989pt.
- [15] [16 <./figures/RDBayes_parameterrecovery_hyperprior_v2.jpg>]
-<figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg, id=241, 1238.6275pt x 1
+ [17] [18 <./figures/RDBayes_parameterrecovery_hyperprior_v2.jpg>]
+<figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg, id=249, 1238.6275pt x 1
 285.80376pt>
 File: figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg Graphic file (type 
 jpg)
@@ -970,33 +973,33 @@ jpg)
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg 
  used on input line 306.
 (pdftex.def)             Requested size: 354.12144pt x 367.61545pt.
- [17] [18 <./figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg>]
+ [19] [20 <./figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg>]
 
-LaTeX Warning: Marginpar on page 19 moved.
+LaTeX Warning: Marginpar on page 21 moved.
 
-<figures/RDBayes_hyperprior.jpg, id=255, 1238.6275pt x 1285.80376pt>
+<figures/RDBayes_hyperprior.jpg, id=264, 1238.6275pt x 1285.80376pt>
 File: figures/RDBayes_hyperprior.jpg Graphic file (type jpg)
 <use figures/RDBayes_hyperprior.jpg>
 Package pdftex.def Info: figures/RDBayes_hyperprior.jpg  used on input line 323
 .
 (pdftex.def)             Requested size: 354.12144pt x 367.61545pt.
-[19]
-<figures/RDBayes_ratio__paironly.jpg, id=268, 627.34375pt x 627.34375pt>
+[21]
+<figures/RDBayes_ratio__paironly.jpg, id=276, 627.34375pt x 627.34375pt>
 File: figures/RDBayes_ratio__paironly.jpg Graphic file (type jpg)
 <use figures/RDBayes_ratio__paironly.jpg>
 Package pdftex.def Info: figures/RDBayes_ratio__paironly.jpg  used on input lin
 e 332.
 (pdftex.def)             Requested size: 252.94499pt x 252.94327pt.
- [20 <./figures/RDBayes_hyperprior.jpg>]
-<figures/RDBayes_2noise_modelA.jpg, id=277, 2462.19875pt x 666.49pt>
+ [22 <./figures/RDBayes_hyperprior.jpg>]
+<figures/RDBayes_2noise_modelA.jpg, id=285, 2462.19875pt x 666.49pt>
 File: figures/RDBayes_2noise_modelA.jpg Graphic file (type jpg)
 <use figures/RDBayes_2noise_modelA.jpg>
 Package pdftex.def Info: figures/RDBayes_2noise_modelA.jpg  used on input line 
 345.
 (pdftex.def)             Requested size: 505.89pt x 136.93642pt.
- [21 <./figures/RDBayes_ratio__paironly.jpg>] [22 <./figures/RDBayes_2noise_mod
+ [23 <./figures/RDBayes_ratio__paironly.jpg>] [24 <./figures/RDBayes_2noise_mod
 elA.jpg>]
-<figures/RDBayes_2noise_hyperprior_6model_recovery.jpg, id=295, 1412.27625pt x 
+<figures/RDBayes_2noise_hyperprior_6model_recovery.jpg, id=303, 1412.27625pt x 
 2039.62pt>
 File: figures/RDBayes_2noise_hyperprior_6model_recovery.jpg Graphic file (type 
 jpg)
@@ -1004,22 +1007,22 @@ jpg)
 Package pdftex.def Info: figures/RDBayes_2noise_hyperprior_6model_recovery.jpg 
  used on input line 392.
 (pdftex.def)             Requested size: 404.71353pt x 584.4722pt.
- [23]
+ [25]
 Overfull \vbox (37.36102pt too high) has occurred while \output is active []
 
 
-[24 <./figures/RDBayes_2noise_hyperprior_6model_recovery.jpg>] [25] [26]
-[27] [28] [29]
+[26 <./figures/RDBayes_2noise_hyperprior_6model_recovery.jpg>] [27] [28]
+[29] [30] [31]
 Overfull \hbox (30.33153pt too wide) in paragraph at lines 594--627
 [][] 
  []
 
-<figures/EEHorizon_2sigma.pdf, id=382, 758.835pt x 397.485pt>
+<figures/EEHorizon_2sigma.pdf, id=391, 758.835pt x 397.485pt>
 File: figures/EEHorizon_2sigma.pdf Graphic file (type pdf)
 <use figures/EEHorizon_2sigma.pdf>
 Package pdftex.def Info: figures/EEHorizon_2sigma.pdf  used on input line 638.
 (pdftex.def)             Requested size: 505.89pt x 264.99136pt.
-[30] (manuscript_DeterministicRandomNoise.bbl [31 <./figures/EEHorizon_2sigma.p
+[32] (manuscript_DeterministicRandomNoise.bbl [33 <./figures/EEHorizon_2sigma.p
 df>]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
 7.
@@ -1032,7 +1035,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--64
 hompson-[]sampling .
  []
 
-[32] [33]) [34]
+[34] [35]) [36]
 \Changes@OutFile=\write5
 \openout5 = `manuscript_DeterministicRandomNoise.soc'.
 
@@ -1049,9 +1052,9 @@ Package rerunfilecheck Info: File `manuscript_DeterministicRandomNoise.out' has
 ### simple group (level 1) entered at line 118 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24292 strings out of 478338
- 461955 string characters out of 2834777
- 746161 words of memory out of 3000000
+ 24294 strings out of 478338
+ 461969 string characters out of 2834777
+ 745503 words of memory out of 3000000
  42125 multiletter control sequences out of 15000+600000
  505474 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1073,10 +1076,10 @@ al/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/Siyu Wang/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Siyu Wang
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Siyu 
 Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript_DeterministicRandomNoise.pdf (34 pages, 2010311 by
+Output written on manuscript_DeterministicRandomNoise.pdf (36 pages, 2056486 by
 tes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
+ 663 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
