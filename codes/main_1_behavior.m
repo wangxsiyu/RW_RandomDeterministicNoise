@@ -8,7 +8,7 @@ W.library_wang('Wang_EEHorizon')
 opt_sub = {'subjectID', 'date', 'time'};
 opt_preprocess = 'EEpreprocess_game_basic';
 opt_game_sub = {'EEpreprocess_game_sub_repeatedgame'};
-opt_analysis = {'EEanalysis_sub_basic'};
+opt_analysis = {'EEanalysis_sub_basic', 'EEanalysis_sub_MLE'};
 [sub0, game, idxsub] = W.analysis_pipeline(filename, opt_sub, opt_preprocess, opt_game_sub, opt_analysis, savedir);
 W.writetable(game, fullfile(savedir,'data_all.csv'));
 %% exclude participants

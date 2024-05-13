@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -77,6 +77,20 @@ J.~Drugowitsch, V.~Wyart, A.~D. Devauchelle, and E.~Koechlin.
 \newblock {{C}omputational {P}recision of {M}ental {I}nference as {C}ritical
   {S}ource of {H}uman {C}hoice {S}uboptimality}.
 \newblock \emph{Neuron}, 92\penalty0 (6):\penalty0 1398--1411, Dec 2016.
+
+\bibitem[Findling et~al.(2019)Findling, Skvortsova, Dromnelle, Palminteri, and
+  Wyart]{Findling19}
+C.~Findling, V.~Skvortsova, R.~Dromnelle, S.~Palminteri, and V.~Wyart.
+\newblock Computational noise in reward-guided learning drives behavioral
+  variability in volatile environments.
+\newblock \emph{Nat Neurosci}, 22\penalty0 (12):\penalty0 2066--2077, 2019.
+\newblock ISSN 1097-6256.
+\newblock \doi{10.1038/s41593-019-0518-9}.
+\newblock 1546-1726 Findling, Charles Skvortsova, Vasilisa Dromnelle, Rémi
+  Palminteri, Stefano Orcid: 0000-0001-5768-6646 Wyart, Valentin Orcid:
+  0000-0001-6522-7837 Journal Article Research Support, Non-U.S. Gov't United
+  States 2019/10/30 Nat Neurosci. 2019 Dec;22(12):2066-2077. doi:
+  10.1038/s41593-019-0518-9. Epub 2019 Oct 28.
 
 \bibitem[Gershman(2018)]{Gershman2018}
 Samuel~J. Gershman.

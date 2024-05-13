@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: Refs/refs.bib
 Warning--empty journal in hbm1
 Warning--empty journal in matjags
-You've used 24 entries,
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            769 strings with 10336 characters,
-and the built_in function-call counts, 11207 in all, are:
-= -- 1019
-> -- 651
+            778 strings with 10903 characters,
+and the built_in function-call counts, 11857 in all, are:
+= -- 1078
+> -- 699
 < -- 16
-+ -- 222
-- -- 197
-* -- 917
-:= -- 1775
-add.period$ -- 102
-call.type$ -- 24
-change.case$ -- 134
-chr.to.int$ -- 23
-cite$ -- 50
-duplicate$ -- 487
-empty$ -- 884
-format.name$ -- 237
-if$ -- 2333
++ -- 238
+- -- 212
+* -- 981
+:= -- 1879
+add.period$ -- 108
+call.type$ -- 25
+change.case$ -- 142
+chr.to.int$ -- 24
+cite$ -- 52
+duplicate$ -- 508
+empty$ -- 927
+format.name$ -- 253
+if$ -- 2467
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 24
-newline$ -- 157
-num.names$ -- 98
-pop$ -- 243
+missing$ -- 25
+newline$ -- 165
+num.names$ -- 102
+pop$ -- 254
 preamble$ -- 1
-purify$ -- 112
+purify$ -- 119
 quote$ -- 0
-skip$ -- 377
+skip$ -- 394
 stack$ -- 0
-substring$ -- 366
-swap$ -- 39
+substring$ -- 395
+swap$ -- 40
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 254
+type$ -- 265
 warning$ -- 2
-while$ -- 93
+while$ -- 97
 width$ -- 0
-write$ -- 366
+write$ -- 385
 (There were 2 warnings)
