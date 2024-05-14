@@ -6,8 +6,11 @@ classdef W_tools_string < handle
             str = W.str2cell(str);
             idnonempty = W.cellsize(str) > 0;
             if any(idnonempty)
-                str(idnonempty) = W.cellfun(@(x)W.strcat(upper(x(1)), x(2:end)), str(idnonempty), false);
+                idnonempty = find(idnonempty);
+                str(idnonempty(1)) = W.cellfun(@(x)W.strcat(upper(x(1)), x(2:end)), str(idnonempty(1)), false);
             end
+%             x = str{1};
+%             str{1} = W.strcat(upper(x(1)), x(2:end));
             str = W.string(str);
         end
         function out = str_de_(str, opt_str)

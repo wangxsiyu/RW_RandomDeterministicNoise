@@ -2,8 +2,8 @@ function EEplot_2noise_hyperpriors(plt, sp, stepsize)
     if ~exist('stepsize', 'var')
         stepsize = [0.02, 0.02];
     end
-    names = {'Random noise - \sigma_{ran}','Random noise - \sigma_{ran}',...
-        'Deterministic noise - \sigma_{det}','Deterministic noise - \sigma_{det}'};
+    names = {'Random noise - \sigma_{ran}',{'Change in random noise - \sigma_{ran}'},...
+        'Deterministic noise - \sigma_{det}',{'Change in deterministic noise - \sigma_{det}'}};
     plt.setfig_all('ylabel', 'posterior density', ...
         'ytick', []);
     plt.setfig('xtick',{0:4:50,-3:3:15,0:4:50,-3:3:15});

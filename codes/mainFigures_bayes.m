@@ -13,11 +13,14 @@ sz = [0.02 0.02;
     0.06 0.02];
 for gii = 1:3
     plt.set_pltsetting('savesfx', suffix{gii});
+    old = plt.param_plt.fontsize_title;
+    plt.param_plt.fontsize_title = 15;
     plt.figure(2,2,'is_title', 'all');
     gi = W.mod0(gii, 2);
     plt.setfig('xlim', {[-1 10+10*gi],[-3 8+ gi *4], [-1 10+10*gi], [-3 8 + gi *4]}, ...
         'ylim', []);
     EEplot_2noise_hyperpriors(plt, paramsub{gii}, sz(gi,:));
+    plt.param_plt.fontsize_title = old;
 end
 %% reduced models
 sp = {};

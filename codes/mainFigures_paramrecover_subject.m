@@ -26,6 +26,14 @@ plt.setfig('xtick', mxtick, ...
     'ytick', mxtick);
 EEplot_2noise_parameter_recovery(plt, st, stsimu(1));
 %%
+plt.set_pltsetting('savesfx', 'examplesession_randet')
+plt.figure(2,2,'is_title', 1);
+mx = {[-1 20],[-1 30],[-1 5],[-1 15]};
+mxtick = {[0:10:50],[0:10:50],[0:5:30],[0:5:30]};
+plt.setfig('xtick', mxtick, ...
+    'ytick', mxtick);
+EEplot_2noise_parameter_recovery(plt, st, stsimu(1),2);
+%%
 % stall = repmat(st,1, 200);
 % %%
 % plt = W_plt('savedir', '../figures', 'savepfx', 'RDBayes', 'isshow', true, ...

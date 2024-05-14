@@ -66,6 +66,11 @@ plt.update('parameterrecovery_hyperprior_v2');
 % end
 % plt.update;
 %%
+median(recovered.NoiseDet(:,:,:), 'all')/median(sp.NoiseDet(:,:,:), 'all')
+(median(sp.NoiseDet(:,:,:), 'all') - median(recovered.NoiseDet(:,:,:), 'all'))/median(sp.NoiseDet(:,:,:), 'all')
+median(recovered.NoiseRan(:,:,:), 'all')/median(sp.NoiseRan(:,:,:), 'all')
+median(recovered.dNoiseDet(:,:,:), 'all')/median(sp.dNoiseDet(:,:,:), 'all')
+%%
 
 %     simunum = num2str(i);
 %     plt.setup_W_plt('fig_dir', fullfile(figdir,'parameter_recovery'),...
