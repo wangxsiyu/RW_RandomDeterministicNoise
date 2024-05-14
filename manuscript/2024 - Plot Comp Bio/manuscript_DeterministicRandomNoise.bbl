@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -62,6 +62,19 @@ Olivier Chapelle and Lihong Li.
 \newblock URL
   \url{http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf}.
 
+\bibitem[Costa et~al.(2019)Costa, Mitz, and Averbeck]{costa1}
+V.~D. Costa, A.~R. Mitz, and B.~B. Averbeck.
+\newblock Subcortical substrates of explore-exploit decisions in primates.
+\newblock \emph{Neuron}, 103\penalty0 (3):\penalty0 533--545 e5, 2019.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Print) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2019.05.017}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/31196672}.
+\newblock Costa, Vincent D Mitz, Andrew R Averbeck, Bruno B eng Z99
+  MH999999/ImNIH/Intramural NIH HHS/ ZIA MH002928/ImNIH/Intramural NIH HHS/ ZIA
+  MH002928-09/ImNIH/Intramural NIH HHS/ Research Support, N.I.H., Intramural
+  2019/06/15 Neuron. 2019 Aug 7;103(3):533-545.e5. doi:
+  10.1016/j.neuron.2019.05.017. Epub 2019 Jun 10.
+
 \bibitem[Depaoli et~al.(2016)Depaoli, Clifton, and Cobb]{jags}
 Sarah Depaoli, James~P. Clifton, and Patrice~R. Cobb.
 \newblock Just another gibbs sampler (jags): Flexible software for mcmc
@@ -77,6 +90,26 @@ J.~Drugowitsch, V.~Wyart, A.~D. Devauchelle, and E.~Koechlin.
 \newblock {{C}omputational {P}recision of {M}ental {I}nference as {C}ritical
   {S}ource of {H}uman {C}hoice {S}uboptimality}.
 \newblock \emph{Neuron}, 92\penalty0 (6):\penalty0 1398--1411, Dec 2016.
+
+\bibitem[Ebitz et~al.(2018)Ebitz, Albarran, and Moore]{Ebitz18}
+R.~B. Ebitz, E.~Albarran, and T.~Moore.
+\newblock Exploration disrupts choice-predictive signals and alters dynamics in
+  prefrontal cortex.
+\newblock \emph{Neuron}, 97\penalty0 (2):\penalty0 475, 2018.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2018.01.011}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/29346756}.
+\newblock Ebitz, R Becket Albarran, Eddy Moore, Tirin eng Published Erratum
+  2018/01/19 Neuron. 2018 Jan 17;97(2):475. doi: 10.1016/j.neuron.2018.01.011.
+
+\bibitem[Feng et~al.(2021)Feng, Wang, Zarnescu, and Wilson]{Feng21}
+Samuel~F. Feng, Siyu Wang, Sylvia Zarnescu, and Robert~C. Wilson.
+\newblock The dynamics of explore–exploit decisions reveal a signal-to-noise
+  mechanism for random exploration.
+\newblock \emph{Scientific Reports}, 11\penalty0 (1):\penalty0 3077, 2021.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-021-82530-8}.
+\newblock URL \url{https://doi.org/10.1038/s41598-021-82530-8}.
 
 \bibitem[Findling et~al.(2019)Findling, Skvortsova, Dromnelle, Palminteri, and
   Wyart]{Findling19}
@@ -104,6 +137,24 @@ J.~C. Gittins and D.~M. Jones.
 \newblock {A dynamic allocation index for the sequential design of
   experiments}.
 \newblock \emph{Progress in Statistics}, 1974.
+
+\bibitem[Hogeveen et~al.(2022)Hogeveen, Mullins, Romero, Eversole,
+  Rogge-Obando, Mayer, and Costa]{costa22}
+J.~Hogeveen, T.~S. Mullins, J.~D. Romero, E.~Eversole, K.~Rogge-Obando, A.~R.
+  Mayer, and V.~D. Costa.
+\newblock The neurocomputational bases of explore-exploit decision-making.
+\newblock \emph{Neuron}, 110\penalty0 (11):\penalty0 1869--1879 e5, 2022.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Print) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2022.03.014}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/35390278}.
+\newblock Hogeveen, Jeremy Mullins, Teagan S Romero, John D Eversole, Elizabeth
+  Rogge-Obando, Kimberly Mayer, Andrew R Costa, Vincent D eng P51
+  OD011092/OD/NIH HHS/ P30 GM122734/GM/NIGMS NIH HHS/ ZIA
+  MH002929/ImNIH/Intramural NIH HHS/ P20 GM109089/GM/NIGMS NIH HHS/ ZIA
+  MH002928/ImNIH/Intramural NIH HHS/ R01 MH125824/MH/NIMH NIH HHS/ Research
+  Support, N.I.H., Extramural Research Support, N.I.H., Intramural Research
+  Support, U.S. Gov't, Non-P.H.S. 2022/04/08 Neuron. 2022 Jun
+  1;110(11):1869-1879.e5. doi: 10.1016/j.neuron.2022.03.014. Epub 2022 Apr 6.
 
 \bibitem[Lee and Wagenmakers(2014{\natexlab{a}})]{lee2014}
 Michael~D. Lee and Eric-Jan Wagenmakers.
@@ -171,6 +222,20 @@ William~R. Thompson.
 \newblock ISSN 00063444.
 \newblock URL \url{http://www.jstor.org/stable/2332286}.
 
+\bibitem[Tomov et~al.(2020)Tomov, Truong, Hundia, and Gershman]{Tomov20}
+M.~S. Tomov, V.~Q. Truong, R.~A. Hundia, and S.~J. Gershman.
+\newblock Dissociable neural correlates of uncertainty underlie different
+  exploration strategies.
+\newblock \emph{Nat Commun}, 11\penalty0 (1):\penalty0 2371, 2020.
+\newblock ISSN 2041-1723 (Electronic) 2041-1723 (Linking).
+\newblock \doi{10.1038/s41467-020-15766-z}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/32398675}.
+\newblock Tomov, Momchil S Truong, Van Q Hundia, Rohan A Gershman, Samuel J eng
+  R01 MH109177/MH/NIMH NIH HHS/ S10 OD020039/OD/NIH HHS/ Research Support,
+  N.I.H., Extramural Research Support, Non-U.S. Gov't Research Support, U.S.
+  Gov't, Non-P.H.S. England 2020/05/14 Nat Commun. 2020 May 12;11(1):2371. doi:
+  10.1038/s41467-020-15766-z.
+
 \bibitem[Watkins(1989)]{eewatkins89}
 C.~J. C.~H. Watkins.
 \newblock {Learning from delayed rewards.}
@@ -190,6 +255,12 @@ Robert~C. Wilson and Anne~G.E. Collins.
 \newblock \emph{eLife}, 2019.
 \newblock ISSN 2050084X.
 \newblock \doi{10.7554/eLife.49547}.
+
+\bibitem[Wilson et~al.(2020)Wilson, Wang, Sadeghiyeh, and Cohen]{Wilson2020}
+Robert~C Wilson, Siyu Wang, Hashem Sadeghiyeh, and Jonathan~D Cohen.
+\newblock Deep exploration as a unifying account of explore-exploit behavior,
+  Feb 2020.
+\newblock URL \url{osf.io/preprints/psyarxiv/uj85c}.
 
 \bibitem[Wilson et~al.(2021)Wilson, Bonawitz, Costa, and Ebitz]{WILSON202149}
 Robert~C Wilson, Elizabeth Bonawitz, Vincent~D Costa, and R~Becket Ebitz.

@@ -197,6 +197,53 @@
 	\end{figure}
 	\newpage
 	\subsection{Fitting variations of the two-noise model to the data}
+	
+	\subsubsection*{Comparison with alternative models}
+	COULD POTENTIALLY MOVE THIS TO THE SUPPLEMENT
+	
+	To check whether all aspects of the model were necessary to reproduce the qualitative pattern of findings, we also built and fit five additional versions of the model. These models varied \added[id=siyu]{in} whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. \added[id=siyu]{Specifically, we tested the following 6 models (Note that the $\sigma^{ran}_{horizon},\sigma^{det}_{horizon}$ model is our original full model).}
+	
+	\begin{table}[h]
+		\small
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Model & Deterministic noise & Random noise \\
+			\hline
+			$\sigma^{ran}_{horizon},\sigma^{det}_{horizon}$  & Horizon dependent & Horizon dependent\\
+			\hline
+			$\sigma^{ran}_{horizon},\sigma^{det}_{}$ & Fixed & Horizon dependent\\
+			\hline
+			$\sigma^{ran}_{},\sigma^{det}_{horizon}$ & Horizon dependent & Fixed\\
+			\hline
+			$\sigma^{ran}_{},\sigma^{det}_{}$ & Fixed & Fixed\\
+			\hline
+			$\sigma^{ran}_{horizon}$ & Horizon dependent & None\\
+			\hline
+			$\sigma^{det}_{horizon}$ & None & Horizon dependent\\
+			\hline
+		\end{tabular}
+		\caption{Variants of the model.}
+		\label{tab:models}	
+	\end{table}
+	\added[id=siyu]{
+		The posterior distributions over the group-level means of the deterministic and random noise standard deviation $\sigma_{det}$ and $\sigma_{ran}$ (when they exist) in these model variants are shown in Supplementary Figure S9. We again simulated choices using fitted parameters from these models and repeated the model-free analysis on the simulated data. 
+	}As shown in Supplementary Figure S10, only one of these models, where random noise is horizon dependent but deterministic noise is not, can capture the full qualitative pattern of \replaced[id=siyu]{behavior}{responding}. However, the quantitative fit to the data is not as good (Supplementary Figure S10).% SIYU says: they actually look quite similar, without horizon dependent deterministic noise, the fixed det noise model is only marginally worse on p(inconsistent) in [2 2] condition, as it overlaps with the pure random noise line more.
+	
+	\added[id=siyu]{
+		Moreover, we examined if our model can indeed qualitatively capture whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. To test this, we simulated choices from each of the 6 models, and then fit the simulated choices with our original full model. The simulation was repeated 50 times for each model. Indeed, we showed that our model can capture both the existence of random and deterministic noise, and whether each noise changes with horizon condition (Figure \ref{fig:6model}), with only one exception that our model falsely detected a small fraction of deterministic noise when no deterministic noise was present (Figure \ref{fig:6model}, S). This phenomenon was also examined and discussed in the section "Model validation" above.
+	}
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.8\textwidth]{figures/RDBayes_2noise_hyperprior_6model_recovery.jpg}
+			\caption{
+				Our model qualitatively captures whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
+			\label{fig:6model}
+		\end{center}
+	\end{figure}
+	
+	
 	\begin{figure}[hp]
 		\begin{center}
 			\includegraphics[width=0.8\textwidth]{figures/RDBayes_2noise_hyperpriors_6model.jpg}

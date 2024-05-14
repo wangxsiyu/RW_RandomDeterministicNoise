@@ -10,4 +10,4 @@
 \contentsline {section}{\numberline {3}Additional model-based analyses}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Replication of Figure 4 without excluding subjects}{17}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Fitting variations of the two-noise model to the data}{18}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Model comparison: Posterior checks using variations of the two-noise model}{20}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Model comparison: Posterior checks using variations of the two-noise model}{21}{subsection.3.3}%

@@ -272,14 +272,12 @@ Thus, overall, we were able to detect both deterministic and random noises using
 
 
 \subsubsection*{Model-based results} 
-
-Posterior distributions over the group-level means of the deterministic and random noise standard deviation $\sigma_{det}$ and $\sigma_{ran}$ are shown in Figure \ref{fig:mb1} and Supplementary Figure S8. Consistent with our model-free results, we see that both random and deterministic noise are non-zero. \replaced[id=siyu]{Numerically,}{and that} random noise is about 2-3 times larger than the deterministic noise. \added[id=siyu]{By computing the posterior distribution of $\sigma^2_{det}/(\sigma^2_{det}+\sigma^2_{ran})$, our data suggests that 14.25\% of the variability in random exploration is accounted for by deterministic noise ([4.90\%, 28.81\%], 95\% CI).} In addition, we find that both random and deterministic noise increase with horizon. This increase was larger for random noise (mean = 7.13, 100\% of samples showed an increase in random noise with horizon) than deterministic noise (mean = 2.59, 98.64\% of samples showed an increase in deterministic noise with horizon). But intriguingly, the relative increase in both types of noise was \replaced[id=siyu]{similar}{the same} (Figure \ref{fig:ratio}). That is, when we compute the relative increase in deterministic noise with horizon, $\sigma^{det}_{horizon6}/\sigma^{det}_{horizon1}$, it is \replaced[id=siyu]{very similar}{almost identical} to the relative increase in random noise with horizon $\sigma^{ran}_{horizon6}/\sigma^{ran}_{horizon1}$. 
-%BOB SAYS: CHECK NOTATION HERE AND INSERT FIGURE SHOWING RATIO  
+Posterior distributions over the group-level means of the deterministic and random noise standard deviation $\sigma_{det}$ and $\sigma_{ran}$ are shown in Figure \ref{fig:mb1} and Supplementary Figure S11. Consistent with our model-free results, we see that both random and deterministic noise are non-zero. Numerically, random noise is about 2-3 times larger than the deterministic noise. By computing the posterior distribution of $\sigma^2_{det}/(\sigma^2_{det}+\sigma^2_{ran})$, our data suggests that 14.25\% of the variability in random exploration is accounted for by deterministic noise ([4.90\%, 28.81\%], 95\% CI). In addition, we find that both random and deterministic noise increase with horizon. This increase was larger for random noise (mean = 7.13, 100\% of samples showed an increase in random noise with horizon) than deterministic noise (mean = 2.59, 98.64\% of samples showed an increase in deterministic noise with horizon). But intriguingly, the relative increase in both types of noise was similar (Figure \ref{fig:ratio}). That is, when we compute the relative increase in deterministic noise with horizon, $\sigma^{det}_{horizon6}/\sigma^{det}_{horizon1}$, it is very similar to the relative increase in random noise with horizon $\sigma^{ran}_{horizon6}/\sigma^{ran}_{horizon1}$. 
 
 \begin{figure}[H]
 \begin{center}
 	\includegraphics[width=0.7\textwidth]{figures/RDBayes_hyperprior.jpg}
-	\caption{\added[id=bob]{TITLE ON B AND D SHOULD SAY `CHANGE IN RANDOM NOISE'}Model based analysis showing the posterior distributions over the group-level mean of the standard deviations of  random and deterministic noise. Both random (A, B) and deterministic (C,D) noises are nonzero (A, C) and change with horizon (B, D).  However, random noise has both a greater magnitude overall (A, C) and a greater change with horizon (B, D) than deterministic noise.}
+	\caption{Model based analysis showing the posterior distributions over the group-level mean of the standard deviations of  random and deterministic noise. Both random (A, B) and deterministic (C,D) noises are nonzero (A, C) and change with horizon (B, D).  However, random noise has both a greater magnitude overall (A, C) and a greater change with horizon (B, D) than deterministic noise.}
 	%BOB SAYS: DON'T NEED THE NUMBERS ON THE Y-AXES. 
 	\label{fig:mb1}
 \end{center}
@@ -296,67 +294,17 @@ Posterior distributions over the group-level means of the deterministic and rand
 \subsubsection*{Posterior predictive checks}
 In addition to fitting the model to behavior, it is also important to check whether the model captures the qualitative patterns of the data \citep{Wilson2019} --- specifically how p(high info), p(low mean) and p(inconsistent) change with horizon.
 
-To perform this `posterior predictive check,' we created a set of simulated data by taking the subject-level parameters from the hierarchical Bayesian fits and having the model play the same sequence of games as seen by the subjects. We then applied the same model-free analysis as described in the previous sections to this simulated data set and compared the model's behavior to that of participants. As shown in Figure  \ref{fig:mb3}, the model can account for all qualitative patterns in the data --- the increase in p(high info), p(low mean), and p(inconsistent) with horizon, and that p(inconsistent) is in between pure random and pure deterministic noise.  The quantitative agreement is almost perfect for p(high info) and for p(inconsistent) in the [1 3] condition, but the model seems to systematically overestimate p(low mean) and p(inconsistent) in [2 2] conditions, although the discrepancy is relatively small (overestimating p(low mean) by 0.054 or 31.37\%, and p(inconsistent) by 0.049 or 27.83\% in [2 2] condition).
+To perform this `posterior predictive check,' we created a set of simulated data by taking the subject-level parameters from the hierarchical Bayesian fits and having the model play the same sequence of games as seen by the subjects. We then applied the same model-free analysis as described in the previous sections to this simulated data set and compared the model's behavior to that of participants. As shown in Figure \ref{fig:mb3}, the model can account for all qualitative patterns in the data --- the increase in p(high info), p(low mean), and p(inconsistent) with horizon, and that p(inconsistent) is in between pure random and pure deterministic noise. The quantitative agreement is almost perfect for p(high info) and for p(inconsistent) in the [1 3] condition, but the model seems to systematically overestimate p(low mean) and p(inconsistent) in [2 2] conditions, although the discrepancy is relatively small (overestimating p(low mean) by 0.054 or 31.37\%, and p(inconsistent) by 0.049 or 27.83\% in [2 2] condition).
 
 \begin{figure}[H]
 \begin{center}
 	\includegraphics[width=1\textwidth]{figures/RDBayes_2noise_modelA.jpg}
 	\caption{
-		% BOB SAYS: KEEP THE TOP LINE OF THIS FIGURE FOR THE MAIN PAPER AND MOVE THE FULL FIGURE TO SUPPLEMENTARY MATERIAL TO FIT DESCRIPTION IN TEXT.  
-		% ALSO MAKE THE FOLLOWING CHANGES: THIS FIGURE NEEDS A LEGEND IN TOP RIGHT TO SAY WHICH LINE IS MODEL AND WHICH IS NOT.  I WOULD ALSO USE TEXTBOXES (in Matlab annotation('textbox', [0 0 1 1], 'string', 'hi') will get you started) TO DESCRIBE THE MODELS RATHER THAN LABELLING MODEL A ETC ... COULD EVEN HAVE SOME FORM OF TABLE 1 ON THE LEFT HAND SIDE - SO A COLUMN FOR DETERMINISTIC NOISE AND A COLUMN FOR RANDOM NOISE.
 		Our model accounts for all qualitative patterns of the data, namely, p(high info) and p(low mean) increase as a function of horizon, p(inconsistent) increases as a function of horizon for both [1 3] and [2 2] conditions and lies between the pure random and pure deterministic noise prediction.}
 	\label{fig:mb3}
 \end{center}
 \end{figure}
 
-\subsubsection*{Comparison with alternative models}
-COULD POTENTIALLY MOVE THIS TO THE SUPPLEMENT
-
-To check whether all aspects of the model were necessary to reproduce the qualitative pattern of findings, we also built and fit five additional versions of the model. These models varied \added[id=siyu]{in} whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. \added[id=siyu]{Specifically, we tested the following 6 models (Note that the $\sigma^{ran}_{horizon},\sigma^{det}_{horizon}$ model is our original full model).}
-
-\begin{table}[h]
-\small
-\centering
-\begin{tabular}{|c|c|c|}
-	\hline
-	Model & Deterministic noise & Random noise \\
-	\hline
-	$\sigma^{ran}_{horizon},\sigma^{det}_{horizon}$  & Horizon dependent & Horizon dependent\\
-	\hline
-	$\sigma^{ran}_{horizon},\sigma^{det}_{}$ & Fixed & Horizon dependent\\
-	\hline
-	$\sigma^{ran}_{},\sigma^{det}_{horizon}$ & Horizon dependent & Fixed\\
-	\hline
-	$\sigma^{ran}_{},\sigma^{det}_{}$ & Fixed & Fixed\\
-	\hline
-	$\sigma^{ran}_{horizon}$ & Horizon dependent & None\\
-	\hline
-	$\sigma^{det}_{horizon}$ & None & Horizon dependent\\
-	\hline
-\end{tabular}
-\caption{Variants of the model.}
-\label{tab:models}	
-\end{table}
-\added[id=siyu]{
-The posterior distributions over the group-level means of the deterministic and random noise standard deviation $\sigma_{det}$ and $\sigma_{ran}$ (when they exist) in these model variants are shown in Supplementary Figure S9. We again simulated choices using fitted parameters from these models and repeated the model-free analysis on the simulated data. 
-}As shown in Supplementary Figure S10, only one of these models, where random noise is horizon dependent but deterministic noise is not, can capture the full qualitative pattern of \replaced[id=siyu]{behavior}{responding}. However, the quantitative fit to the data is not as good (Supplementary Figure S10).% SIYU says: they actually look quite similar, without horizon dependent deterministic noise, the fixed det noise model is only marginally worse on p(inconsistent) in [2 2] condition, as it overlaps with the pure random noise line more.
-
-\added[id=siyu]{
-Moreover, we examined if our model can indeed qualitatively capture whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. To test this, we simulated choices from each of the 6 models, and then fit the simulated choices with our original full model. The simulation was repeated 50 times for each model. Indeed, we showed that our model can capture both the existence of random and deterministic noise, and whether each noise changes with horizon condition (Figure \ref{fig:6model}), with only one exception that our model falsely detected a small fraction of deterministic noise when no deterministic noise was present (Figure \ref{fig:6model}, S). This phenomenon was also examined and discussed in the section "Model validation" above.
-}
-
-\begin{figure}[H]
-\begin{center}
-	\includegraphics[width=0.8\textwidth]{figures/RDBayes_2noise_hyperprior_6model_recovery.jpg}
-	\caption{
-		Our model qualitatively captures whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
-	\label{fig:6model}
-\end{center}
-\end{figure}
-
-
-
-%The previous section suggests that behavioral variability in random exploration can be at least partially explained by deterministic processing of the stimulus. 
 
 %dominated by random noise. To test this more explicitly, we build a series of models in which different assumptions are made regarding the presence and absence of both types of noise and whether each type of noise if exists is horizon dependent (See Table \ref{tab:models}). In model A-D, we assumed the existence of both random and deterministic noise, in model A and B, random noise is assumed to be horizon-dependent, whereas in model A and C, deterministic noise is assumed to be horizon dependent. In model E, we assumed no random noise. In model F, we assumed no deterministic noise. 
 
@@ -370,22 +318,13 @@ Moreover, we examined if our model can indeed qualitatively capture whether dete
 
 
 \section*{Discussion}
-
-
-
-% BOB SAYS: CAN YOU TRY TO REFRAME THIS AROUND THE DETERMINISTIC STORY
-% \added[id=siyu]{Randomness in exploratory behavior can be driven by both the intrinsic variability generated in the brain (appearing in behavior as random noise) and by deterministic neural processes induced by the stimuli (appearing in behavior as deterministic noise).} 
 In this paper, we investigated whether random exploration is really random or whether it is driven deterministically by aspects of the stimulus we have previously ignored when measuring `decision noise.'  Using a version of the Horizon Task with repeated games, we found evidence that at least some of the noise in random exploration could be explained by such `deterministic noise.' In particular, we found that deterministic noise accounted for around 15\% of the overall variability in people's behavior. 
 
-%	\added[id=siyu]{We quantified the contribution of both deterministic noise (unobserved deterministic processes of the stimulus) and random noise (intrinsic stochasticity in decision making, or stimulus irrelevant processes) contribute to behavioral variability in random exploration, 
+% SUGGEST REFRAMING NEXT PARAGRAPH IN THE FOLLOWING WAY.  SIMPLE READ OF RESULTS SUGGESTS RANDOM EXPLORATION IS RANDOM - THIS IS CONSISTENT WITH X.  FOLLOWING PARA THEN GIVES LIMITATIONS AND TALKS ABOUT DETERMINISTIC INTERPRETATION.  I'VE TRIED TO DO THIS ...
 
-SUGGEST REFRAMING NEXT PARAGRAPH IN THE FOLLOWING WAY.  SIMPLE READ OF RESULTS SUGGESTS RANDOM EXPLORATION IS RANDOM - THIS IS CONSISTENT WITH X.  FOLLOWING PARA THEN GIVES LIMITATIONS AND TALKS ABOUT DETERMINISTIC INTERPRETATION.  I'VE TRIED TO DO THIS ...
+One interpretation for this low level of deterministic noise is that most of the variability in random exploration is truly random. Such a random noise interpretation, would be consistent with recent work showing that variability in perceptual decisions may be driven by imperfections in mental inference \cite{drugowitsch16}. In this view, apparently random behavior is not due to sensory processing or response selection, but to suboptimal computations in the brain. Although suboptimal inference is different from simply adding random noise to neural circuitry\citep{Pouget12}, as long as the suboptimality in neural computation is not a deterministic function of the stimuli, it is a form of random noise in our definition. Indeed, a strong interpretation of this hypothesis would suggest that randomness in explore-exploit behavior is due to imperfect inference about the correct course of action. In the context of the Horizon Task, such computational errors would likely be larger in the long horizon condition as the correct course of action in these cases is much harder to compute \citep{Wilson2020}.
 
-
-
-\added[id=bob]{One interpretation for this low level of deterministic noise is that most of the variability in random exploration is truly random. Such a random noise interpretation, would be consistent with recent work showing that variability in perceptual decisions may be driven by imperfections in mental inference \cite{drugowitsch16}. In this view, apparently random behavior is not due to sensory processing or response selection, but to suboptimal computations in the brain. Although suboptimal inference is different from simply adding random noise to neural circuitry\citep{Pouget12}, as long as the suboptimality in neural computation is not a deterministic function of the stimuli, it is a form of random noise in our definition. Indeed, a strong interpretation of this hypothesis would suggest that randomness in explore-exploit behavior is due to imperfect inference about the correct course of action. In the context of the Horizon Task, such computational errors would likely be larger in the long horizon condition as the correct course of action in these cases is much harder to compute CITE DEEP EXPLORATION PAPER.}
-
-While the random noise interpretation is theoretically appealing, our approach, while an improvement on previous methods, is not without limitations. Most important is that our measure of `random' noise is only an upper bound on the true level of randomness and that, in principle, the random decision noise could be lower. Specifically, in our model, what we labeled random noise was really `non-stimulus-driven variability.' While this non-stimulus-driven variability could be driven by truly random stochastic processes, it could also be driven by deterministic processing that is unrelated to the stimuli in the task. For example, such deterministic noise could be driven by differences in where people look, or for how long they look, or by whether they were fidgeting or scratching their nose \citep{Musall2019}. In addition to this conceptual limitation in measuring deterministic noise, parameter recovery simulations suggest that our estimation method also slightly underestimates deterministic noise (see Figure \ref{fig:coverage2}, Supplementary Figure S6). As a result, from both a conceptual and methodological perspective, it is possible that the remaining 85\% of the decision noise that is not stimulus-driven noise, could be deterministic.
+Although the random noise interpretation is theoretically appealing, our approach, while an improvement on previous methods, is not without limitations. Most important is that our measure of `random' noise is only an upper bound on the true level of randomness and that, in principle, the random decision noise could be lower. Specifically, in our model, what we labeled random noise was really `non-stimulus-driven variability'. While this non-stimulus-driven variability could be driven by truly random stochastic processes, it could also be driven by deterministic processing that is unrelated to the stimuli in the task. For example, such deterministic noise could be driven by differences in where people look, or for how long they look, or by whether they were fidgeting or scratching their nose \citep{Musall2019}. In addition to this conceptual limitation in measuring deterministic noise, parameter recovery simulations suggest that our estimation method also slightly underestimates deterministic noise (see Figure \ref{fig:paramrecover_main}, Supplementary Figure S5, S6). As a result, from both a conceptual and methodological perspective, it is possible that the remaining 85\% of the decision noise that is not stimulus-driven noise, could be deterministic.
 
 Like the random noise account, the deterministic noise account is also in line with previous work in which neural variability can be accounted for by fluctuations in sensory inputs. For example, MT neurons were shown to have a reproducible temporal modulation in response to a fixed random motion stimuli \citep{Bair1996}. In other words, `irrelevant' features in the stimuli are represented in a reliable way in the brain that could drive downstream choices in a predictable way. 
 
@@ -393,7 +332,7 @@ Like the random noise account, the deterministic noise account is also in line w
 
 Regardless of whether we interpret the noise as random or deterministic, a key finding in this paper is that both types of noise change with horizon. Such a horizon increase is a hallmark of an exploratory process and suggests that the modulation of deterministic and random processes may underlie random exploration. Moreover, the fact that the horizon change in the two types of noise are proportional to each other (Figure \ref{fig:ratio}) suggests a possible mechanism for random exploration: a reduction in the strength with which reward drives the choice. 
 
-To see how a change in reward processing could affect random and deterministic noise, consider the simple decision model we introduced in Equation XXX. In this model, choice is determined by the sign of the difference in utility $\Delta Q$ between the two options, where
+To see how a change in reward processing could affect random and deterministic noise, consider the simple decision model we introduced in Equation \ref{eq:newmodel}. In this model, choice is determined by the sign of the difference in utility $\Delta Q$ between the two options, where
 \begin{equation}
 	\label{eq:noise1}
 	\Delta Q = 
@@ -413,7 +352,7 @@ Because the choice only depends on the sign of $\Delta Q$, scaling $\Delta Q$ by
 \end{equation}
 which is equivalent to a scaling of both deterministic and random noise by the same factor $1/\beta$. Thus, one interpretation of our result that both deterministic and random noise change across horizons with the same ratio, is that this reflects a change in reward processing. That is, the reward signal is reduced in the longer horizon condition (smaller $\beta$ in horizon 6 than horizon 1).  %In the alternate interpretation, where deterministic and random noise are varied independently it is not clear why they should change by the same scale factor.
 
-Such a reduction in the strength of reward coding in exploration, is consistent with our recent work using a drift diffusion model (DDM) to model explore-exploit decisions CITE FENG ET AL. In the drift diffusion model, changes in behavioral variability can be driven by changes in the decision threshold (smaller threshold = more noise) or changes in the signal-to-noise ratio with which reward is encoded (lower SNR = more noise). By fitting both choices and response times, we were able to distinguish between these two accounts showing that the majority of the horizon-change in variability was driven by changes in SNR not threshold.  However, this model could not determine whether the changes in SNR were driven by signal or noise. By showing that the change in deterministic and random noise have the same ratio, the present work suggests that this SNR change is driven by changes in reward-signal processing, not noise. Of course, to truly see whether changes in signal or noise are driving random exploration will require more direct measurements of neural processing such as with neuroimaging and electrophysiology (CITE TOMOV GERSHMAN FMRI, CITE EBITZ).
+Such a reduction in the strength of reward coding in exploration, is consistent with our recent work using a drift diffusion model (DDM) to model explore-exploit decisions \citep{Feng21}. In the drift diffusion model, changes in behavioral variability can be driven by changes in the decision threshold (smaller threshold = more noise) or changes in the signal-to-noise ratio with which reward is encoded (lower SNR = more noise). By fitting both choices and response times, we were able to distinguish between these two accounts showing that the majority of the horizon-change in variability was driven by changes in SNR not threshold. However, this model could not determine whether the changes in SNR were driven by signal or noise. By showing that the change in deterministic and random noise have the same ratio, the present work suggests that this SNR change is driven by changes in reward-signal processing, not noise. Of course, to truly see whether changes in signal or noise are driving random exploration will require more direct measurements of neural processing such as with neuroimaging and electrophysiology \citep{Tomov20, Ebitz18,costa1,costa22}
 
 
 
@@ -518,7 +457,7 @@ Such a reduction in the strength of reward coding in exploration, is consistent 
 \section*{Materials and Methods}
 \subsection*{Participants}
 
-80 participants (ages 18-25, 37 male, 43 female) from the University of Arizona undergraduate subject pool participated in the experiment. 14 were excluded on the basis of performance, using the same exclusion criterion as in \citep{wilson2014}. In this exclusion criteria, we measured the accuracy of each participant's choices by calculating the percentage of times that a participant chose the bandit with the higher underlying mean payouts in the last choice of a long horizon game, intuitively people should figure out which bandit has a higher mean payout by the last trial and should have an accuracy measure significantly above 50\%, specifically, we computed the likelihood that the measured accuracy can be achieved \deleted[id=siyu]{driven}by making a completely random choice between the two options and excluded participants with a likelihood smaller than 99.999\%, in other words, participants who didn't show an accuracy significant above chance with $p < 0.001$ were excluded in the analysis. This left 65 for the main analysis. Note that including the 15 badly performing subjects did not change the main results (Supplementary Figures 1 - 3)% MAKE AND INCLUDE REPLICAS OF ALL FIGS BUT WITH ALL SUBJECTS
+80 participants (ages 18-25, 37 male, 43 female) from the University of Arizona undergraduate subject pool participated in the experiment. 14 were excluded on the basis of performance, using the same exclusion criterion as in \citep{wilson2014}. In this exclusion criteria, we measured the accuracy of each participant's choices by calculating the percentage of times that a participant chose the bandit with the higher underlying mean payouts in the last choice of a long horizon game, intuitively people should figure out which bandit has a higher mean payout by the last trial and should have an accuracy measure significantly above 50\%, specifically, we computed the likelihood that the measured accuracy can be achieved by making a completely random choice between the two options and excluded participants with a likelihood smaller than 99.999\%, in other words, participants who didn't show an accuracy significant above chance with $p < 0.001$ were excluded in the analysis. This left 65 for the main analysis. Note that including the 15 badly performing subjects did not change the main results (Supplementary Figures S1, S2, S11)
 
 \subsection*{Task}
 The task was a modified version of the Horizon Task \citep{wilson2014} (Figure \ref{fig:taskfig}). In this task, participants play a set of games in which they make choices between two slot machines (one-armed bandits) that pay out rewards from different Gaussian distributions. In each game they made multiple decisions between two options. Each option paid out a random reward between 1 and 100 points sampled from a Gaussian distribution. The means of the underlying Gaussians were different for the two bandit options, remained the same within a game, but changed with each new game. One of the bandits always had a higher mean than the other. Participants were instructed to maximize the points earned over the entire task. To maximize their rewards in each game, participants need to exploit the slot machine with the highest mean, but they cannot identify this best option without exploring both options first. 
@@ -533,7 +472,7 @@ Each game consisted of 5 or 10 choices. Every game started with a fixation cross
 The first four trials of each game were forced-choice trials, in which only one of the options was available for the participant to choose. We used these forced-choice instructed trials to manipulate the relative ambiguity of the two options, by providing the participant with different amounts of information about each bandit before their first free choice. The four forced-choice trials set up two uncertainty conditions: unequal uncertainty(or [1 3]) in which one option was forced to be played once and the other three times, and equal uncertainty(or [2 2]) in which each option was forced to be played twice. After the forced-choice trials, participants made either 1 or 6 free choices (two horizon conditions),  Figure \ref{fig:taskfig}.
 
 \subsection*{Model-based analysis}
-We modeled behavior on the first free choice of the Horizon Task using a version of the logistic choice model in \citep{wilson2014} that was modified to differentiate \replaced[id=siyu]{deterministic noise from random noise.}{between components of the noise that are deterministically driven by the stimulus (`deterministic noise') and components of the noise that are not deterministically driven by the stimulus (`random noise').}Because the stimuli are identical in the repeated games, by definition, deterministic noise remains the same in repeated games, whereas random noise can change. 
+We modeled behavior on the first free choice of the Horizon Task using a version of the logistic choice model in \citep{wilson2014} that was modified to differentiate deterministic noise from random noise. Because the stimuli are identical in the repeated games, by definition, deterministic noise remains the same in repeated games, whereas random noise can change. 
 
 \subsubsection*{Hierarchical Bayesian Model}
 

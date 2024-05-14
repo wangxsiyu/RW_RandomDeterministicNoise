@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  14 MAY 2024 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  14 MAY 2024 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1026,24 +1026,58 @@ e 193.
  [15 <./figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg>] [16 <./figures/
 RDBayes_parameterrecovery_gridsimu_all.jpg>] [17 <./figures/RDBayes_hyperprior_
 _all.jpg>]
-<figures/RDBayes_2noise_hyperpriors_6model.jpg, id=189, 1412.27625pt x 2039.62p
+Package hyperref Info: bookmark level for unknown added defaults to 0 on input 
+line 204.
+Package hyperref Info: bookmark level for unknown replaced defaults to 0 on inp
+ut line 231.
+
+
+LaTeX Warning: Reference `fig:6model' on page 18 undefined on input line 235.
+
+
+LaTeX Warning: Reference `fig:6model' on page 18 undefined on input line 235.
+
+[18]
+
+LaTeX Warning: File `figures/RDBayes_2noise_hyperprior_6model_recovery.jpg' not
+ found on input line 239.
+
+
+! Package pdftex.def Error: File `figures/RDBayes_2noise_hyperprior_6model_reco
+very.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 ...es_2noise_hyperprior_6model_recovery.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+39.
+(C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+<figures/RDBayes_2noise_hyperpriors_6model.jpg, id=198, 1412.27625pt x 2039.62p
 t>
 File: figures/RDBayes_2noise_hyperpriors_6model.jpg Graphic file (type jpg)
 <use figures/RDBayes_2noise_hyperpriors_6model.jpg>
 Package pdftex.def Info: figures/RDBayes_2noise_hyperpriors_6model.jpg  used on
- input line 202.
+ input line 249.
 (pdftex.def)             Requested size: 404.71353pt x 584.4722pt.
- [18]
-[19 <./figures/RDBayes_2noise_hyperpriors_6model.jpg>]
-<figures/RDBayes_2noise_6modelcomparison.jpg, id=200, 1421.31pt x 2045.6425pt>
+
+[19] [20 <./figures/RDBayes_2noise_hyperpriors_6model.jpg>]
+<figures/RDBayes_2noise_6modelcomparison.jpg, id=212, 1421.31pt x 2045.6425pt>
 File: figures/RDBayes_2noise_6modelcomparison.jpg Graphic file (type jpg)
 <use figures/RDBayes_2noise_6modelcomparison.jpg>
 Package pdftex.def Info: figures/RDBayes_2noise_6modelcomparison.jpg  used on i
-nput line 214.
+nput line 261.
 (pdftex.def)             Requested size: 404.71353pt x 582.48354pt.
 
 
-LaTeX Warning: Float too large for page by 14.97235pt on input line 219.
+LaTeX Warning: Float too large for page by 14.97235pt on input line 266.
 
 \Changes@OutFile=\write6
 \openout6 = `DetRanNoise_Supplementary.soc'.
@@ -1051,26 +1085,26 @@ LaTeX Warning: Float too large for page by 14.97235pt on input line 219.
 \tf@loc=\write7
 \openout7 = `DetRanNoise_Supplementary.loc'.
 
-[20] [21 <./figures/RDBayes_2noise_6modelcomparison.jpg>]
+[21] [22 <./figures/RDBayes_2noise_6modelcomparison.jpg>]
 (DetRanNoise_Supplementary.aux)
 
-Package rerunfilecheck Warning: File `DetRanNoise_Supplementary.out' has change
-d.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `DetRanNoise_Supplementary.out':
-(rerunfilecheck)             Before: C7FACA8F4BBFA51942FA399CC47DEC00;4203
-(rerunfilecheck)             After:  F8EA73A3B174DDCE66FF678E19374352;4190.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `DetRanNoise_Supplementary.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: F8EA73A3B174DDCE66FF678E19374352;4190.
  ) 
 Here is how much of TeX's memory you used:
- 24160 strings out of 478338
- 458129 string characters out of 2834777
- 722513 words of memory out of 3000000
- 42093 multiletter control sequences out of 15000+600000
- 492562 words of font info for 83 fonts, out of 8000000 for 9000
+ 24259 strings out of 478338
+ 460960 string characters out of 2834777
+ 726480 words of memory out of 3000000
+ 42163 multiletter control sequences out of 15000+600000
+ 496247 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,6n,108p,2052b,554s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,10n,108p,2052b,554s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/pub
@@ -1079,13 +1113,14 @@ nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Siyu Wang/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Siyu Wang/AppData/
 Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Siyu W
 ang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.
-pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
-b8a.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
-/utmr8a.pfb>
-Output written on DetRanNoise_Supplementary.pdf (21 pages, 2895569 bytes).
+/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.p
+fb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/u
+hvr8a.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
+es/utmb8a.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/times/utmr8a.pfb>
+Output written on DetRanNoise_Supplementary.pdf (22 pages, 2914933 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
