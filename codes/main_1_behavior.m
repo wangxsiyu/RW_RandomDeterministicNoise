@@ -1,4 +1,5 @@
 %% main analysis 2016
+addpath(genpath('../codes_support'))
 rawdatadir = '../data';
 savedir = '../data/all';
 files = dir(fullfile(rawdatadir,'Imported_EE_blinkCuriosity_2016S.csv'));

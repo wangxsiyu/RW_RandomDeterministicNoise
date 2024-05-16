@@ -258,9 +258,10 @@ Robert~C. Wilson and Anne~G.E. Collins.
 
 \bibitem[Wilson et~al.(2020)Wilson, Wang, Sadeghiyeh, and Cohen]{Wilson2020}
 Robert~C Wilson, Siyu Wang, Hashem Sadeghiyeh, and Jonathan~D Cohen.
-\newblock Deep exploration as a unifying account of explore-exploit behavior,
-  Feb 2020.
-\newblock URL \url{osf.io/preprints/psyarxiv/uj85c}.
+\newblock Deep exploration as a unifying account of explore-exploit behavior.
+\newblock Feb 2020.
+\newblock \doi{10.31234/osf.io/uj85c}.
+\newblock URL \url{https://doi.org/10.31234/osf.io/uj85c}.
 
 \bibitem[Wilson et~al.(2021)Wilson, Bonawitz, Costa, and Ebitz]{WILSON202149}
 Robert~C Wilson, Elizabeth Bonawitz, Vincent~D Costa, and R~Becket Ebitz.

@@ -7,45 +7,46 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: Refs/refs.bib
 Warning--empty journal in hbm1
 Warning--empty journal in matjags
+Warning--empty journal in Wilson2020
 You've used 31 entries,
             2773 wiz_defined-function locations,
-            834 strings with 13780 characters,
-and the built_in function-call counts, 15315 in all, are:
-= -- 1396
+            834 strings with 13786 characters,
+and the built_in function-call counts, 15343 in all, are:
+= -- 1401
 > -- 942
 < -- 16
 + -- 319
 - -- 287
-* -- 1317
-:= -- 2436
-add.period$ -- 145
+* -- 1321
+:= -- 2445
+add.period$ -- 147
 call.type$ -- 31
 change.case$ -- 185
 chr.to.int$ -- 30
-cite$ -- 64
-duplicate$ -- 629
-empty$ -- 1163
+cite$ -- 65
+duplicate$ -- 633
+empty$ -- 1161
 format.name$ -- 334
-if$ -- 3179
+if$ -- 3182
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 30
-newline$ -- 214
+missing$ -- 31
+newline$ -- 216
 num.names$ -- 126
-pop$ -- 314
+pop$ -- 311
 preamble$ -- 1
 purify$ -- 156
 quote$ -- 0
-skip$ -- 491
+skip$ -- 490
 stack$ -- 0
 substring$ -- 506
-swap$ -- 47
+swap$ -- 46
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 331
-warning$ -- 2
+warning$ -- 3
 while$ -- 120
 width$ -- 0
-write$ -- 500
-(There were 2 warnings)
+write$ -- 503
+(There were 3 warnings)
