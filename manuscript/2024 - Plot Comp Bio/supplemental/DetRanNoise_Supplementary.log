@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  16 MAY 2024 01:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  16 MAY 2024 02:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -932,7 +932,7 @@ LaTeX Font Info:    Trying to load font information for OT1+phv on input line 8
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 [2]
-Overfull \vbox (12.89574pt too high) has occurred while \output is active []
+Overfull \vbox (53.69576pt too high) has occurred while \output is active []
 
 
 [3 <./figures/RanDetNoise_modelfree__all.jpg>]
@@ -1067,12 +1067,12 @@ Overfull \vbox (37.36102pt too high) has occurred while \output is active []
 (DetRanNoise_Supplementary.aux)
 Package rerunfilecheck Info: File `DetRanNoise_Supplementary.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 33A33CB02C31D125904F8490BF4F1E06;3945.
+(rerunfilecheck)             Checksum: 080C317388B81988BAC25609DC83BCFE;3988.
  ) 
 Here is how much of TeX's memory you used:
  24173 strings out of 478338
  458632 string characters out of 2834777
- 729205 words of memory out of 3000000
+ 729424 words of memory out of 3000000
  42103 multiletter control sequences out of 15000+600000
  494147 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1089,7 +1089,7 @@ ang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmr8a.pfb>
-Output written on DetRanNoise_Supplementary.pdf (21 pages, 3174351 bytes).
+Output written on DetRanNoise_Supplementary.pdf (21 pages, 3174656 bytes).
 PDF statistics:
  270 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)

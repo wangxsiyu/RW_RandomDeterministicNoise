@@ -9,4 +9,4 @@
 \contentsline {subsection}{\numberline {2.4}Parameter recovery over a bigger range of arbitrary combinations of deterministic and random noises }{14}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Additional model-based analyses}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Replication of Figure 5 without excluding subjects}{17}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Alternative variations of the two-noise model}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Alternative models: variations of the two-noise model}{18}{subsection.3.2}%
