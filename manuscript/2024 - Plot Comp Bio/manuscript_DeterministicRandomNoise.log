@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  16 MAY 2024 02:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  17 MAY 2024 03:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,30 +945,33 @@ Package pdftex.def Info: figures/RDBayes_hyperprior.jpg  used on input line 280
 .
 (pdftex.def)             Requested size: 505.89pt x 525.16212pt.
  [15]
-<figures/RDBayes_ratio__paironly.jpg, id=224, 627.34375pt x 627.34375pt>
-File: figures/RDBayes_ratio__paironly.jpg Graphic file (type jpg)
-<use figures/RDBayes_ratio__paironly.jpg>
-Package pdftex.def Info: figures/RDBayes_ratio__paironly.jpg  used on input lin
-e 289.
+<figures/RDBayes_ratio.jpg, id=224, 627.34375pt x 627.34375pt>
+File: figures/RDBayes_ratio.jpg Graphic file (type jpg)
+<use figures/RDBayes_ratio.jpg>
+Package pdftex.def Info: figures/RDBayes_ratio.jpg  used on input line 289.
 (pdftex.def)             Requested size: 252.94499pt x 252.94327pt.
  [16 <./figures/RDBayes_hyperprior.jpg>]
-[17 <./figures/RDBayes_ratio__paironly.jpg>]
+[17 <./figures/RDBayes_ratio.jpg>]
 <figures/RDBayes_2noise_modelA.jpg, id=238, 2462.19875pt x 666.49pt>
 File: figures/RDBayes_2noise_modelA.jpg Graphic file (type jpg)
 <use figures/RDBayes_2noise_modelA.jpg>
 Package pdftex.def Info: figures/RDBayes_2noise_modelA.jpg  used on input line 
 304.
 (pdftex.def)             Requested size: 505.89pt x 136.93642pt.
- [18 <./figures/RDBayes_2noise_modelA.jpg>] [19] [20] [21] [22]
-Overfull \hbox (30.33153pt too wide) in paragraph at lines 494--527
+ [18 <./figures/RDBayes_2noise_modelA.jpg>]
+[19] [20] [21] [22]
+Overfull \hbox (30.33153pt too wide) in paragraph at lines 496--529
 [][] 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [23]
-<figures/EEHorizon_2sigma.pdf, id=332, 758.835pt x 397.485pt>
+<figures/EEHorizon_2sigma.pdf, id=334, 758.835pt x 397.485pt>
 File: figures/EEHorizon_2sigma.pdf Graphic file (type pdf)
 <use figures/EEHorizon_2sigma.pdf>
-Package pdftex.def Info: figures/EEHorizon_2sigma.pdf  used on input line 538.
+Package pdftex.def Info: figures/EEHorizon_2sigma.pdf  used on input line 540.
 (pdftex.def)             Requested size: 505.89pt x 264.99136pt.
  (manuscript_DeterministicRandomNoise.bbl [24 <./figures/EEHorizon_2sigma.pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
@@ -999,13 +1002,13 @@ Package rerunfilecheck Info: File `manuscript_DeterministicRandomNoise.out' has
 ### simple group (level 1) entered at line 118 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24033 strings out of 478338
- 456004 string characters out of 2834777
- 721871 words of memory out of 3000000
+ 24034 strings out of 478338
+ 456001 string characters out of 2834777
+ 718867 words of memory out of 3000000
  41911 multiletter control sequences out of 15000+600000
  499858 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,16n,108p,1970b,690s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,16n,108p,1970b,686s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/f
@@ -1025,10 +1028,10 @@ iyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Use
 rs/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
 /Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on manuscript_DeterministicRandomNoise.pdf (29 pages, 1351438 by
+Output written on manuscript_DeterministicRandomNoise.pdf (29 pages, 1351883 by
 tes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

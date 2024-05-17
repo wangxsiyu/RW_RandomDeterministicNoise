@@ -82,4 +82,4 @@ for mi = 1:2
     [tl, tm] = W.JAGS_density(td(:,:,2)./td(:,:,1), xbins);
     plt.plot(tm, tl, [], 'line', 'color', cols{mi});
 end
-plt.update('ratio');
+plt.update('ratio',' ');
