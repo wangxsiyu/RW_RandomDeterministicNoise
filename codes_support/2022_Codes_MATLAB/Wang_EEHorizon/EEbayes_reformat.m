@@ -5,6 +5,55 @@ function bayesdata = EEbayes_reformat(data, idxsub, modelname, maxtrial)
     data = W.tab_autofieldcombine(data);
     bayesdata.modelname = modelname;
     switch modelname
+        case '2noisemodel_2cond'
+            bayesdata.nHorizon = 2;
+            bayesdata.nSubject = length(idxsub);
+            nT = cellfun(@(x)length(x), idxsub);
+            LEN = min(max(nT),maxtrial);
+            bayesdata.nForcedTrials = 4;
+            bayesdata.nCond = 2;
+            for si = 1:bayesdata.nSubject
+                gd = data(idxsub{si},:);
+                nT = min(size(gd,1), LEN);
+                bayesdata.nTrial(si,1) = nT;
+                bayesdata.horizon(si,:) = W.extend(ceil(gd.cond_horizon'/5), LEN); 
+                % 1 is short, 2 is long
+                bayesdata.dI(si,:) = W.extend(gd.dI',LEN); % -1, 0, 1
+                bayesdata.choice(si,:) = W.extend((gd.choice(:,5)' == 2) + 0, LEN); 
+                % 1 is right, 0 is left
+                bayesdata.dR(si,:) = W.extend(gd.dR(:,4)',LEN);
+                [~, ~, ranking] = unique(gd.repeat_id);
+                bayesdata.nrepeatID(si,1) = max(ranking);
+                bayesdata.repeatID(si,:) = W.extend(ranking',LEN);
+
+                bayesdata.infocond(si,:) = W.nan_equal(bayesdata.dI(si,:), 0) + 1;
+                % 1 - [1 3], 2 - [2 2]
+                bayesdata.rpIDHorizon(si,:) = W.extend(W.arrayfun(@(x)unique(bayesdata.horizon(si,(ranking == x))), 1:bayesdata.nrepeatID(si,1)), LEN);
+                bayesdata.rpIDCond(si,:) = W.extend(W.arrayfun(@(x)unique(bayesdata.infocond(si,(ranking == x))), 1:bayesdata.nrepeatID(si,1)), LEN);
+            end
+%         case '2noisemodel_KF'
+%             bayesdata.nHorizon = 2;
+%             bayesdata.nSubject = length(idxsub);
+%             nT = cellfun(@(x)length(x), idxsub);
+%             LEN = min(max(nT),maxtrial);
+%             bayesdata.nForcedTrials = 4;
+%             bayesdata.nCond = 2;
+%             for si = 1:bayesdata.nSubject
+%                 gd = data(idxsub{si},:);
+%                 nT = min(size(gd,1), LEN);
+%                 bayesdata.nTrial(si,1) = nT;
+%                 bayesdata.horizon(si,:) = W.extend(ceil(gd.cond_horizon'/5), LEN); % 1 is short, 2 is long
+%                 bayesdata.dI(si,:) = W.extend(gd.dI',LEN); % -1, 0, 1
+%                 bayesdata.choice(si,:) = W.extend((gd.choice(:,5)' == 2) + 0, LEN); % 1 is right, 0 is left
+%                 bayesdata.dR(si,:) = W.extend(gd.dR(:,4)',LEN);
+%                 [~, ~, ranking] = unique(gd.repeat_id);
+%                 bayesdata.nrepeatID(si,1) = max(ranking);
+%                 bayesdata.repeatID(si,:) = W.extend(ranking',LEN);
+% 
+%                 bayesdata.choice4(si,1:LEN,:) = W.extend((gd.choice(:, 1:4)' == 2) + 0, LEN)';
+%                 bayesdata.reward4(si,1:LEN,:) = W.extend(gd.reward(:, 1:4)', LEN)';
+%                 bayesdata.infocond(si,:) = W.extend((gd.dI == 0)' + 1, LEN); % 1 - [1 3], 2 - [2 2]
+%             end
         case '2noisemodel'
             bayesdata.nHorizon = 2;
             bayesdata.nSubject = length(idxsub);

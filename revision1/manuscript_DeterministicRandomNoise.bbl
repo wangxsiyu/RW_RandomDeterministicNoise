@@ -1,0 +1,278 @@
+\begin{thebibliography}{31}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agrawal and Goyal(2011)]{eeAgrawal11}
+Shipra Agrawal and Navin Goyal.
+\newblock Analysis of thompson sampling for the multi-armed bandit problem,
+  2011.
+
+\bibitem[Allenby et~al.(2005)Allenby, Rossi, and McCulloch]{hbm1}
+Greg Allenby, Peter Rossi, and Robert McCulloch.
+\newblock Hierarchical bayes models: A practitioners guide.
+\newblock 01 2005.
+
+\bibitem[Bair and Koch(1996)]{Bair1996}
+Wyeth Bair and Christof Koch.
+\newblock {Temporal Precision of Spike Trains in Extrastriate Cortex of the
+  Behaving Macaque Monkey}.
+\newblock \emph{Neural Computation}, 8\penalty0 (6):\penalty0 1185--1202, 1996.
+\newblock ISSN 08997667.
+\newblock \doi{10.1162/neco.1996.8.6.1185}.
+
+\bibitem[Basu et~al.(2018)Basu, Senellart, and Bressan]{eeBasu18}
+Debabrota Basu, Pierre Senellart, and Stéphane Bressan.
+\newblock Belman: Bayesian bandits on the belief--reward manifold, 2018.
+
+\bibitem[Beck et~al.(2012)Beck, Ma, Pitkow, Latham, and Pouget]{Pouget12}
+J.~M. Beck, W.~J. Ma, X.~Pitkow, P.~E. Latham, and A.~Pouget.
+\newblock Not noisy, just wrong: the role of suboptimal inference in behavioral
+  variability.
+\newblock \emph{Neuron}, 74\penalty0 (1):\penalty0 30--9, 2012.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Print) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2012.03.016}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/22500627}.
+\newblock Beck, Jeffrey M Ma, Wei Ji Pitkow, Xaq Latham, Peter E Pouget,
+  Alexandre eng R01 EY020958/EY/NEI NIH HHS/ R01EY020958/EY/NEI NIH HHS/
+  Research Support, N.I.H., Extramural Research Support, Non-U.S. Gov't
+  Research Support, U.S. Gov't, Non-P.H.S. 2012/04/17 Neuron. 2012 Apr
+  12;74(1):30-9. doi: 10.1016/j.neuron.2012.03.016.
+
+\bibitem[Brainard(1997)]{psychtoolbox1}
+D.~H. Brainard.
+\newblock The psychophysics toolbox.
+\newblock \emph{Spatial vision}, 10\penalty0 (4):\penalty0 433–436, 1997.
+
+\bibitem[Bridle(1990)]{eebridle90}
+J.S. Bridle.
+\newblock {Training stochastic model recognition algorithms as networks can
+  lead to maximum mutual information estimates of parameters}.
+\newblock \emph{Advances in Neural Information Processing Systems}, 2:\penalty0
+  211--217, 1990.
+
+\bibitem[Chapelle and Li(2011)]{eeChapelle11}
+Olivier Chapelle and Lihong Li.
+\newblock An empirical evaluation of thompson sampling.
+\newblock In J.~Shawe-Taylor, R.~S. Zemel, P.~L. Bartlett, F.~Pereira, and
+  K.~Q. Weinberger, editors, \emph{Advances in Neural Information Processing
+  Systems 24}, pages 2249--2257. Curran Associates, Inc., 2011.
+\newblock URL
+  \url{http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf}.
+
+\bibitem[Costa et~al.(2019)Costa, Mitz, and Averbeck]{costa1}
+V.~D. Costa, A.~R. Mitz, and B.~B. Averbeck.
+\newblock Subcortical substrates of explore-exploit decisions in primates.
+\newblock \emph{Neuron}, 103\penalty0 (3):\penalty0 533--545 e5, 2019.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Print) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2019.05.017}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/31196672}.
+\newblock Costa, Vincent D Mitz, Andrew R Averbeck, Bruno B eng Z99
+  MH999999/ImNIH/Intramural NIH HHS/ ZIA MH002928/ImNIH/Intramural NIH HHS/ ZIA
+  MH002928-09/ImNIH/Intramural NIH HHS/ Research Support, N.I.H., Intramural
+  2019/06/15 Neuron. 2019 Aug 7;103(3):533-545.e5. doi:
+  10.1016/j.neuron.2019.05.017. Epub 2019 Jun 10.
+
+\bibitem[Depaoli et~al.(2016)Depaoli, Clifton, and Cobb]{jags}
+Sarah Depaoli, James~P. Clifton, and Patrice~R. Cobb.
+\newblock Just another gibbs sampler (jags): Flexible software for mcmc
+  implementation.
+\newblock \emph{Journal of Educational and Behavioral Statistics}, 41\penalty0
+  (6):\penalty0 628--649, 2016.
+\newblock \doi{10.3102/1076998616664876}.
+\newblock URL \url{https://doi.org/10.3102/1076998616664876}.
+
+\bibitem[Drugowitsch et~al.(2016)Drugowitsch, Wyart, Devauchelle, and
+  Koechlin]{drugowitsch16}
+J.~Drugowitsch, V.~Wyart, A.~D. Devauchelle, and E.~Koechlin.
+\newblock {{C}omputational {P}recision of {M}ental {I}nference as {C}ritical
+  {S}ource of {H}uman {C}hoice {S}uboptimality}.
+\newblock \emph{Neuron}, 92\penalty0 (6):\penalty0 1398--1411, Dec 2016.
+
+\bibitem[Ebitz et~al.(2018)Ebitz, Albarran, and Moore]{Ebitz18}
+R.~B. Ebitz, E.~Albarran, and T.~Moore.
+\newblock Exploration disrupts choice-predictive signals and alters dynamics in
+  prefrontal cortex.
+\newblock \emph{Neuron}, 97\penalty0 (2):\penalty0 475, 2018.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2018.01.011}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/29346756}.
+\newblock Ebitz, R Becket Albarran, Eddy Moore, Tirin eng Published Erratum
+  2018/01/19 Neuron. 2018 Jan 17;97(2):475. doi: 10.1016/j.neuron.2018.01.011.
+
+\bibitem[Feng et~al.(2021)Feng, Wang, Zarnescu, and Wilson]{Feng21}
+Samuel~F. Feng, Siyu Wang, Sylvia Zarnescu, and Robert~C. Wilson.
+\newblock The dynamics of explore–exploit decisions reveal a signal-to-noise
+  mechanism for random exploration.
+\newblock \emph{Scientific Reports}, 11\penalty0 (1):\penalty0 3077, 2021.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-021-82530-8}.
+\newblock URL \url{https://doi.org/10.1038/s41598-021-82530-8}.
+
+\bibitem[Findling et~al.(2019)Findling, Skvortsova, Dromnelle, Palminteri, and
+  Wyart]{Findling19}
+C.~Findling, V.~Skvortsova, R.~Dromnelle, S.~Palminteri, and V.~Wyart.
+\newblock Computational noise in reward-guided learning drives behavioral
+  variability in volatile environments.
+\newblock \emph{Nat Neurosci}, 22\penalty0 (12):\penalty0 2066--2077, 2019.
+\newblock ISSN 1097-6256.
+\newblock \doi{10.1038/s41593-019-0518-9}.
+\newblock 1546-1726 Findling, Charles Skvortsova, Vasilisa Dromnelle, Rémi
+  Palminteri, Stefano Orcid: 0000-0001-5768-6646 Wyart, Valentin Orcid:
+  0000-0001-6522-7837 Journal Article Research Support, Non-U.S. Gov't United
+  States 2019/10/30 Nat Neurosci. 2019 Dec;22(12):2066-2077. doi:
+  10.1038/s41593-019-0518-9. Epub 2019 Oct 28.
+
+\bibitem[Gershman(2018)]{Gershman2018}
+Samuel~J. Gershman.
+\newblock {Deconstructing the human algorithms for exploration}.
+\newblock \emph{Cognition}, 2018.
+\newblock ISSN 18737838.
+\newblock \doi{10.1016/j.cognition.2017.12.014}.
+
+\bibitem[Gittins and Jones(1974)]{eegittins74}
+J.~C. Gittins and D.~M. Jones.
+\newblock {A dynamic allocation index for the sequential design of
+  experiments}.
+\newblock \emph{Progress in Statistics}, 1974.
+
+\bibitem[Hogeveen et~al.(2022)Hogeveen, Mullins, Romero, Eversole,
+  Rogge-Obando, Mayer, and Costa]{costa22}
+J.~Hogeveen, T.~S. Mullins, J.~D. Romero, E.~Eversole, K.~Rogge-Obando, A.~R.
+  Mayer, and V.~D. Costa.
+\newblock The neurocomputational bases of explore-exploit decision-making.
+\newblock \emph{Neuron}, 110\penalty0 (11):\penalty0 1869--1879 e5, 2022.
+\newblock ISSN 1097-4199 (Electronic) 0896-6273 (Print) 0896-6273 (Linking).
+\newblock \doi{10.1016/j.neuron.2022.03.014}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/35390278}.
+\newblock Hogeveen, Jeremy Mullins, Teagan S Romero, John D Eversole, Elizabeth
+  Rogge-Obando, Kimberly Mayer, Andrew R Costa, Vincent D eng P51
+  OD011092/OD/NIH HHS/ P30 GM122734/GM/NIGMS NIH HHS/ ZIA
+  MH002929/ImNIH/Intramural NIH HHS/ P20 GM109089/GM/NIGMS NIH HHS/ ZIA
+  MH002928/ImNIH/Intramural NIH HHS/ R01 MH125824/MH/NIMH NIH HHS/ Research
+  Support, N.I.H., Extramural Research Support, N.I.H., Intramural Research
+  Support, U.S. Gov't, Non-P.H.S. 2022/04/08 Neuron. 2022 Jun
+  1;110(11):1869-1879.e5. doi: 10.1016/j.neuron.2022.03.014. Epub 2022 Apr 6.
+
+\bibitem[Lee and Wagenmakers(2014{\natexlab{a}})]{lee2014}
+Michael~D. Lee and Eric-Jan Wagenmakers.
+\newblock \emph{Bayesian Cognitive Modeling: A Practical Course}.
+\newblock Cambridge University Press, 2014{\natexlab{a}}.
+\newblock \doi{10.1017/CBO9781139087759}.
+
+\bibitem[Lee and Wagenmakers(2014{\natexlab{b}})]{lee_wagenmakers_2014}
+Michael~D. Lee and Eric-Jan Wagenmakers.
+\newblock \emph{Bayesian Cognitive Modeling: A Practical Course}.
+\newblock Cambridge University Press, 2014{\natexlab{b}}.
+\newblock \doi{10.1017/CBO9781139087759}.
+
+\bibitem[Mehlhorn et~al.(2015)Mehlhorn, Newell, Todd, Lee, Morgan, Braithwaite,
+  Hausmann, Fiedler, and Gonzalez]{Mehlhorn15}
+Katja Mehlhorn, Ben Newell, Peter Todd, Michael Lee, Kate Morgan, Victoria
+  Braithwaite, Daniel Hausmann, Klaus Fiedler, and Cleotilde Gonzalez.
+\newblock Unpacking the exploration–exploitation tradeoff: A synthesis of
+  human and animal literatures.
+\newblock \emph{Decision}, 2, 07 2015.
+\newblock \doi{10.1037/dec0000033}.
+
+\bibitem[Musall et~al.(2019)Musall, Kaufman, Juavinett, Gluf, and
+  Churchland]{Musall2019}
+S.~Musall, M.~T. Kaufman, A.~L. Juavinett, S.~Gluf, and A.~K. Churchland.
+\newblock Single-trial neural dynamics are dominated by richly varied
+  movements.
+\newblock \emph{Nat Neurosci}, 22\penalty0 (10):\penalty0 1677--1686, 2019.
+\newblock ISSN 1546-1726 (Electronic) 1097-6256 (Print) 1097-6256 (Linking).
+\newblock \doi{10.1038/s41593-019-0502-4}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/31551604}.
+\newblock Musall, Simon Kaufman, Matthew T Juavinett, Ashley L Gluf, Steven
+  Churchland, Anne K eng R01 EY022979/EY/NEI NIH HHS/ Research Support, N.I.H.,
+  Extramural Research Support, Non-U.S. Gov't Research Support, U.S. Gov't,
+  Non-P.H.S. 2019/09/26 Nat Neurosci. 2019 Oct;22(10):1677-1686. doi:
+  10.1038/s41593-019-0502-4. Epub 2019 Sep 24.
+
+\bibitem[Pelli(1997)]{psychtoolbox2}
+D.~G. Pelli.
+\newblock {{T}he {V}ideo{T}oolbox software for visual psychophysics:
+  transforming numbers into movies}.
+\newblock \emph{Spat Vis}, 10\penalty0 (4):\penalty0 437--442, 1997.
+
+\bibitem[Schulz and Gershman(2019)]{SCHULZ20197}
+Eric Schulz and Samuel~J. Gershman.
+\newblock The algorithmic architecture of exploration in the human brain.
+\newblock \emph{Current Opinion in Neurobiology}, 55:\penalty0 7--14, 2019.
+\newblock ISSN 0959-4388.
+\newblock \doi{https://doi.org/10.1016/j.conb.2018.11.003}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0959438818300904}.
+\newblock Machine Learning, Big Data, and Neuroscience.
+
+\bibitem[Steyvers(2011)]{matjags}
+M.~Steyvers.
+\newblock {{m}atjags. An interface for MATLAB to JAGS version 1.3.}
+\newblock 2011.
+\newblock URL \url{http://psiexp.ss.uci.edu/research/programs_data/jags/}.
+
+\bibitem[Thompson(1933)]{eethompson33}
+William~R. Thompson.
+\newblock On the likelihood that one unknown probability exceeds another in
+  view of the evidence of two samples.
+\newblock \emph{Biometrika}, 25\penalty0 (3/4):\penalty0 285--294, 1933.
+\newblock ISSN 00063444.
+\newblock URL \url{http://www.jstor.org/stable/2332286}.
+
+\bibitem[Tomov et~al.(2020)Tomov, Truong, Hundia, and Gershman]{Tomov20}
+M.~S. Tomov, V.~Q. Truong, R.~A. Hundia, and S.~J. Gershman.
+\newblock Dissociable neural correlates of uncertainty underlie different
+  exploration strategies.
+\newblock \emph{Nat Commun}, 11\penalty0 (1):\penalty0 2371, 2020.
+\newblock ISSN 2041-1723 (Electronic) 2041-1723 (Linking).
+\newblock \doi{10.1038/s41467-020-15766-z}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/32398675}.
+\newblock Tomov, Momchil S Truong, Van Q Hundia, Rohan A Gershman, Samuel J eng
+  R01 MH109177/MH/NIMH NIH HHS/ S10 OD020039/OD/NIH HHS/ Research Support,
+  N.I.H., Extramural Research Support, Non-U.S. Gov't Research Support, U.S.
+  Gov't, Non-P.H.S. England 2020/05/14 Nat Commun. 2020 May 12;11(1):2371. doi:
+  10.1038/s41467-020-15766-z.
+
+\bibitem[Watkins(1989)]{eewatkins89}
+C.~J. C.~H. Watkins.
+\newblock {Learning from delayed rewards.}
+\newblock \emph{Ph.D thesis, Cambridge University}, 1989.
+
+\bibitem[Wilson et~al.(2014)Wilson, Geana, White, Ludvig, and
+  Cohen]{wilson2014}
+R.~C. Wilson, A.~Geana, J.~M. White, E.~A. Ludvig, and J.~D. Cohen.
+\newblock {{H}umans use directed and random exploration to solve the
+  explore-exploit dilemma}.
+\newblock \emph{J Exp Psychol Gen}, 143\penalty0 (6):\penalty0 2074--2081, Dec
+  2014.
+
+\bibitem[Wilson and Collins(2019)]{Wilson2019}
+Robert~C. Wilson and Anne~G.E. Collins.
+\newblock {Ten simple rules for the computational modeling of behavioral data}.
+\newblock \emph{eLife}, 2019.
+\newblock ISSN 2050084X.
+\newblock \doi{10.7554/eLife.49547}.
+
+\bibitem[Wilson et~al.(2020)Wilson, Wang, Sadeghiyeh, and Cohen]{Wilson2020}
+Robert~C Wilson, Siyu Wang, Hashem Sadeghiyeh, and Jonathan~D Cohen.
+\newblock Deep exploration as a unifying account of explore-exploit behavior.
+\newblock Feb 2020.
+\newblock \doi{10.31234/osf.io/uj85c}.
+\newblock URL \url{https://doi.org/10.31234/osf.io/uj85c}.
+
+\bibitem[Wilson et~al.(2021)Wilson, Bonawitz, Costa, and Ebitz]{WILSON202149}
+Robert~C Wilson, Elizabeth Bonawitz, Vincent~D Costa, and R~Becket Ebitz.
+\newblock Balancing exploration and exploitation with information and
+  randomization.
+\newblock \emph{Current Opinion in Behavioral Sciences}, 38:\penalty0 49--56,
+  2021.
+\newblock ISSN 2352-1546.
+\newblock \doi{https://doi.org/10.1016/j.cobeha.2020.10.001}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2352154620301467}.
+\newblock Computational cognitive neuroscience.
+
+\end{thebibliography}

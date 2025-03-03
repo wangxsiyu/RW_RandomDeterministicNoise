@@ -62,12 +62,14 @@ bayes_data_paironly = EEbayes_reformat(game, idxsub(id), '2noisemodel_paironly')
 bayes_data_dRonly = EEbayes_reformat(game, idxsub(id), '2noisemodel_dRonly');
 bayes_data_dIonly = EEbayes_reformat(game, idxsub(id), '2noisemodel_dIonly');
 bayes_data_0model = EEbayes_reformat(game, idxsub(id), '2noisemodel_0model');
+
 save('../data/all/bayes_2noise.mat', 'bayes_data');
 save('../data/all/bayes_2noise_all.mat', 'bayes_data_all');
 save('../data/all/bayes_2noise_paironly.mat', 'bayes_data_paironly');
 save('../data/all/bayes_2noise_dRonly.mat', 'bayes_data_dRonly');
 save('../data/all/bayes_2noise_dIonly.mat', 'bayes_data_dIonly');
 save('../data/all/bayes_2noise_0model.mat', 'bayes_data_0model');
+
 %%
 % subject level parameter,
 % det/ran noise at the subject level

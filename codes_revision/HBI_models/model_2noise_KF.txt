@@ -1,0 +1,88 @@
+model{
+		a0_p ~ dunif(0.1, 10) #dexp(0.001)
+		b0_p ~ dunif(0.5, 10) #dexp(0.0001)
+		a_inf_p ~ dunif(0.1, 10) #dexp(0.001)
+		b_inf_p ~ dunif(0.1, 10) #dexp(0.0001)
+		mu0_mean_n ~ dnorm(50, 0.005)
+		mu0_sigma_p ~ dgamma(1,0.001)
+		mu0_tau <- 1/mu0_sigma_p
+		
+		for (s in 1:nSubject) {
+			dum[s] ~ dbeta(a0_p, b0_p)
+			alpha_start[s] <- dum[s]*0.999 # hack to prevent alpha_start == 1
+            # asymptotic learning rate
+            alpha_inf[s] ~ dbeta(a_inf_p, b_inf_p)
+
+            # initial value
+            mu0[s] ~ dnorm( mu0_mean_n, mu0_tau)
+
+            # compute alpha0 and alpha_d
+            alpha0[s]  <- alpha_start[s] / (1 - alpha_start[s]) - alpha_inf[s]^2 / (1 - alpha_inf[s])
+            alpha_d[s] <- alpha_inf[s]^2 / (1 - alpha_inf[s])
+		}
+		
+	    for (h in 1:nHorizon) {
+			NoiseRan_k_p[h] ~ dexp(0.01); # dexp(1)
+			NoiseRan_lambda_p[h] ~ dexp(10);
+			NoiseRan[h] <- NoiseRan_k_p[h]/NoiseRan_lambda_p[h];
+		    NoiseDet_k_p[h] ~ dexp(0.01);
+		    NoiseDet_lambda_p[h] ~ dexp(10);
+		    NoiseDet[h] <- NoiseDet_k_p[h]/NoiseDet_lambda_p[h];
+			InfoBonus_mu_n[h] ~ dnorm(0,0.01); # dnorm(0, 0.0001)
+			InfoBonus_sigma_p[h] ~ dexp(0.01); # dgamma(1,0.001)
+			bias_mu_n[h] ~ dnorm(0,0.01);
+			bias_sigma_p[h] ~ dexp(0.01);
+			for (s in 1:nSubject) {
+				NoiseRan_sub[h,s] ~ dgamma(NoiseRan_k_p[h], NoiseRan_lambda_p[h]);
+		        NoiseDet_sub[h,s] ~ dgamma(NoiseDet_k_p[h], NoiseDet_lambda_p[h]);
+				Infobonus_sub[h,s] ~ dnorm(InfoBonus_mu_n[h], 1/InfoBonus_sigma_p[h]);
+				bias_sub[h,s] ~ dnorm(bias_mu_n[h], 1/bias_sigma_p[h]);
+		        NoiseRan_sub_tau[h,s] <- 1/NoiseRan_sub[h,s];
+		        NoiseDet_sub_tau[h,s] <- 1/NoiseDet_sub[h,s];
+			}
+		}
+		
+		dNoiseRan = NoiseRan[2] - NoiseRan[1];
+		dNoiseDet = NoiseDet[2] - NoiseDet[1];
+		dInfoBonus = InfoBonus_mu_n[2] - InfoBonus_mu_n[1];
+		dbias = bias_mu_n[2] - bias_mu_n[1];
+	    
+		for (h in 1:nHorizon) {
+            for (s in 1:nSubject){
+                for (i in 1:nrepeatID[s]){
+                    NoiseDet_pair[h, s, i] ~ dlogis(0, NoiseDet_sub_tau[h, s]);
+                }
+            }
+        }
+		
+		for (s in 1:nSubject){
+			dNoiseRan_sub[s] = NoiseRan_sub[2, s] - NoiseRan_sub[1, s];
+			dNoiseDet_sub[s] = NoiseDet_sub[2, s] - NoiseDet_sub[1, s];
+			for (t in 1:nTrial[s]) {
+				# initialize stuff
+				# learning rates 
+				alpha1[s,t,1] <- alpha0[s]
+				alpha2[s,t,1] <- alpha0[s]
+				
+				# values
+				mu1[s,t,1] <- mu0[s]
+				mu2[s,t,1] <- mu0[s]
+				
+				# run inference model
+				for (f in 1:nForcedTrials) { # loop over forced-choice trials
+					# learning rates
+					alpha1[s,t,f+1] <- ifelse( choice4[s,t,f] == 1, 1/( 1/(alpha1[s,t,f] + alpha_d[s]) + 1 ), 1/( 1/(alpha1[s,t,f] + alpha_d[s]) ) )
+					alpha2[s,t,f+1] <- ifelse( choice4[s,t,f] == 2, 1/( 1/(alpha2[s,t,f] + alpha_d[s]) + 1 ), 1/( 1/(alpha2[s,t,f] + alpha_d[s]) ) )
+
+					# update means for each bandit
+					mu1[s,t,f+1] <- ifelse( choice4[s,t,f] == 1, mu1[s,t,f] + alpha1[s,t,f+1] * (reward4[s,t,f] - mu1[s,t,f]), mu1[s,t,f])
+					mu2[s,t,f+1] <- ifelse( choice4[s,t,f] == 2, mu2[s,t,f] + alpha2[s,t,f+1] * (reward4[s,t,f] - mu2[s,t,f]), mu2[s,t,f])
+				}
+				
+				NoiseRan_trial[s, t] ~ dlogis(0,NoiseRan_sub_tau[horizon[s,t],s]);
+				dQ[s, t] <- mu2[s,t,nForcedTrials+1] - mu1[s,t,nForcedTrials+1] + Infobonus_sub[horizon[s,t],s] * dI[s, t] + bias_sub[horizon[s,t],s] + NoiseDet_pair[horizon[s,t],s,repeatID[s,t]] + NoiseRan_trial[s, t];
+				P[s,t]  <- ifelse(dQ[s,t] >= 0, 0.999999999, 0.000000001);
+				choice[s,t] ~ dbern( P[s,t] );
+			}
+		}
+}
