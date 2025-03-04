@@ -25,7 +25,8 @@ classdef W_JAGS < handle
                 if ismac
                     obj.workingdir = W.mkdir('~/Documents/Jags');
                 elseif ispc
-                    obj.workingdir = W.mkdir('C:\Users\Siyu_Wang\Documents\TEMP\JAGS');
+                    username = getenv('username');
+                    obj.workingdir = W.mkdir(fullfile('C:\Users', username, 'Documents\TEMP\JAGS'));
                 end
             end
         end
