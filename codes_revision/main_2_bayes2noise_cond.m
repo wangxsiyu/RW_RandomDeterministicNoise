@@ -34,6 +34,16 @@ end
 %     wj.setup(wjinfo.modelfile, wjinfo.params, struct, ['DetRanNoise' suffix{fi}]);
 %     wj.run;
 % end
+%% main bayes KF
+files = {'bayes_2noise_2condKF.mat'};
+suffix = {''};
+for fi = 1:1
+    d = load(fullfile(fullfile('../data',ver), files{fi})).(['bayes_data_2condKF', suffix{fi}]);
+    wj.setup_data_dir(d, outputdir);
+    wjinfo = EEbayes_analysis(d, nchains);
+    wj.setup(wjinfo.modelfile, wjinfo.params, struct, ['DetRanNoise_2condKF' suffix{fi}]);
+    wj.run;
+end
 
 
 

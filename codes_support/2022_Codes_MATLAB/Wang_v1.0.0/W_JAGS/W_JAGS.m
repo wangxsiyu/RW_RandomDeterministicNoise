@@ -14,15 +14,19 @@ classdef W_JAGS < handle
        isdoparallel
     end
     methods
-        function obj = W_JAGS()
+        function obj = W_JAGS(varargin)
             obj.isoverwrite = false;
             obj.setup_params(2, 1, 1);
             obj.setup_data_dir([], './');
             obj.isdoparallel = 1;
-            if ismac
-                obj.workingdir = W.mkdir('~/Documents/Jags');
-            elseif ispc
-                obj.workingdir = W.mkdir('C:\Users\Siyu_Wang\Documents\TEMP\JAGS');
+            if nargin > 0
+                obj.workingdir = W.mkdir(varargin{1});
+            else % default path
+                if ismac
+                    obj.workingdir = W.mkdir('~/Documents/Jags');
+                elseif ispc
+                    obj.workingdir = W.mkdir('C:\Users\Siyu_Wang\Documents\TEMP\JAGS');
+                end
             end
         end
         function run(obj)
