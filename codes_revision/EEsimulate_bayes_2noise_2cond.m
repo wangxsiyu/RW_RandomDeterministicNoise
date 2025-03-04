@@ -1,11 +1,11 @@
 function out = EEsimulate_bayes_2noise_2cond(data, As, bs, nrans, ndets)
     disp(['Generating simulation']);
-%     if size(ndets, 2) == 1
-%         ndets = repmat(ndets, 1, 2);
-%     end
-%     if size(nrans, 2) == 1
-%         nrans = repmat(nrans, 1, 2);
-%     end
+    if length(size(ndets)) == 2
+        ndets = repmat(reshape(ndets, 1, 2, []),2,1,1);
+    end
+    if length(size(nrans)) == 2
+        nrans = repmat(reshape(nrans, 1, 2, []),2,1,1);
+    end
     
     for si = 1:data.nSubject
         choice = [];
