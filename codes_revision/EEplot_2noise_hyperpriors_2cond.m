@@ -6,7 +6,7 @@ function EEplot_2noise_hyperpriors_2cond(plt, sp, stepsize)
         'Deterministic noise - \sigma_{det}',{'Change in deterministic noise - \sigma_{det}'}};
     plt.setfig_all('ylabel', 'posterior density', ...
         'ytick', []);
-    plt.setfig('xtick',{0:4:50,-3:3:15,0:4:50,-3:3:15});
+%     plt.setfig('xtick',{0:4:50,-3:3:15,0:4:50,-3:3:15});
     color = {{'AZred50','AZred'},{'AZblue50','AZblue'}};
     fns = {'NoiseRan', 'NoiseDet'};
     plt.setfig('legend', {{'h = 1, [1 3]','h = 1, [2 2]','h = 6, [1 3]','h = 6, [2 2]'},{'change, [1 3]', 'change, [2 2]'},...
@@ -14,7 +14,7 @@ function EEplot_2noise_hyperpriors_2cond(plt, sp, stepsize)
         'xlabel', {'','','noise standard deviation [points]', 'noise standard deviation [points]'}, ...
         'title', names);
     for i = 1:2
-        xbins = [-10:stepsize(i):50];
+        xbins = [-10:stepsize(i):30];
         fn = fns{i};
         plt.ax(i*2-1);
         td = sp.(fn);

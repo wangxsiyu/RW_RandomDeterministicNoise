@@ -10,9 +10,9 @@ model{
 		mu0_tau[j] <- 1/mu0_sigma_p[j]
 	}
 	for (h in 1:nHorizon) {
-		InfoBonus_mu_n[h] ~ dnorm(0,0.01); # dnorm(0, 0.0001)
-		InfoBonus_sigma_p[h] ~ dexp(0.01); # dgamma(1,0.001)
 		for (j in 1:nCond) {
+			InfoBonus_mu_n[h,j] ~ dnorm(0,0.01); # dnorm(0, 0.0001)
+			InfoBonus_sigma_p[h,j] ~ dexp(0.01); # dgamma(1,0.001)
 			NoiseRan_k_p[h, j] ~ dexp(0.01);
 			NoiseRan_lambda_p[h, j] ~ dexp(10);
 			NoiseRan[h, j] <- NoiseRan_k_p[h, j]/NoiseRan_lambda_p[h, j];
@@ -24,8 +24,8 @@ model{
 		}	
 	}
 	# calculate horizon changes
-	dInfoBonus = InfoBonus_mu_n[2] - InfoBonus_mu_n[1];
 	for (j in 1:nCond){
+		dInfoBonus[j] = InfoBonus_mu_n[2,j] - InfoBonus_mu_n[1,j];
 		dNoiseRan[j] = NoiseRan[2,j] - NoiseRan[1,j];
 		dNoiseDet[j] = NoiseDet[2,j] - NoiseDet[1,j];
 		dbias[j] = bias_mu_n[2,j] - bias_mu_n[1,j];
@@ -33,8 +33,8 @@ model{
 	# subject-level parameters
 	for (s in 1:nSubject) {
 	    for (h in 1:nHorizon) {
-			Infobonus_sub[h,s] ~ dnorm(InfoBonus_mu_n[h], 1/InfoBonus_sigma_p[h]);
 			for (j in 1:nCond) {
+				Infobonus_sub[h,j,s] ~ dnorm(InfoBonus_mu_n[h,j], 1/InfoBonus_sigma_p[h,j]);
 				NoiseRan_sub[h,j,s] ~ dgamma(NoiseRan_k_p[h,j], NoiseRan_lambda_p[h,j]);
 				NoiseDet_sub[h,j,s] ~ dgamma(NoiseDet_k_p[h,j], NoiseDet_lambda_p[h,j]);
 				NoiseRan_sub_tau[h,j,s] <- 1/NoiseRan_sub[h,j,s];
@@ -89,8 +89,7 @@ model{
 			}
 		
             NoiseRan_trial[s, i] ~ dlogis(0,NoiseRan_sub_tau[horizon[s,i],infocond[s,i], s]);
-			dInfo[s, i] <- (alpha2[s,i,nForcedTrials+1] - alpha1[s,i,nForcedTrials+1]) * 64
-			dQ[s, i] <- mu2[s,i,nForcedTrials+1] - mu1[s,i,nForcedTrials+1] + Infobonus_sub[horizon[s,i],s] * dInfo[s, i] + bias_sub[horizon[s,i],infocond[s,i],s] + NoiseDet_pair[s,repeatID[s,i]] + NoiseRan_trial[s, i];
+			dQ[s, i] <- mu2[s,i,nForcedTrials+1] - mu1[s,i,nForcedTrials+1] + Infobonus_sub[horizon[s,i],infocond[s,i], s] * (alpha2[s,i,nForcedTrials+1] - alpha1[s,i,nForcedTrials+1]) * 64 + bias_sub[horizon[s,i],infocond[s,i],s] + NoiseDet_pair[s,repeatID[s,i]] + NoiseRan_trial[s, i];
 			P[s,i]  <- ifelse(dQ[s,i] >= 0, 0.999999999, 0.000000001);
 			choice[s,i] ~ dbern( P[s,i] );
 		}

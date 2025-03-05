@@ -24,7 +24,7 @@ muteprint = 1;
 simugp = cell(50,6);
 for repi = 1:50
     W.disp(repi,'');
-    simu = load(fullfile('../bayesoutput_revision/simu6model/', sprintf('bayes_6model_simu_rep%d.mat', repi))).simu;
+    simu = load(fullfile('../bayesoutput_revision/dIvar/', sprintf('bayes_dIvar_simu_rep%d.mat', repi))).simu;
     for mi = 1:6
         gamenow = game0;
         for si = 1:length(idxsub)
@@ -61,3 +61,34 @@ leg = {'random noise only', 'simulated data (random noise only)', 'deterministic
 plt.setfig(1:2, 'ylim', {[0 0.45],[0 0.45]}, ...
     'ytick', 0:0.1:0.4, 'legend',{leg,leg});
 plt = EEplot_2noise_pinconsistent(plt, sgp.modelE, '_byR', '_byR', 'GPav_');
+
+%%
+tfile = fullfile(W.mkdir('../bayesoutput_revision/dIvar'), sprintf('bayes_dIvar_simu_rep%d.mat', repi));
+
+%% ratio plot (h = 6/h = 1, for ran and det, A and b)
+sp = paramsub{1};
+%%
+plt.figure(4,2,'istitle',0,'rect',[0 0 0.5 0.9],...
+    'margin',[0.1 0.11 0.02 0.02]);
+stepsize = 0.04;
+xbins = [-30:stepsize:30];
+fns = {'NoiseRan', 'NoiseDet','InfoBonus_mu_n','bias_mu_n'};
+tt = [];
+cols = {'AZred', 'AZblue','AZcactus','AZsand'};
+plt.setfig([1 3 5 7],'legend', {'Random noise', 'Deterministic noise','Information bonus','spatial bias'}, ...
+    'xlabel', {'','','','ratio of increase (H = 6/H = 1)'}, 'ylabel', {'\sigma_{Ran}','\sigma_{Det}','A','b'},'title','','ytick', '', ...
+    'xlim', [-10,10]);
+plt.setfig([1 3 5 7]+1,'legend', {'Random noise', 'Deterministic noise','Information bonus','spatial bias'}, ...
+    'xlabel', {'','','','ratio of increase (H = 6/H = 1)'}, 'ylabel', {'\sigma_{Ran}','\sigma_{Det}','A','b'},'title','','ytick', '', ...
+    'xlim', [-10,10]);
+for j = 1:2
+    for mi = 1:4
+        plt.ax(mi,j);
+        fn = fns{mi};
+        td = sp.(fn);
+        [tl, tm] = W.JAGS_density((td(:,:,2,j)./td(:,:,1,j)), xbins);
+        plt.plot(tm, tl, [], 'line', 'color', cols{mi});
+
+    end
+end
+plt.update;
