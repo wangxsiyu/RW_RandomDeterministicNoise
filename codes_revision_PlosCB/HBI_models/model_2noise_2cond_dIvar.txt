@@ -6,10 +6,10 @@ model{
 		bias_mu_n[h] ~ dnorm(0,0.01);
 		bias_sigma_p[h] ~ dexp(0.01);
 		for (j in 1:nCond) {
-			NoiseRan_k_p[h, j] ~ dexp(0.01);
+			NoiseRan_k_p[h, j] ~ dexp(0.1);
 			NoiseRan_lambda_p[h, j] ~ dexp(10);
 			NoiseRan[h, j] <- NoiseRan_k_p[h, j]/NoiseRan_lambda_p[h, j];
-		    NoiseDet_k_p[h, j] ~ dexp(0.01);
+		    NoiseDet_k_p[h, j] ~ dexp(0.1);
 		    NoiseDet_lambda_p[h, j] ~ dexp(10);
 		    NoiseDet[h, j] <- NoiseDet_k_p[h, j]/NoiseDet_lambda_p[h, j];
 		}	
@@ -24,6 +24,8 @@ model{
 	# subject-level parameters
 	for (s in 1:nSubject){
 		for (h in 1:nHorizon){
+			Infobonus_sub[h,s] ~ dnorm(InfoBonus_mu_n[h], 1/InfoBonus_sigma_p[h]);
+			bias_sub[h,s] ~ dnorm(bias_mu_n[h], 1/bias_sigma_p[h]);
 			for (j in 1:nCond) {
 				NoiseRan_sub[h,j,s] ~ dgamma(NoiseRan_k_p[h,j], NoiseRan_lambda_p[h,j]);
 				NoiseDet_sub[h,j,s] ~ dgamma(NoiseDet_k_p[h,j], NoiseDet_lambda_p[h,j]);
@@ -33,8 +35,6 @@ model{
 		}
 		# calculate horizon difference in subject-level noise
 		for (j in 1:nCond){
-			Infobonus_sub[h,s] ~ dnorm(InfoBonus_mu_n[h], 1/InfoBonus_sigma_p[h]);
-			bias_sub[h,s] ~ dnorm(bias_mu_n[h], 1/bias_sigma_p[h]);
 			dNoiseRan_sub[s,j] = NoiseRan_sub[2,j, s] - NoiseRan_sub[1,j, s];
 			dNoiseDet_sub[s,j] = NoiseDet_sub[2,j, s] - NoiseDet_sub[1,j, s];
 		}

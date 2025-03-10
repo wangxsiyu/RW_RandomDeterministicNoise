@@ -1,4 +1,3 @@
-addpath(genpath('../codes_support'))
 JAGS_setup_revision;
 %% main bayes
 files = {'bayes_2noise_2cond_dIvar2.mat'};
@@ -74,27 +73,6 @@ for repi = 1:50
         save(tfile,'simu');
     end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 % %% main bayes
 % files = {'bayes_2noise_KF.mat'};
 % suffix = {''};
