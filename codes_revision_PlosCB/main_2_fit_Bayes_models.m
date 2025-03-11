@@ -1,6 +1,7 @@
 %% main bayes
-suffix = {'', '_2cond', '_2cond_dIvar', '_2cond_dIvar_both'};
-for fi = 1:4
+suffix = {'', '_2cond', '_2cond_dIvar', '_2cond_dIvar_both', ...
+    '_v2', '_v2_2cond', '_v2_2cond_dIvar', '_v2_2cond_dIvar_both'};
+for fi = 1:length(suffix)
     JAGS_setup_revision;
 %     wj.setup_params;
     d = load(fullfile(fullfile('../data',ver), 'bayesdata.mat')).(['bayesdata']);
