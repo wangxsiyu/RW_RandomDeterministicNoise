@@ -32,7 +32,7 @@ function out = EEsimulate_bayes_2noise_2cond(data, As, bs, nrans, ndets)
                 end
             end
             dne = n_det(repeatID(gi));
-            dQ = dR(gi) + As(horizon(gi), si) * dI(gi) + bs(horizon(gi), infocond(gi), si) + dne + dni;
+            dQ = dR(gi) + As(horizon(gi), si) * dI(gi) + bs(horizon(gi), si) + dne + dni;
             if dQ > 0
                 choice(gi) = 1;
             else

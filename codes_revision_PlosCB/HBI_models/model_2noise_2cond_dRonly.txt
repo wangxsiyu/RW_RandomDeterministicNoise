@@ -1,0 +1,53 @@
+model{
+	# hyper parameters
+	for (h in 1:nHorizon) {
+		bias_mu_n[h] ~ dnorm(0,0.01);
+		bias_sigma_p[h] ~ dexp(0.01);
+		for (j in 1:nCond) {
+			NoiseRan_k_p[h, j] ~ dexp(0.1);
+			NoiseRan_lambda_p[h, j] ~ dexp(10);
+			NoiseRan[h, j] <- NoiseRan_k_p[h, j]/NoiseRan_lambda_p[h, j];
+		    NoiseDet_k_p[h, j] ~ dexp(0.1);
+		    NoiseDet_lambda_p[h, j] ~ dexp(10);
+		    NoiseDet[h, j] <- NoiseDet_k_p[h, j]/NoiseDet_lambda_p[h, j];
+		}	
+	}
+	# calculate horizon changes
+	dbias = bias_mu_n[2] - bias_mu_n[1];
+	for (j in 1:nCond){
+		dNoiseRan[j] = NoiseRan[2,j] - NoiseRan[1,j];
+		dNoiseDet[j] = NoiseDet[2,j] - NoiseDet[1,j];
+	}
+	# subject-level parameters
+	for (s in 1:nSubject){
+		for (h in 1:nHorizon){
+			bias_sub[h,s] ~ dnorm(bias_mu_n[h], 1/bias_sigma_p[h]);
+			for (j in 1:nCond) {
+				NoiseRan_sub[h,j,s] ~ dgamma(NoiseRan_k_p[h,j], NoiseRan_lambda_p[h,j]);
+				NoiseDet_sub[h,j,s] ~ dgamma(NoiseDet_k_p[h,j], NoiseDet_lambda_p[h,j]);
+				NoiseRan_sub_tau[h,j,s] <- 1/NoiseRan_sub[h,j,s];
+				NoiseDet_sub_tau[h,j,s] <- 1/NoiseDet_sub[h,j,s];
+			}
+		}
+		# calculate horizon difference in subject-level noise
+		for (j in 1:nCond){
+			dNoiseRan_sub[s,j] = NoiseRan_sub[2,j, s] - NoiseRan_sub[1,j, s];
+			dNoiseDet_sub[s,j] = NoiseDet_sub[2,j, s] - NoiseDet_sub[1,j, s];
+		}
+	}
+	# deterministic noise parameters
+	for (s in 1:nSubject){
+		for (i in 1:nrepeatID[s]){
+			NoiseDet_pair[s, i] ~ dlogis(0, NoiseDet_sub_tau[rpIDHorizon[s,i], rpIDCond[s,i], s]);
+		}
+	}
+	# compute choice likelihood
+	for (s in 1:nSubject){
+        for (i in 1:nTrial[s]) {
+            NoiseRan_trial[s, i] ~ dlogis(0,NoiseRan_sub_tau[horizon[s,i],infocond[s,i], s]);
+			dQ[s, i] <- dR[s,i] + bias_sub[horizon[s,i],s] + NoiseDet_pair[s,repeatID[s,i]] + NoiseRan_trial[s, i];
+			P[s,i]  <- ifelse(dQ[s,i] >= 0, 0.999999999, 0.000000001);
+			choice[s,i] ~ dbern( P[s,i] );
+		}
+	}
+}

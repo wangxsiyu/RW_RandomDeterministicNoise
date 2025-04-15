@@ -7,9 +7,9 @@ outputdir = fullfile('../bayesoutput_revision', ver);
 outputdir = W.get_fullpath(W.mkdir(outputdir));
 wj = W_JAGS;
 %% set up chains
-nchains = 10; % How Many Chains?
-nburnin = 5000; % How Many Burn-in Samples?
-nsamples = 5000; % How Many Recorded Samples?
+nchains = 4; % How Many Chains?
+nburnin = 2000; % How Many Burn-in Samples?
+nsamples = 2000; % How Many Recorded Samples?
 HBItest = '';
 wj.setup_params(nchains, nburnin, nsamples);
 %% test

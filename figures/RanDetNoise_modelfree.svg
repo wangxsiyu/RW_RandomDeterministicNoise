@@ -629,7 +629,7 @@
     ><line y2="976.4828" style="fill:none;" x1="231.5" x2="231.5" y1="956.6948"
       /><line y2="783.8235" style="fill:none;" x1="456.5" x2="456.5" y1="732.7786"
       /><line y2="936.9067" style="fill:none;" x1="231.5" x2="231.5" y1="956.6948"
-      /><line y2="681.7336" style="fill:none;" x1="456.5" x2="456.5" y1="732.7786"
+      /><line y2="681.7337" style="fill:none;" x1="456.5" x2="456.5" y1="732.7786"
       /><line y2="732.7786" style="fill:none;" x1="231.5" x2="456.5" y1="956.6948"
     /></g
     ><g style="text-rendering:geometricPrecision; color-rendering:optimizeQuality; color-interpolation:linearRGB; image-rendering:optimizeQuality;" transform="translate(231.5,976.4828)"
@@ -650,12 +650,12 @@
     ><g transform="translate(231.5,936.9067)" style="stroke-linecap:butt; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; color-interpolation:linearRGB; stroke-width:4;"
     ><path style="fill:none;" d="M-6 0 L6 0"
     /></g
-    ><g style="text-rendering:geometricPrecision; color-rendering:optimizeQuality; color-interpolation:linearRGB; image-rendering:optimizeQuality;" transform="translate(456.5,681.7336)"
+    ><g style="text-rendering:geometricPrecision; color-rendering:optimizeQuality; color-interpolation:linearRGB; image-rendering:optimizeQuality;" transform="translate(456.5,681.7337)"
     ><path style="stroke:none;" d="M-6 0 L6 0"
     /></g
-    ><g transform="translate(456.5,681.7336)" style="stroke-linecap:butt; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; color-interpolation:linearRGB; stroke-width:4;"
+    ><g transform="translate(456.5,681.7337)" style="stroke-linecap:butt; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; color-interpolation:linearRGB; stroke-width:4;"
     ><path style="fill:none;" d="M-6 0 L6 0"
-      /><path transform="translate(-456.5,-681.7336)" style="fill:none; stroke-width:1; fill-rule:evenodd; stroke-linejoin:round;" d="M485.525 956.6948 L490.25 956.6948 L490.25 732.7786 L485.525 732.7786"
+      /><path transform="translate(-456.5,-681.7337)" style="fill:none; stroke-width:1; fill-rule:evenodd; stroke-linejoin:round;" d="M485.525 956.6948 L490.25 956.6948 L490.25 732.7786 L485.525 732.7786"
     /></g
     ><g transform="translate(490.475,844.7367) rotate(90)" style="text-rendering:geometricPrecision; font-size:40px; color-interpolation:linearRGB; color-rendering:optimizeQuality; image-rendering:optimizeQuality;"
     ><text x="-23.5" xml:space="preserve" y="0" style="stroke:none;"
