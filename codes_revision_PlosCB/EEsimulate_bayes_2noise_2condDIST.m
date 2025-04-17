@@ -30,11 +30,12 @@ function out = EEsimulate_bayes_2noise_2condDIST(data, As, bs, nrans, ndets)
                 tdni = reshape(ndets(:,:, infocond(gi), si),1,[]);
             end
             tid = randperm(length(tA),1);
+            tid2 = randperm(length(tA),1);
             tdni = tdni(tid);
 
             
-            if tdne(tid) > 0
-                pdni = makedist('Logistic',0, tdne(tid));
+            if tdne(tid2) > 0
+                pdni = makedist('Logistic',0, tdne(tid2));
                 dni = random(pdni);
             else
                 dni = 0;
@@ -47,10 +48,12 @@ function out = EEsimulate_bayes_2noise_2condDIST(data, As, bs, nrans, ndets)
                     n_det(repeatID(gi)) = 0;
                 end
             end
+            tid3= randperm(length(tA),1);
+            tid4 = randperm(length(tA),1);
+        
 
 
-
-            dQ = dR(gi) + tA(tid) * dI(gi) +  tb(tid) + dni + n_det(repeatID(gi));
+            dQ = dR(gi) + tA(tid3) * dI(gi) +  tb(tid4) + dni + n_det(repeatID(gi));
             if dQ > 0
                 choice(gi) = 1;
             else

@@ -15,7 +15,7 @@ wj.run;
 % 1cond vs 2cond
 % dI vs dIvar
 suffix = {'', '_2cond', '_2cond_dIvar', '_2cond_dIvar_both', '_2cond_dRonly', '_2cond_nobias', ...
-    'B_2cond','C_2cond','D_2cond','E_2cond','F_2cond'};
+    'B_2cond','C_2cond','D_2cond','E_2cond','F_2cond','_2cond_nonhierarchical'};% reviewer fit non-hierarchical
 for fi = 1:length(suffix)
     JAGS_setup;
     d = load(fullfile(fullfile('../data',ver), 'bayesdata.mat')).(['bayesdata']);

@@ -70,3 +70,6 @@ leg = {'random noise only', 'simulated data (random noise only)', 'deterministic
 plt.setfig(1:2, 'ylim', {[0 0.45],[0 0.45]}, ...
     'ytick', 0:0.1:0.4, 'legend',{leg,leg});
 plt = EEplot_2noise_pinconsistent(plt, sgp.modelE, '_byR', '_byR', 'GPav_');
+%% non-hierarchical
+repi = 1;
+simu = load(fullfile('../bayesoutput_revision/simurepeat/', sprintf('simugame_%d.mat', repi))).simugame;

@@ -1,14 +1,4 @@
 JAGS_setup
-%% posterior checks
-data = load(fullfile('../data/all_revision/bayesdata.mat')).(['bayesdata']);
-
-st = load(fullfile(outputdir, ['HBI_DetRanNoiseR1_2cond_stat.mat'])).stats.mean;
-sp = load(fullfile(outputdir, ['HBI_DetRanNoiseR1_2cond_samples.mat'])).samples;
-
-tfile = fullfile(W.mkdir('../bayesoutput_revision/simu6modelMAP'), sprintf('bayes_6model_simu_rep%d.mat', repi));
-simu = EEsimulate_bayes_2noise_2condDIST(data, sp.Infobonus_sub, ...
-    sp.bias_sub, sp.NoiseRan_sub, sp.NoiseDet_sub);
-save(tfile,'simu');
 %% 6 model comparison
 data = load(fullfile('../data/all_revision/bayesdata.mat')).(['bayesdata']);
 name = {'_','B_','C_','D_','E_','F_'};

@@ -23,7 +23,7 @@ for repi = 1:50
     %%
     data1 = importdata(tfile);
     for mi = 1:6
-        for mmi = 1:6
+        for mmi = 1 % can be 1:6 
             filename = [sprintf('DetRanNoise_fitmodel%s_rep%d_', name{mmi}, repi) char(64 + mi)];
             if ~exist(fullfile('../bayesoutput/simu6model', ['HBI_' filename '_stat.mat']), 'file')
                 d = data1{mi};

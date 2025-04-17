@@ -21,18 +21,18 @@ function EEplot_2noise_modelcomparison(plt, gp, simugp)
         plt.plot(1:2,gp.GPav_p_lm22, gp.GPste_p_lm22,'line','color','AZred');
         plt.setfig_ax('legend',{'model','data'});
         plt.ax(mi,3);
-        plt.plot(1:2,tgp.GPav_GPav_p_inconsistent13_randomtheory_byR, tgp.GPav_GPste_p_inconsistent13_randomtheory_byR,'line', 'color', 'AZblue50','linestyle','--');
+        % plt.plot(1:2,tgp.GPav_GPav_p_inconsistent13_randomtheory_byR, tgp.GPav_GPste_p_inconsistent13_randomtheory_byR,'line', 'color', 'AZblue50','linestyle','--');
         plt.plot(1:2,tgp.GPav_GPav_p_inconsistent13, tgp.GPav_GPste_p_inconsistent13,'line', 'color', 'AZblue');
         plt.plot(1:2,gp.GPav_p_inconsistent13, gp.GPste_p_inconsistent13,'line', 'color', 'AZred');
-%         plt.plot(1:2,gp.GPav_p_inconsistent13_randomtheory_byR, gp.GPste_p_inconsistent13_randomtheory_byR,'line', 'color', 'AZred50','linestyle','--');
+        plt.plot(1:2,gp.GPav_p_inconsistent13_randomtheory_byR, gp.GPste_p_inconsistent13_randomtheory_byR,'line', 'color', 'AZred50','linestyle','--');
         plt.setfig_ax('legend',{'\sigma^{ran} only','model','data'});
 %         plt.setfig_ax('legend',{'data','model'});
         
         plt.ax(mi,4);
-        plt.plot(1:2,tgp.GPav_GPav_p_inconsistent22_randomtheory_byR, tgp.GPav_GPste_p_inconsistent22_randomtheory_byR,'line', 'color', 'AZblue50','linestyle','--');
+        % plt.plot(1:2,tgp.GPav_GPav_p_inconsistent22_randomtheory_byR, tgp.GPav_GPste_p_inconsistent22_randomtheory_byR,'line', 'color', 'AZblue50','linestyle','--');
         plt.plot(1:2,tgp.GPav_GPav_p_inconsistent22, tgp.GPav_GPste_p_inconsistent22,'line', 'color', 'AZblue');
         plt.plot(1:2,gp.GPav_p_inconsistent22, gp.GPste_p_inconsistent22,'line', 'color', 'AZred')
-%         plt.plot(1:2,gp.GPav_p_inconsistent22_randomtheory_byR, gp.GPste_p_inconsistent22_randomtheory_byR,'line', 'color', 'AZred50','linestyle','--');
+        plt.plot(1:2,gp.GPav_p_inconsistent22_randomtheory_byR, gp.GPste_p_inconsistent22_randomtheory_byR,'line', 'color', 'AZred50','linestyle','--');
         plt.setfig_ax('legend',{'\sigma^{ran} only','model','data'});
 %         plt.setfig_ax('legend',{'data','model'});
     end
