@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  18 APR 2025 15:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  18 APR 2025 23:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -832,7 +832,17 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count355
 \l__pdf_internal_box=\box70
-) (DetRanNoise_Supplementary.aux)
+) (DetRanNoise_Supplementary.aux
+
+LaTeX Warning: Label `fig:paramrecover_sub' multiply defined.
+
+
+LaTeX Warning: Label `fig:s8' multiply defined.
+
+
+LaTeX Warning: Label `fig:s8' multiply defined.
+
+)
 \openout1 = `DetRanNoise_Supplementary.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -854,8 +864,7 @@ LaTeX Font Info:    ... okay on input line 70.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
 Package hyperref Info: Link coloring OFF on input line 70.
- (DetRanNoise_Supplementary.out)
-(DetRanNoise_Supplementary.out)
+ (DetRanNoise_Supplementary.out) (DetRanNoise_Supplementary.out)
 \@outlinefile=\write4
 \openout4 = `DetRanNoise_Supplementary.out'.
 
@@ -919,7 +928,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \tf@toc=\write5
 \openout5 = `DetRanNoise_Supplementary.toc'.
 
-<figures/RanDetNoise_modelfree__all.jpg, id=72, 1238.6275pt x 1246.6575pt>
+<figures/RanDetNoise_modelfree__all.jpg, id=82, 1238.6275pt x 1246.6575pt>
 File: figures/RanDetNoise_modelfree__all.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_modelfree__all.jpg>
 Package pdftex.def Info: figures/RanDetNoise_modelfree__all.jpg  used on input 
@@ -936,144 +945,178 @@ Overfull \vbox (53.69576pt too high) has occurred while \output is active []
 
 
 [3 <./figures/RanDetNoise_modelfree__all.jpg>]
-<figures/RanDetNoise_pinconsistent__all.jpg, id=87, 1238.6275pt x 666.49pt>
+<figures/RanDetNoise_pinconsistent__all.jpg, id=97, 1238.6275pt x 666.49pt>
 File: figures/RanDetNoise_pinconsistent__all.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_pinconsistent__all.jpg>
 Package pdftex.def Info: figures/RanDetNoise_pinconsistent__all.jpg  used on in
 put line 89.
 (pdftex.def)             Requested size: 505.89pt x 272.21518pt.
  [4 <./figures/RanDetNoise_pinconsistent__all.jpg>]
-<figures/RDBayes_pinconsistent_validation.jpg, id=93, 1238.6275pt x 666.49pt>
+<figures/RDBayes_pinconsistent_validation.jpg, id=103, 1238.6275pt x 666.49pt>
 File: figures/RDBayes_pinconsistent_validation.jpg Graphic file (type jpg)
 <use figures/RDBayes_pinconsistent_validation.jpg>
 Package pdftex.def Info: figures/RDBayes_pinconsistent_validation.jpg  used on 
 input line 100.
 (pdftex.def)             Requested size: 505.89pt x 272.21518pt.
  [5 <./figures/RDBayes_pinconsistent_validation.jpg>]
-<figures/RDBayes_reduced_model.jpg, id=100, 1254.6875pt x 1246.6575pt>
+<figures/RDBayes_reduced_model.jpg, id=110, 1254.6875pt x 1246.6575pt>
 File: figures/RDBayes_reduced_model.jpg Graphic file (type jpg)
 <use figures/RDBayes_reduced_model.jpg>
 Package pdftex.def Info: figures/RDBayes_reduced_model.jpg  used on input line 
-114.
+116.
 (pdftex.def)             Requested size: 505.89pt x 502.64888pt.
 
 [6] [7 <./figures/RDBayes_reduced_model.jpg>]
-<figures/RDBayes_parameterrecovery_hyperprior_v2.jpg, id=118, 1850.915pt x 1246
+<figures/RDBayes_parameterrecovery_hyperprior_v2.jpg, id=128, 1850.915pt x 1246
 .6575pt>
 File: figures/RDBayes_parameterrecovery_hyperprior_v2.jpg Graphic file (type jp
 g)
 <use figures/RDBayes_parameterrecovery_hyperprior_v2.jpg>
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_hyperprior_v2.jpg  u
-sed on input line 125.
+sed on input line 127.
 (pdftex.def)             Requested size: 505.89pt x 340.72989pt.
  [8]
-<figures/RDBayes_parameterrecovery_hyperprior.jpg, id=125, 1850.915pt x 1246.65
+<figures/RDBayes_parameterrecovery_hyperprior.jpg, id=135, 1850.915pt x 1246.65
 75pt>
 File: figures/RDBayes_parameterrecovery_hyperprior.jpg Graphic file (type jpg)
 <use figures/RDBayes_parameterrecovery_hyperprior.jpg>
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_hyperprior.jpg  used
- on input line 133.
+ on input line 135.
 (pdftex.def)             Requested size: 505.89pt x 340.72989pt.
  [9 <./figures/RDBayes_parameterrecovery_hyperprior_v2.jpg>] [10 <./figures/RDB
 ayes_parameterrecovery_hyperprior.jpg>]
-<figures/RDBayes_parameterrecovery_subject_examplesession.jpg, id=140, 1045.907
+<figures/RDBayes_parameterrecovery_subject_examplesession.jpg, id=150, 1045.907
 5pt x 2032.59375pt>
 File: figures/RDBayes_parameterrecovery_subject_examplesession.jpg Graphic file
  (type jpg)
 <use figures/RDBayes_parameterrecovery_subject_examplesession.jpg>
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_subject_examplesessi
-on.jpg  used on input line 147.
+on.jpg  used on input line 149.
 (pdftex.def)             Requested size: 328.82541pt x 639.02983pt.
 
 
-LaTeX Warning: Float too large for page by 51.11864pt on input line 151.
+LaTeX Warning: Float too large for page by 51.11864pt on input line 153.
 
-<figures/RDBayes_parameterrecovery_subject.jpg, id=141, 1045.9075pt x 2032.5937
+<figures/RDBayes_parameterrecovery_subject.jpg, id=151, 1045.9075pt x 2032.5937
 5pt>
 File: figures/RDBayes_parameterrecovery_subject.jpg Graphic file (type jpg)
 <use figures/RDBayes_parameterrecovery_subject.jpg>
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_subject.jpg  used on
- input line 155.
+ input line 157.
 (pdftex.def)             Requested size: 328.82541pt x 639.02983pt.
 
-LaTeX Warning: Float too large for page by 30.71863pt on input line 159.
+LaTeX Warning: Float too large for page by 30.71863pt on input line 161.
 
+<figures/R1_shuffle_shuffled_recovery.jpg, id=154, 1242.6425pt x 1285.80376pt>
+File: figures/R1_shuffle_shuffled_recovery.jpg Graphic file (type jpg)
+<use figures/R1_shuffle_shuffled_recovery.jpg>
+Package pdftex.def Info: figures/R1_shuffle_shuffled_recovery.jpg  used on inpu
+t line 165.
+(pdftex.def)             Requested size: 328.82541pt x 340.24588pt.
 [11] [12 <./figures/RDBayes_parameterrecovery_subject_examplesession.jpg>]
-[13 <./figures/RDBayes_parameterrecovery_subject.jpg>]
-<figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg, id=164, 1238.6275pt x 1
+[13 <./figures/RDBayes_parameterrecovery_subject.jpg>] [14 <./figures/R1_shuffl
+e_shuffled_recovery.jpg>]
+<figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg, id=180, 1238.6275pt x 1
 285.80376pt>
 File: figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg Graphic file (type 
 jpg)
 <use figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg>
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg 
- used on input line 173.
+ used on input line 182.
 (pdftex.def)             Requested size: 354.12144pt x 367.61545pt.
- [14]
-<figures/RDBayes_parameterrecovery_gridsimu_all.jpg, id=172, 2336.73pt x 1709.3
+ [15]
+<figures/RDBayes_parameterrecovery_gridsimu_all.jpg, id=188, 2336.73pt x 1709.3
 8625pt>
 File: figures/RDBayes_parameterrecovery_gridsimu_all.jpg Graphic file (type jpg
 )
 <use figures/RDBayes_parameterrecovery_gridsimu_all.jpg>
 Package pdftex.def Info: figures/RDBayes_parameterrecovery_gridsimu_all.jpg  us
-ed on input line 182.
+ed on input line 191.
 (pdftex.def)             Requested size: 505.89pt x 370.06703pt.
-<figures/RDBayes_hyperprior__all.jpg, id=173, 1238.6275pt x 1285.80376pt>
+<figures/RDBayes_hyperprior__all.jpg, id=189, 1238.6275pt x 1285.80376pt>
 File: figures/RDBayes_hyperprior__all.jpg Graphic file (type jpg)
 <use figures/RDBayes_hyperprior__all.jpg>
 Package pdftex.def Info: figures/RDBayes_hyperprior__all.jpg  used on input lin
-e 192.
+e 201.
 (pdftex.def)             Requested size: 354.12144pt x 367.61545pt.
- [15 <./figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg>] [16 <./figures/
-RDBayes_parameterrecovery_gridsimu_all.jpg>] [17 <./figures/RDBayes_hyperprior_
-_all.jpg>]
-<figures/RDBayes_2noise_hyperpriors_6model.jpg, id=190, 1412.27625pt x 2039.62p
+ [16 <./figures/RDBayes_parameterrecovery_grid_pureRanDet.jpg>] [17 <./figures/
+RDBayes_parameterrecovery_gridsimu_all.jpg>]
+[18 <./figures/RDBayes_hyperprior__all.jpg>]
+<figures/RDBayes_2noise_hyperpriors_6model.jpg, id=208, 1412.27625pt x 2039.62p
 t>
 File: figures/RDBayes_2noise_hyperpriors_6model.jpg Graphic file (type jpg)
 <use figures/RDBayes_2noise_hyperpriors_6model.jpg>
 Package pdftex.def Info: figures/RDBayes_2noise_hyperpriors_6model.jpg  used on
- input line 232.
+ input line 242.
 (pdftex.def)             Requested size: 404.71353pt x 584.4722pt.
-<figures/RDBayes_2noise_6modelcomparison.jpg, id=191, 1421.31pt x 2045.6425pt>
-File: figures/RDBayes_2noise_6modelcomparison.jpg Graphic file (type jpg)
-<use figures/RDBayes_2noise_6modelcomparison.jpg>
-Package pdftex.def Info: figures/RDBayes_2noise_6modelcomparison.jpg  used on i
-nput line 240.
-(pdftex.def)             Requested size: 404.71353pt x 582.48354pt.
+<figures/R1_2noise_6modelcomparison_dist.jpg, id=209, 1421.31pt x 2046.64626pt>
+
+File: figures/R1_2noise_6modelcomparison_dist.jpg Graphic file (type jpg)
+<use figures/R1_2noise_6modelcomparison_dist.jpg>
+Package pdftex.def Info: figures/R1_2noise_6modelcomparison_dist.jpg  used on i
+nput line 250.
+(pdftex.def)             Requested size: 404.71353pt x 582.76935pt.
 
 
-LaTeX Warning: Float too large for page by 14.97235pt on input line 245.
+LaTeX Warning: Float too large for page by 15.25816pt on input line 255.
 
-<figures/RDBayes_2noise_hyperprior_6model_recovery.jpg, id=195, 1412.27625pt x 
+<figures/R1_2noise_6modelcomparison_map.jpg, id=210, 1421.31pt x 2046.64626pt>
+File: figures/R1_2noise_6modelcomparison_map.jpg Graphic file (type jpg)
+<use figures/R1_2noise_6modelcomparison_map.jpg>
+Package pdftex.def Info: figures/R1_2noise_6modelcomparison_map.jpg  used on in
+put line 258.
+(pdftex.def)             Requested size: 404.71353pt x 582.76935pt.
+
+LaTeX Warning: Float too large for page by 15.25816pt on input line 263.
+
+[19] [20 <./figures/RDBayes_2noise_hyperpriors_6model.jpg>] [21 <./figures/R1_2
+noise_6modelcomparison_dist.jpg>] [22 <./figures/R1_2noise_6modelcomparison_map
+.jpg>]
+<figures/RDBayes_2noise_hyperprior_6model_recovery.jpg, id=235, 1412.27625pt x 
 2039.62pt>
 File: figures/RDBayes_2noise_hyperprior_6model_recovery.jpg Graphic file (type 
 jpg)
 <use figures/RDBayes_2noise_hyperprior_6model_recovery.jpg>
 Package pdftex.def Info: figures/RDBayes_2noise_hyperprior_6model_recovery.jpg 
- used on input line 252.
+ used on input line 270.
 (pdftex.def)             Requested size: 404.71353pt x 584.4722pt.
-[18] [19 <./figures/RDBayes_2noise_hyperpriors_6model.jpg>] [20 <./figures/RDBa
-yes_2noise_6modelcomparison.jpg>]
+ [23]
 Overfull \vbox (37.36102pt too high) has occurred while \output is active []
 
 
-[21 <./figures/RDBayes_2noise_hyperprior_6model_recovery.jpg>]
+[24 <./figures/RDBayes_2noise_hyperprior_6model_recovery.jpg>]
+<figures/R1_hyperprior.jpg, id=245, 1238.6275pt x 1583.9175pt>
+File: figures/R1_hyperprior.jpg Graphic file (type jpg)
+<use figures/R1_hyperprior.jpg>
+Package pdftex.def Info: figures/R1_hyperprior.jpg  used on input line 282.
+(pdftex.def)             Requested size: 354.12144pt x 452.84714pt.
+ [25 <./figures/R1_hyperprior.jpg>]
+<figures/R1_hyperprior_dIvar.jpg, id=252, 1238.6275pt x 1285.80376pt>
+File: figures/R1_hyperprior_dIvar.jpg Graphic file (type jpg)
+<use figures/R1_hyperprior_dIvar.jpg>
+Package pdftex.def Info: figures/R1_hyperprior_dIvar.jpg  used on input line 29
+1.
+(pdftex.def)             Requested size: 354.12144pt x 367.61545pt.
 \Changes@OutFile=\write6
 \openout6 = `DetRanNoise_Supplementary.soc'.
 
 \tf@loc=\write7
 \openout7 = `DetRanNoise_Supplementary.loc'.
 
-
+ [26 <./figures/R1_hyperprior_dIvar.jpg>]
 (DetRanNoise_Supplementary.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `DetRanNoise_Supplementary.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 080C317388B81988BAC25609DC83BCFE;3988.
+(rerunfilecheck)             Checksum: F37C9339F9F356548163B181F99AE2D4;4727.
  ) 
 Here is how much of TeX's memory you used:
- 24173 strings out of 478338
- 458478 string characters out of 2834777
- 729425 words of memory out of 3000000
- 42103 multiletter control sequences out of 15000+600000
+ 24215 strings out of 478338
+ 459727 string characters out of 2834777
+ 731313 words of memory out of 3000000
+ 42130 multiletter control sequences out of 15000+600000
  494147 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,10n,108p,2051b,554s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1089,9 +1132,9 @@ ang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmr8a.pfb>
-Output written on DetRanNoise_Supplementary.pdf (21 pages, 3174659 bytes).
+Output written on DetRanNoise_Supplementary.pdf (26 pages, 4053198 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
