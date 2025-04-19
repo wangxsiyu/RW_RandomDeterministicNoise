@@ -8,45 +8,45 @@ Database file #1: Refs/refs.bib
 Warning--empty journal in hbm1
 Warning--empty journal in matjags
 Warning--empty journal in Wilson2020
-You've used 31 entries,
+You've used 38 entries,
             2773 wiz_defined-function locations,
-            834 strings with 13786 characters,
-and the built_in function-call counts, 15343 in all, are:
-= -- 1401
-> -- 942
-< -- 16
-+ -- 319
-- -- 287
-* -- 1321
-:= -- 2445
-add.period$ -- 147
-call.type$ -- 31
-change.case$ -- 185
-chr.to.int$ -- 30
-cite$ -- 65
-duplicate$ -- 633
-empty$ -- 1161
-format.name$ -- 334
-if$ -- 3182
+            901 strings with 15748 characters,
+and the built_in function-call counts, 19125 in all, are:
+= -- 1768
+> -- 1147
+< -- 22
++ -- 388
+- -- 349
+* -- 1647
+:= -- 3043
+add.period$ -- 190
+call.type$ -- 38
+change.case$ -- 226
+chr.to.int$ -- 37
+cite$ -- 79
+duplicate$ -- 790
+empty$ -- 1450
+format.name$ -- 407
+if$ -- 3988
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 31
-newline$ -- 216
-num.names$ -- 126
-pop$ -- 311
+missing$ -- 38
+newline$ -- 272
+num.names$ -- 156
+pop$ -- 364
 preamble$ -- 1
-purify$ -- 156
+purify$ -- 190
 quote$ -- 0
-skip$ -- 490
+skip$ -- 610
 stack$ -- 0
-substring$ -- 506
-swap$ -- 46
-text.length$ -- 1
+substring$ -- 656
+swap$ -- 64
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 331
+type$ -- 408
 warning$ -- 3
-while$ -- 120
+while$ -- 150
 width$ -- 0
-write$ -- 503
+write$ -- 638
 (There were 3 warnings)

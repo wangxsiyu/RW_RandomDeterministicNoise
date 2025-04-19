@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  2 MAR 2025 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  18 APR 2025 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,11 +890,14 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 [1
 
 {C:/Users/Siyu_Wang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Package hyperref Info: bookmark level for unknown added defaults to 0 on input 
+line 112.
+
 [2] [3] [4]
 
 pdfTeX warning: pdflatex.exe (file ./figures/taskfiga.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<figures/taskfiga.pdf, id=81, 1011.78pt x 917.82903pt>
+<figures/taskfiga.pdf, id=99, 1011.78pt x 917.82903pt>
 File: figures/taskfiga.pdf Graphic file (type pdf)
 <use figures/taskfiga.pdf>
 Package pdftex.def Info: figures/taskfiga.pdf  used on input line 147.
@@ -914,21 +917,21 @@ of choos-ing the more in-for-ma-tive op-tion $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12
  ([])$
  []
 
-<figures/RanDetNoise_modelfree.jpg, id=144, 1238.6275pt x 1246.6575pt>
+<figures/RanDetNoise_modelfree.jpg, id=163, 1238.6275pt x 1246.6575pt>
 File: figures/RanDetNoise_modelfree.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_modelfree.jpg>
 Package pdftex.def Info: figures/RanDetNoise_modelfree.jpg  used on input line 
 186.
 (pdftex.def)             Requested size: 505.89pt x 509.17358pt.
 [8] [9 <./figures/RanDetNoise_modelfree.jpg>]
-<figures/RanDetNoise_pinconsistent.jpg, id=162, 1238.6275pt x 666.49pt>
+<figures/RanDetNoise_pinconsistent.jpg, id=181, 1238.6275pt x 666.49pt>
 File: figures/RanDetNoise_pinconsistent.jpg Graphic file (type jpg)
 <use figures/RanDetNoise_pinconsistent.jpg>
 Package pdftex.def Info: figures/RanDetNoise_pinconsistent.jpg  used on input l
 ine 211.
 (pdftex.def)             Requested size: 505.89pt x 272.21518pt.
  [10] [11 <./figures/RanDetNoise_pinconsistent.jpg>] [12]
-<figures/RDBayes_parameterrecovery_subject_examplesession_randet.jpg, id=195, 1
+<figures/RDBayes_parameterrecovery_subject_examplesession_randet.jpg, id=214, 1
 045.9075pt x 1052.93375pt>
 File: figures/RDBayes_parameterrecovery_subject_examplesession_randet.jpg Graph
 ic file (type jpg)
@@ -938,21 +941,21 @@ on_randet.jpg  used on input line 262.
 (pdftex.def)             Requested size: 480.59395pt x 483.82521pt.
  [13] [14 <./figures/RDBayes_parameterrecovery_subject_examplesession_randet.jp
 g>]
-<figures/RDBayes_hyperprior.jpg, id=216, 1238.6275pt x 1285.80376pt>
+<figures/RDBayes_hyperprior.jpg, id=235, 1238.6275pt x 1285.80376pt>
 File: figures/RDBayes_hyperprior.jpg Graphic file (type jpg)
 <use figures/RDBayes_hyperprior.jpg>
 Package pdftex.def Info: figures/RDBayes_hyperprior.jpg  used on input line 280
 .
 (pdftex.def)             Requested size: 505.89pt x 525.16212pt.
  [15]
-<figures/RDBayes_ratio.jpg, id=224, 627.34375pt x 627.34375pt>
+<figures/RDBayes_ratio.jpg, id=243, 627.34375pt x 627.34375pt>
 File: figures/RDBayes_ratio.jpg Graphic file (type jpg)
 <use figures/RDBayes_ratio.jpg>
 Package pdftex.def Info: figures/RDBayes_ratio.jpg  used on input line 289.
 (pdftex.def)             Requested size: 252.94499pt x 252.94327pt.
  [16 <./figures/RDBayes_hyperprior.jpg>]
 [17 <./figures/RDBayes_ratio.jpg>]
-<figures/RDBayes_2noise_modelA.jpg, id=238, 2462.19875pt x 666.49pt>
+<figures/RDBayes_2noise_modelA.jpg, id=260, 2462.19875pt x 666.49pt>
 File: figures/RDBayes_2noise_modelA.jpg Graphic file (type jpg)
 <use figures/RDBayes_2noise_modelA.jpg>
 Package pdftex.def Info: figures/RDBayes_2noise_modelA.jpg  used on input line 
@@ -964,16 +967,14 @@ Overfull \hbox (30.33153pt too wide) in paragraph at lines 496--529
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [23]
-<figures/EEHorizon_2sigma.pdf, id=334, 758.835pt x 397.485pt>
+<figures/EEHorizon_2sigma.pdf, id=364, 758.835pt x 397.485pt>
 File: figures/EEHorizon_2sigma.pdf Graphic file (type pdf)
 <use figures/EEHorizon_2sigma.pdf>
 Package pdftex.def Info: figures/EEHorizon_2sigma.pdf  used on input line 540.
 (pdftex.def)             Requested size: 505.89pt x 264.99136pt.
- (manuscript_DeterministicRandomNoise.bbl [24 <./figures/EEHorizon_2sigma.pdf>]
+ [24] (manuscript_DeterministicRandomNoise.bbl [25 <./figures/EEHorizon_2sigma.
+pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
 7.
 
@@ -985,7 +986,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--64
 hompson-[]sampling .
  []
 
-[25] [26] [27] [28]) [29]
+[26]
+Underfull \hbox (badness 2165) in paragraph at lines 99--106
+\OT1/ptm/m/n/12 0893-6080.  doi: $https : / / doi . org / 10 . 1016 / S0893-[]6
+080(02 ) 00044-[]8$.  URL []$\OT1/pcr/m/n/12 https : / / www .
+ []
+
+[27]
+Underfull \hbox (badness 2213) in paragraph at lines 193--202
+\OT1/ptm/m/n/12 of \OT1/ptm/m/it/12 Progress in Brain Re-search\OT1/ptm/m/n/12 
+, pages 441--464. El-se-vier, 2013.  doi: $https : / / doi . org / 10 .
+ []
+
+[28] [29]) [30]
 \Changes@OutFile=\write5
 \openout5 = `manuscript_DeterministicRandomNoise.soc'.
 
@@ -1002,13 +1015,13 @@ Package rerunfilecheck Info: File `manuscript_DeterministicRandomNoise.out' has
 ### simple group (level 1) entered at line 118 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24034 strings out of 478338
- 455663 string characters out of 2834777
- 718868 words of memory out of 3000000
- 41911 multiletter control sequences out of 15000+600000
- 499858 words of font info for 93 fonts, out of 8000000 for 9000
+ 24075 strings out of 478338
+ 456431 string characters out of 2834777
+ 719231 words of memory out of 3000000
+ 41937 multiletter control sequences out of 15000+600000
+ 501443 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,16n,108p,1970b,686s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,16n,108p,2054b,782s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/f
@@ -1028,10 +1041,10 @@ iyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Use
 rs/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
 /Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on manuscript_DeterministicRandomNoise.pdf (29 pages, 1351651 by
+Output written on manuscript_DeterministicRandomNoise.pdf (30 pages, 1363754 by
 tes).
 PDF statistics:
- 618 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

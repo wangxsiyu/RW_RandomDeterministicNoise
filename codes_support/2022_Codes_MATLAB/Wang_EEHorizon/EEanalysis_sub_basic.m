@@ -27,6 +27,19 @@ function out = EEanalysis_sub_basic(game)
         out.p_hi13_reduced(hi) = out.p_hi13(hi) - out.hiishm(hi);
         out.p_lm13(hi) = nanmean(c5_lm(idx_h & idx_13));
         out.p_lm22(hi) = nanmean(c5_lm(idx_h & idx_22));
+
+        out.p_hi13_od1(hi) = mean(c5_hi(idx_h & idx_13 & game.repeat_order == 1));
+        out.p_lm22_od1(hi) = nanmean(c5_lm(idx_h & idx_22 & game.repeat_order == 1));
+        out.p_hi13_od2(hi) = mean(c5_hi(idx_h & idx_13 & game.repeat_order == 2));
+        out.p_lm22_od2(hi) = nanmean(c5_lm(idx_h & idx_22 & game.repeat_order == 2));
+
+        ratio = game.gameNumber/max(game.gameNumber);
+        isr = ismember(game.repeat_order, [1 2]);
+        out.p_hi13_h1(hi) = mean(c5_hi(idx_h & idx_13 & ratio <= .5 & isr));
+        out.p_lm22_h1(hi) = nanmean(c5_lm(idx_h & idx_22 & ratio <= .5& isr));
+        out.p_hi13_h2(hi) = mean(c5_hi(idx_h & idx_13 & ratio > .5 & isr));
+        out.p_lm22_h2(hi) = nanmean(c5_lm(idx_h & idx_22 & ratio > .5 & isr));
+
         out.p_lm(hi) = nanmean(c5_lm(idx_h));
         out.p_rp13(hi) = nanmean(c5_rp(idx_h & idx_13));
         out.p_rp22(hi) = nanmean(c5_rp(idx_h & idx_22));

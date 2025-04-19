@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -62,6 +62,17 @@ Olivier Chapelle and Lihong Li.
 \newblock URL
   \url{http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf}.
 
+\bibitem[Cinotti et~al.(2019)Cinotti, Fresno, Aklil, Coutureau, Girard,
+  Marchand, and Khamassi]{Cinotti19}
+François Cinotti, Virginie Fresno, Nassim Aklil, Etienne Coutureau, Benoît
+  Girard, Alain~R. Marchand, and Mehdi Khamassi.
+\newblock Dopamine blockade impairs the exploration-exploitation trade-off in
+  rats.
+\newblock \emph{Scientific Reports}, 9\penalty0 (1):\penalty0 6770, 2019.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-019-43245-z}.
+\newblock URL \url{https://doi.org/10.1038/s41598-019-43245-z}.
+
 \bibitem[Costa et~al.(2019)Costa, Mitz, and Averbeck]{costa1}
 V.~D. Costa, A.~R. Mitz, and B.~B. Averbeck.
 \newblock Subcortical substrates of explore-exploit decisions in primates.
@@ -83,6 +94,15 @@ Sarah Depaoli, James~P. Clifton, and Patrice~R. Cobb.
   (6):\penalty0 628--649, 2016.
 \newblock \doi{10.3102/1076998616664876}.
 \newblock URL \url{https://doi.org/10.3102/1076998616664876}.
+
+\bibitem[Doya(2002)]{DOYA2002495}
+Kenji Doya.
+\newblock Metalearning and neuromodulation.
+\newblock \emph{Neural Networks}, 15\penalty0 (4):\penalty0 495--506, 2002.
+\newblock ISSN 0893-6080.
+\newblock \doi{https://doi.org/10.1016/S0893-6080(02)00044-8}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0893608002000448}.
 
 \bibitem[Drugowitsch et~al.(2016)Drugowitsch, Wyart, Devauchelle, and
   Koechlin]{drugowitsch16}
@@ -125,6 +145,18 @@ C.~Findling, V.~Skvortsova, R.~Dromnelle, S.~Palminteri, and V.~Wyart.
   States 2019/10/30 Nat Neurosci. 2019 Dec;22(12):2066-2077. doi:
   10.1038/s41593-019-0518-9. Epub 2019 Oct 28.
 
+\bibitem[Findling and Wyart(2021)]{Findling21}
+Charles Findling and Valentin Wyart.
+\newblock Computation noise in human learning and decision-making: origin,
+  impact, function.
+\newblock \emph{Current Opinion in Behavioral Sciences}, 38:\penalty0 124--132,
+  2021.
+\newblock ISSN 2352-1546.
+\newblock \doi{https://doi.org/10.1016/j.cobeha.2021.02.018}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2352154621000401}.
+\newblock Computational cognitive neuroscience.
+
 \bibitem[Gershman(2018)]{Gershman2018}
 Samuel~J. Gershman.
 \newblock {Deconstructing the human algorithms for exploration}.
@@ -155,6 +187,18 @@ J.~Hogeveen, T.~S. Mullins, J.~D. Romero, E.~Eversole, K.~Rogge-Obando, A.~R.
   Support, N.I.H., Extramural Research Support, N.I.H., Intramural Research
   Support, U.S. Gov't, Non-P.H.S. 2022/04/08 Neuron. 2022 Jun
   1;110(11):1869-1879.e5. doi: 10.1016/j.neuron.2022.03.014. Epub 2022 Apr 6.
+
+\bibitem[Khamassi et~al.(2013)Khamassi, Enel, Dominey, and
+  Procyk]{KHAMASSI2013441}
+Mehdi Khamassi, Pierre Enel, Peter~Ford Dominey, and Emmanuel Procyk.
+\newblock Chapter 22 - medial prefrontal cortex and the adaptive regulation of
+  reinforcement learning parameters.
+\newblock In V.S.~Chandrasekhar Pammi and Narayanan Srinivasan, editors,
+  \emph{Decision Making}, volume 202 of \emph{Progress in Brain Research},
+  pages 441--464. Elsevier, 2013.
+\newblock \doi{https://doi.org/10.1016/B978-0-444-62604-2.00022-8}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/B9780444626042000228}.
 
 \bibitem[Lee and Wagenmakers(2014{\natexlab{a}})]{lee2014}
 Michael~D. Lee and Eric-Jan Wagenmakers.
@@ -191,6 +235,16 @@ S.~Musall, M.~T. Kaufman, A.~L. Juavinett, S.~Gluf, and A.~K. Churchland.
   Extramural Research Support, Non-U.S. Gov't Research Support, U.S. Gov't,
   Non-P.H.S. 2019/09/26 Nat Neurosci. 2019 Oct;22(10):1677-1686. doi:
   10.1038/s41593-019-0502-4. Epub 2019 Sep 24.
+
+\bibitem[Palminteri et~al.(2017)Palminteri, Wyart, and Koechlin]{Palminteri}
+Stefano Palminteri, Valentin Wyart, and Etienne Koechlin.
+\newblock The importance of falsification in computational cognitive modeling.
+\newblock \emph{Trends in Cognitive Sciences}, 21\penalty0 (6):\penalty0
+  425--433, 2017.
+\newblock ISSN 1364-6613.
+\newblock \doi{10.1016/j.tics.2017.03.011}.
+\newblock URL \url{https://doi.org/10.1016/j.tics.2017.03.011}.
+\newblock doi: 10.1016/j.tics.2017.03.011.
 
 \bibitem[Pelli(1997)]{psychtoolbox2}
 D.~G. Pelli.
@@ -274,5 +328,23 @@ Robert~C Wilson, Elizabeth Bonawitz, Vincent~D Costa, and R~Becket Ebitz.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S2352154620301467}.
 \newblock Computational cognitive neuroscience.
+
+\bibitem[Wyart(2018)]{Wyart_2018}
+Valentin Wyart.
+\newblock Leveraging decision consistency to decompose suboptimality in terms
+  of its ultimate predictability.
+\newblock \emph{Behavioral and Brain Sciences}, 41:\penalty0 e248, 2018.
+\newblock \doi{10.1017/S0140525X18001504}.
+
+\bibitem[Wyart and Koechlin(2016)]{WYART2016}
+Valentin Wyart and Etienne Koechlin.
+\newblock Choice variability and suboptimality in uncertain environments.
+\newblock \emph{Current Opinion in Behavioral Sciences}, 11:\penalty0 109--115,
+  2016.
+\newblock ISSN 2352-1546.
+\newblock \doi{https://doi.org/10.1016/j.cobeha.2016.07.003}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S235215461630136X}.
+\newblock Computational modeling.
 
 \end{thebibliography}
