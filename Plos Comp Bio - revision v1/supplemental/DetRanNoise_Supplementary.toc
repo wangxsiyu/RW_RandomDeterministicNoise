@@ -1,14 +1,15 @@
 \contentsline {section}{\numberline {1}Additional model-free analyses}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Replication of Figure 2 without excluding subjects}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Replication of Figure 3 without excluding subjects}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Model-free analysis with simulated choice from a pure random noise model}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Control analysis: model-free analysis with simulated choice from a random-noise only model}{5}{subsection.1.3}%
 \contentsline {section}{\numberline {2}Model validation analyses}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Deterministic noise captures known deterministic processes excluded from the model}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Frequentist coverage analysis}{8}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Parameter recovery of the subject-level parameter fits}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Parameter recovery over a bigger range of arbitrary combinations of deterministic and random noises }{15}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Additional model-based analyses}{18}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Replication of Figure 5 without excluding subjects}{18}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Alternative models: variations of the two-noise model}{19}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Alternative models: separate noises for [1 3] and [2 2] condition}{25}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Alternative models: use variance differences as dI}{26}{subsection.3.4}%
+\contentsline {subsection}{\numberline {2.4}Parameter recovery of arbitrary combinations of deterministic and random noises }{14}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Additional model-based analyses}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Replication of Figure 5 without excluding subjects}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Alternative model: fit separate random and deterministic noises for [1 3] and [2 2] conditions}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Alternative model: use variance differences as dI}{19}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Examine the co-variance of random vs deterministic noise}{20}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Alternative models: variations of the two-noise model}{21}{subsection.3.5}%
