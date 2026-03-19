@@ -84,9 +84,9 @@
 
 \makeatletter
 \renewcommand{\fnum@figure}{\figurename\thefigure}
+\renewcommand{\figurename}{Fig }
+\renewcommand{\thefigure}{\arabic{figure}}
 \makeatother
-\renewcommand{\figurename}{}
-\renewcommand{\thefigure}{Fig \arabic{figure}}
 
 
 \newcommand{\bcaption}[2]{\caption[#1]{\textbf{#1} #2}}

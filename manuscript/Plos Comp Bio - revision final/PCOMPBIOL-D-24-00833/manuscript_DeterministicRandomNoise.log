@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  19 MAR 2026 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  19 MAR 2026 03:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -927,7 +927,7 @@ Package epstopdf Info: Source file: <Fig2.eps>
 o.pdf Fig2.eps>
 (epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
-<Fig2-eps-converted-to.pdf, id=153, 1189.44376pt x 1196.47pt>
+<Fig2-eps-converted-to.pdf, id=152, 1189.44376pt x 1196.47pt>
 File: Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig2-eps-converted-to.pdf>
 Package pdftex.def Info: Fig2-eps-converted-to.pdf  used on input line 190.
@@ -943,7 +943,7 @@ Package epstopdf Info: Source file: <Fig3.eps>
 o.pdf Fig3.eps>
 (epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
-<Fig3-eps-converted-to.pdf, id=178, 1189.44376pt x 639.38875pt>
+<Fig3-eps-converted-to.pdf, id=177, 1189.44376pt x 639.38875pt>
 File: Fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig3-eps-converted-to.pdf>
 Package pdftex.def Info: Fig3-eps-converted-to.pdf  used on input line 208.
@@ -960,7 +960,7 @@ Package epstopdf Info: Source file: <Fig4.eps>
 o.pdf Fig4.eps>
 (epstopdf)             \includegraphics on input line 259.
 Package epstopdf Info: Output file is already uptodate.
-<Fig4-eps-converted-to.pdf, id=228, 1045.9075pt x 1052.93375pt>
+<Fig4-eps-converted-to.pdf, id=227, 1045.9075pt x 1052.93375pt>
 File: Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig4-eps-converted-to.pdf>
 Package pdftex.def Info: Fig4-eps-converted-to.pdf  used on input line 259.
@@ -976,7 +976,7 @@ Package epstopdf Info: Source file: <Fig5.eps>
 o.pdf Fig5.eps>
 (epstopdf)             \includegraphics on input line 278.
 Package epstopdf Info: Output file is already uptodate.
-<Fig5-eps-converted-to.pdf, id=256, 1189.44376pt x 1234.6125pt>
+<Fig5-eps-converted-to.pdf, id=254, 1189.44376pt x 1234.6125pt>
 File: Fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig5-eps-converted-to.pdf>
 Package pdftex.def Info: Fig5-eps-converted-to.pdf  used on input line 278.
@@ -992,7 +992,7 @@ Package epstopdf Info: Source file: <Fig6.eps>
 o.pdf Fig6.eps>
 (epstopdf)             \includegraphics on input line 287.
 Package epstopdf Info: Output file is already uptodate.
-<Fig6-eps-converted-to.pdf, id=261, 602.25pt x 602.25pt>
+<Fig6-eps-converted-to.pdf, id=259, 602.25pt x 602.25pt>
 File: Fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig6-eps-converted-to.pdf>
 Package pdftex.def Info: Fig6-eps-converted-to.pdf  used on input line 287.
@@ -1008,7 +1008,7 @@ Package epstopdf Info: Source file: <Fig7.eps>
 o.pdf Fig7.eps>
 (epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
-<Fig7-eps-converted-to.pdf, id=291, 2363.83125pt x 639.38875pt>
+<Fig7-eps-converted-to.pdf, id=288, 2363.83125pt x 639.38875pt>
 File: Fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig7-eps-converted-to.pdf>
 Package pdftex.def Info: Fig7-eps-converted-to.pdf  used on input line 303.
@@ -1029,7 +1029,7 @@ Package epstopdf Info: Source file: <Fig8.eps>
 o.pdf Fig8.eps>
 (epstopdf)             \includegraphics on input line 425.
 Package epstopdf Info: Output file is already uptodate.
-<Fig8-eps-converted-to.pdf, id=393, 725.71124pt x 376.40625pt>
+<Fig8-eps-converted-to.pdf, id=390, 725.71124pt x 376.40625pt>
 File: Fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig8-eps-converted-to.pdf>
 Package pdftex.def Info: Fig8-eps-converted-to.pdf  used on input line 425.
@@ -1081,7 +1081,7 @@ Package rerunfilecheck Info: File `manuscript_DeterministicRandomNoise.out' has
 Here is how much of TeX's memory you used:
  24097 strings out of 478338
  456218 string characters out of 2834777
- 720458 words of memory out of 3000000
+ 720426 words of memory out of 3000000
  41942 multiletter control sequences out of 15000+600000
  501177 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1106,10 +1106,10 @@ Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
 <C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on manuscript_DeterministicRandomNoise.pdf (37 pages, 1031098 by
+Output written on manuscript_DeterministicRandomNoise.pdf (37 pages, 1030493 by
 tes).
 PDF statistics:
- 606 PDF objects out of 1000 (max. 8388607)
+ 603 PDF objects out of 1000 (max. 8388607)
  133 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
