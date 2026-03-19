@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  9 MAR 2026 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  19 MAR 2026 00:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,7 +933,7 @@ Package rerunfilecheck Info: File `S1_Text.out' has not changed.
 Here is how much of TeX's memory you used:
  24012 strings out of 478338
  452729 string characters out of 2834777
- 718460 words of memory out of 3000000
+ 718459 words of memory out of 3000000
  41989 multiletter control sequences out of 15000+600000
  495466 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -950,7 +950,7 @@ s/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><
 C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.p
 fb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
 8a.pfb>
-Output written on S1_Text.pdf (9 pages, 119005 bytes).
+Output written on S1_Text.pdf (9 pages, 119007 bytes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
