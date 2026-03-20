@@ -1,2 +1,7 @@
 
 Human decisions often seem random. Even simple decisions like what food to order at a restaurant can be difficult to predict ahead of time. One outstanding question is where the randomness in our decisions comes from. Sometimes, our seemingly random decisions are driven by predictable external factors, like what the guests at the next table order could influence what we order. Other times, our decisions are not driven by external factors but are instead made by random thoughts within our brain. How can we tell whether a seemingly "random" decision is actually random? In this paper, we developed a novel computational method to quantify the extend to which our seemingly random decisions are driven by predictable external factors, versus being actually random and unpredictable. 
+
+
+
+The randomness in our decisions can actually be beneficial, effectively allowing us to explore new options by chance. For example, picking a random item out of the menu might actually lead you to your new favorite dish. Understanding the source of behavioral variability is thus key to understanding the nature of exploration. By quantifying and studying the roles of both external/predictable (e.g., my dinner decision is driven by what the guest at the next table ordered) versus internal/unpredictable (e.g., I just felt like eating pizza today) sources of randomness in decision-making, we provided new insights on how humans flexibly adapt the level of randomness in their behaviors in the service of exploration. 
+
